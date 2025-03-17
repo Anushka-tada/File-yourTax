@@ -1,0 +1,14 @@
+@import url('../homepage/EasiestWay.css');
+/* otp css */
+
+.otp-input{
+    border: 1px solid var(--third-color);
+}
+
+.otp-submit{
+    background-color: var(--third-color);
+    width: 250px;
+}
+.otp-submit:hover{
+    background-color: var(--primary-color);
+}
