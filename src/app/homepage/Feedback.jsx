@@ -24,7 +24,7 @@ const Feedback = () => {
     <div className="feedback p-10 rounded-2xl bg-white">
         <p className='font-bold mb-2 text-lg'>Neha Kumari</p>
         <img alt="Rating" src="https://tax2win.in/assets-new/img/testimonials/five-star.png" width="90" height="16" loading="lazy"/>
-        <p className='mt-2 '>Good service, quick response, and friendly interaction.Thank you Tax2win team for filing my ITR, especially to Heena</p>
+        <p className='mt-2 '>Good service, quick response, and friendly interaction.Thank you File Your Tax team for filing my ITR, especially to Heena</p>
     </div>
 
 <div className="feedback p-10 rounded-2xl bg-white">
@@ -38,7 +38,7 @@ const Feedback = () => {
     <div className="feedback p-10 rounded-2xl bg-white">
         <p  className='font-bold mb-2 text-lg'>Sumit Chattaraj</p>
         <img alt="Rating" src="https://tax2win.in/assets-new/img/testimonials/five-star.png" width="90" height="16" loading="lazy"/>
-        <p className='mt-2 '>Thank you filing my tax returns. Gopal Sir was really good and he answered all my clarifications with patience and helped] me with prompt filing. I truly appretiate Gopal sir and T2W team.</p>
+        <p className='mt-2 '>Thank you filing my tax returns. Gopal Sir was really good and he answered all my clarifications with patience and helped me with prompt filing. I truly appretiate Gopal sir and T2W team.</p>
     </div>
 
    </div>

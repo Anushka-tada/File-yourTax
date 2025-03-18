@@ -253,6 +253,13 @@ const Nav = () => {
   const profileRef = useRef(null); // Reference for profile dropdown
 
   const { loggedUserData } = useContext(LoggedDataContext); // Access context data
+  const { updateLoggedUserData } = useContext(LoggedDataContext);
+
+  const handleLogout = () => {
+    updateLoggedUserData(null); // Clear Context API
+    localStorage.removeItem("user"); // Clear Local Storage
+};
+
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -411,10 +418,14 @@ const Nav = () => {
              
             </div>
             {isProfileDropdownOpen && (
-              <div className="dropdown bg-white shadow-lg rounded-lg absolute top-full mt-2 right-0 p-4">
-                <p><strong>Name:</strong> {loggedUserData.firstName} {loggedUserData.lastName}</p>
+              <div className="dropdown bg-white shadow-lg rounded-lg absolute top-full mt-2 right-0 p-6">
+                {/* <p><strong>Name:</strong> {loggedUserData.firstName} {loggedUserData.lastName}</p>
                 <p><strong>Email:</strong> {loggedUserData.email}</p>
-                <p><strong>Phone:</strong> {loggedUserData.phoneNumber}</p>
+                <p><strong>Phone:</strong> {loggedUserData.phoneNumber}</p> */}
+                  <div className="drop-items flex flex-col gap-2">
+                 <a href="./user-profile">  <div className="flex gap-4 p-2 rounded drop-item"> <img src="https://tax2win.in/assets-new/img/new-theme/profile.svg" alt="" height={17} width={17} /><p className="text-sm ">My Profile</p></div></a>
+                  <div className="flex gap-4 p-2 rounded drop-item" onClick={handleLogout} > <img src="https://tax2win.in/assets-new/img/new-theme/logout.svg" alt="" height={17} width={17} /><p className="text-sm ">Logout</p></div>
+                  </div>
               </div>
             )}
           </div>

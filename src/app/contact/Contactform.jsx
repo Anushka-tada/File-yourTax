@@ -38,7 +38,7 @@ width="100%" height="400" frameBorder="0"  allowFullScreen=""></iframe>
 
             <div className='flex gap-3 justify-start'>
            <img src="https://tax2win.in/assets-new/img/email-icon.svg" alt="support" width="28" height="28"/>
-              <a className='text-white' href="mailto:support@tax2win.in">support@tax2win.in</a>
+              <a className='text-white' href="mailto:support@tax2win.in">support@fileyourtax.in</a>
             </div>
 
            <div className='flex justify-end w-full '>

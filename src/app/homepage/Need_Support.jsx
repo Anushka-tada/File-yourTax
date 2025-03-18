@@ -11,7 +11,7 @@ const Need_Support = () => {
             </div>
             <div className="mail flex gap-3 items-center">
             <img src="https://tax2win.in/assets-new/img/new-theme/mail.svg" alt="Call Now" width="32" height="32"/>
-           <h2 className=" text-white text-2xl"> support@tax2win.in</h2>
+           <h2 className=" text-white text-2xl"> support@fileyourtax.in</h2>
             </div>
 </div>
 

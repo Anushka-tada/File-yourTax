@@ -28,7 +28,7 @@ const Faq_ITR = () => {
           <p className="text-base mb-2">E-filing of Income-tax returns is the process of filing Income-tax online. As per the income tax department,
              income tax returns can be filed through the online method only. However, the super senior citizens filing ITR using Form 1 or Form 4 are allowed to use the offline or paper mode.</p>
           <p className="text-base">E-filing of Income-tax returns can be done easily and quickly in the comfort of your home or office in just 4
-             minutes with Tax2win. Or you can simply visit the Income <span className="text-green-700">Tax e-filing portal</span>. You can learn both processes <span className="text-green-700">here</span>.</p> 
+             minutes with File Your Tax. Or you can simply visit the Income <span className="text-green-700">Tax e-filing portal</span>. You can learn both processes <span className="text-green-700">here</span>.</p> 
         </div>}
 
 
@@ -58,7 +58,7 @@ const Faq_ITR = () => {
         {visibleAnswer === 2 &&
         <div className="answer text-left my-3"> 
           <p className="text-base mb-2">In India, taxpayers have several options for filing their Income Tax Return (ITR). Taxpayers can file their ITR via the income tax efiling login portal <span className="text-green-700"> (https://www.incometax.gov.in/iec/foportal/)</span>where taxpayers can file their ITR electronically.</p>
-          <p className="text-base">You can file ITR with Tax2win e-filing login portal in under 4 minutes. Tax2Win's user-friendly interface and expert assistance help you to file the ITR easily and quickly. The due date to file ITR for the FY 2024-25 (AY 2025-26) is 31st July 2025.</p> 
+          <p className="text-base">You can file ITR with File Your Tax e-filing login portal in under 4 minutes. File Your Tax's user-friendly interface and expert assistance help you to file the ITR easily and quickly. The due date to file ITR for the FY 2024-25 (AY 2025-26) is 31st July 2025.</p> 
         </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
@@ -77,17 +77,17 @@ const Faq_ITR = () => {
         </div>
         {visibleAnswer === 4 &&
         <div className="answer text-left my-3 text-base"> 
-          <p className=" mb-3">Income Tax online filing is a simple process and can be done by sitting at home for with Tax2win.</p>
+          <p className=" mb-3">Income Tax online filing is a simple process and can be done by sitting at home for with File Your Tax.</p>
 
           <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-                <li><b className="me-2">Step 1:</b> Visit the <a href="https://tax2win.in/" target="_blank" className="link-p">Tax2Win</a> website. Here, click on the option “<a href="https://tax2win.in/efile-income-tax-return" target="_blank" className="link-p">File ITR Now</a>.”</li>
+                <li><b className="me-2">Step 1:</b> Visit the <a href="https://tax2win.in/" target="_blank" className="link-p">File Your Tax</a> website. Here, click on the option “<a href="https://tax2win.in/efile-income-tax-return" target="_blank" className="link-p">File ITR Now</a>.”</li>
                 <li><b className="me-2">Step 2:</b> Select your source of Income and click on continue.</li>
                 <li><b className="me-2">Step 3:</b> If you're a salaried individual, just upload your Form 16. If you do not have form 16, you can skip the option and move further.</li>
                 <li><b className="me-2">Step 4:</b> Enter the Financial Year, PAN &amp; Aadhaar number, and other basic details like your Employment Details, Deductions(If Any), and bank details.</li>
                 <li><b className="me-2">Step 5:</b> After giving the details of all the required information. Review your tax computation and click the “File My ITR” button.</li>
               </ul>
 
-          <p className=" mb-3">You can also <span className="text-green-700">take the advice of our expert CAs</span> to do tax filing for you. Tax2win eCA focuses on filing accurate returns, availing maximum deductions, and getting maximum tax refunds.</p> 
+          <p className=" mb-3">You can also <span className="text-green-700">take the advice of our expert CAs</span> to do tax filing for you. File Your Tax eCA focuses on filing accurate returns, availing maximum deductions, and getting maximum tax refunds.</p> 
           <p className=" ">Also, the Income Tax <span className="text-green-700">e-filing portal</span> lets you easily file the return online.</p>
         </div>}
 
@@ -100,8 +100,8 @@ const Faq_ITR = () => {
           <p className=" mb-3">The procedure to e-file return with form-16 is as follows:</p>
 
           <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-                <li><b className="me-2">Step 1:</b>Choose "File It Yourself" and click on the “ <span className="text-green-700">File ITR Now</span>” option at tax2win.in and upload your <span className="text-green-700">Form 16</span>.</li>
-                <li><b className="me-2">Step 2:</b>  After uploading Form 16, Tax2win software will auto-fill the Form 16 data.</li>
+                <li><b className="me-2">Step 1:</b>Choose "File It Yourself" and click on the “ <span className="text-green-700">File ITR Now</span>” option at fileyourtax.in and upload your <span className="text-green-700">Form 16</span>.</li>
+                <li><b className="me-2">Step 2:</b>  After uploading Form 16, File Your Tax software will auto-fill the Form 16 data.</li>
                 <li><b className="me-2">Step 3:</b> Verify your tax computation now and edit if required.</li>
                 <li><b className="me-2">Step 4:</b>Click the "FILE MY RETURN" button, and you are done!</li>
               </ul>

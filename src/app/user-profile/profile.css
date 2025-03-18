@@ -1,0 +1,66 @@
+@import url('../homepage/EasiestWay.css');
+
+.user-profile{
+    background-color: #F7F8FA;
+}
+
+.loading-div{
+       height:  700px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.loading-div p {
+    color: rgb(35, 120, 223);
+    font-size: 22px;
+}
+.profile-section1-inner{
+    width: 310px;
+}
+.first-letter{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.change-pass-btn{
+    border: 1px solid var(--third-color);
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+.btn-p{
+    color: var(--third-color);
+}
+
+.change-pass-btn:hover{
+    background-color: var(--third-color);
+}
+.change-pass-btn:hover .btn-p{
+    color: white;
+}
+
+.text-grey{
+    color: rgb(92, 92, 92);
+}
+
+.email , .profile , .profile-section1-inner , .phone {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.update-btn{
+    background-color: var(--secondary-color);
+}
+.update-p {
+    color: var(--third-color);
+}
+
+.edit-btn{
+    border: 1px solid var(--third-color);
+}
+.edit-p{
+    color: var(--third-color);
+}

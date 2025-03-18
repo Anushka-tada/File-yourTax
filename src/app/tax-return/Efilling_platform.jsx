@@ -43,7 +43,7 @@ const Efilling_platform = () => {
       {/* income tax return e-filling */}
       <div className='eFilling-outer flex flex-col items-center py-8 px-4'>
         <h1 className='font-bold text-3xl mb-3'>Income Tax eFiling Platform</h1>
-        <p className='text-lg'>Tax2win <span className='font-bold'>simplifies e-filing your Income Tax</span> Return! Take the first step towards ITR filing.</p>
+        <p className='text-lg'>File Your Tax <span className='font-bold'>simplifies e-filing your Income Tax</span> Return! Take the first step towards ITR filing.</p>
         <p className='text-lg mb-5'>Choose your income source and file ITR today!</p>
         <div className="efilling-questions bg-white p-5 rounded-md lg:w-3/4 md:w-11/12">
           <div className="efill-que flex flex-wrap justify-between py-5">
@@ -242,7 +242,7 @@ const Efilling_platform = () => {
           <div className="revised-return p-5 rounded-3xl">
             <img src="https://tax2win.in/assets-new/img/new-theme/icon_upload.svg" alt="" />
             <h3 className='text-xl font-bold mb-2 mt-2'>Filing Process</h3>
-            <p className='text-xl  mb-2'>You can file a revised return with Tax2Win. Just select 'Revised return' on the ITR Details
+            <p className='text-xl  mb-2'>You can file a revised return with File Your Tax. Just select 'Revised return' on the ITR Details
               page and enter the correct information. If tax filing feels overwhelming,
               our experts are just a click away to help you out. Connect with us today.</p>
           </div>
@@ -519,8 +519,8 @@ const Efilling_platform = () => {
 
         <div className="faq pb-7 mt-6">
           <p className="que text-2xl font-bold mb-2">How Can I File my ITR Myself?</p>
-          <p className="ans ">Yes, taxpayers can file their ITR themselves either through the income tax department’s website or through Tax2win’s website.
-            Filing your Income Tax Return (ITR) with Tax2win offers a convenient and user-friendly experience. All you have to do is enter some basic
+          <p className="ans ">Yes, taxpayers can file their ITR themselves either through the income tax department’s website or through File Your Tax’s website.
+            Filing your Income Tax Return (ITR) with File Your Tax offers a convenient and user-friendly experience. All you have to do is enter some basic
             information about your salary and personal details, and the AI-integrated DIY ITR filing software automatically extracts your personal
             details and employment details, selects the appropriate ITR form, computes the tax liability, and files your ITR.</p>
         </div>
@@ -694,13 +694,13 @@ const Efilling_platform = () => {
 
         <div className="faq pb-7 mt-6">
           <p className="que text-2xl font-bold mb-2">How can I check my income tax refund status?</p>
-          <p>You can check the refund status of your ITR via Tax2win's "<a href="" className="link-p">Check Income Tax Refund Status</a>."</p>
+          <p>You can check the refund status of your ITR via File Your Tax's "<a href="" className="link-p">Check Income Tax Refund Status</a>."</p>
         </div>
 
 
         <div className="faq pb-7 mt-6">
-          <p className="que text-2xl font-bold mb-2">Is there any charges associated with Tax2win for ITR filing?</p>
-          <p className='mb-2'>Tax2win has simplified the complex task of filing income tax returns. It is fast, safe, and easy to use. With its
+          <p className="que text-2xl font-bold mb-2">Is there any charges associated with File Your Tax for ITR filing?</p>
+          <p className='mb-2'>File Your Tax has simplified the complex task of filing income tax returns. It is fast, safe, and easy to use. With its
              user-friendly platform,
              you can easily file your ITR in just 4 minutes. A small platform usage fee is applicable to deliver smooth services.</p>
         </div>

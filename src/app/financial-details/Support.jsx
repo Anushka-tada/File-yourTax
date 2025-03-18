@@ -12,7 +12,7 @@ const Support = () => {
             </div>
             <div className="mail flex gap-3 items-center">
             <img src="https://tax2win.in/assets-new/img/new-theme/mail.svg" alt="Call Now" width="32" height="32"/>
-           <h2 className=" text-white text-2xl"> support@tax2win.in</h2>
+           <h2 className=" text-white text-2xl"> support@fileyourtax.in</h2>
             </div>
 </div>
 
@@ -20,7 +20,7 @@ const Support = () => {
     </div>
 
     <div className="copyright py-4 flex justify-between px-14">
-      <p>© 2025 TAX2WIN. All Rights Reserved.</p>
+      <p>© 2025 File Your Tax. All Rights Reserved.</p>
       <p>Terms & Conditions | Privacy Policy
       </p>
     </div>

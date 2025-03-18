@@ -79,3 +79,15 @@ margin-top: 570px;
  .logo{
     font-family: "Eras Demi ITC";
  }
+
+ .dropdown{
+    width: max-content;
+ }
+ .drop-item:hover  {
+     background-color: rgb(233, 233, 233);
+   
+ }
+ 
+ .drop-item:hover p {
+    color: var(--primary-color);
+ }

@@ -173,7 +173,7 @@ const BookeCA = () => {
 
       <div className="tax-return-filling flex flex-col justify-center items-center  py-14">
         <div className="text-center">
-          <h1 className='text-4xl font-bold py-4' >Tax2win Online CA for Income Tax Return (ITR) Filing</h1>
+          <h1 className='text-4xl font-bold py-4' >File Your Tax Online CA for Income Tax Return (ITR) Filing</h1>
           <p>Streamline your tax process with our online CA consultation services for smooth income tax return filing</p>
 
         </div>

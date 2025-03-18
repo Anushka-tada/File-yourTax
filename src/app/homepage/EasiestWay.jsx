@@ -27,11 +27,11 @@ const EasiestWay = () => {
     <div className="section1-boxes flex flex-wrap md:flex-nowrap  lg:flex-nowrap gap-4 ">
     <div className="box1 p-4 py-5 pb-5 rounded-xl ">
     <img src="https://tax2win.in/assets-new/img/new-theme/self-filing-blue.svg" alt="File Income Tax Yourself" className="icon mt-10" width="66" height="66"/>
-<h2 className="text-white text-3xl mt-2" >File ITR yourself</h2>
+<h2 className="text-white text-3xl mt-2" >File Your GST</h2>
 <p className="text-white mt-2">It&rsquo;s quick, easy, and takes only 4 minutes to file your income tax return. ITR filing plans start at just ₹49.</p>
 <div className="btn-div  bg-white hover:bg-sky-100 py-3  inline-flex  px-12  rounded-full mt-4">
 <a href="\tax-return" className=" flex gap-3">
-<p className="eCA">File ITR Now</p>
+<p className="eCA">File GST Now</p>
 <img src="https://tax2win.in/assets-new/img/new-theme/bdark-arrow.svg" alt="File Income Tax Yourself"></img>
 </a>
 </div>

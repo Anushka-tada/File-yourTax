@@ -167,7 +167,7 @@ const Footer = () => {
       </div>
 
       <div className="copyrights flex flex-wrap justify-between py-5">
-        <p>© 2025 TAX2WIN. All Rights Reserved.</p>
+        <p>© 2025 File Your Tax. All Rights Reserved.</p>
         <p>Terms & Conditions | Privacy Policy        </p>
       </div>
     </div>
