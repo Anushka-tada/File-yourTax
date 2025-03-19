@@ -1,0 +1,37 @@
+@import url('../homepage/EasiestWay.css');
+
+.pricing{
+    width: 230px;
+    box-shadow: var(--shd,0 5px 19px rgba(120, 120, 120, 0.6));
+}
+.pricing-2{
+    width: 310px;
+    box-shadow: var(--shd,0 5px 19px rgba(120, 120, 120, 0.6));
+}
+.text-blue{
+    color: var(--primary-color);
+}
+.suited{
+    color: rgb(56, 125, 228);
+}
+
+.get-btn{
+    border: 1px solid var(--third-color);
+
+}
+.btn-p{
+    color: var(--third-color);
+}
+
+.image{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.pricing-heading{
+    color: #2a3947;
+
+}
+.pricing-page{
+    border:  2px solid rgb(224, 224, 224);
+}

@@ -49,7 +49,7 @@ const Services = () => {
           </div>
         </div> */}
 
-        <div className="section5-box-2 rounded-xl p-5 bg-white flex flex-col justify-between">
+        {/* <div className="section5-box-2 rounded-xl p-5 bg-white flex flex-col justify-between">
           <img src="https://tax2win.in/assets-new/img/new-theme/diy-filing.svg" alt="File ITR Yourself (DIY filing )" title="File ITR Yourself (DIY filing )" loading="lazy" width="57" height="57" className="icon" />
           <div>
             <h2 className="text-2xl font-bold mb-3 mt-2">File ITR Yourself (DIY filing )</h2>
@@ -60,7 +60,7 @@ const Services = () => {
             <p className="text-blue font-bold ">Start Filing</p>
             <img src="https://tax2win.in/assets-new/img/new-theme/b_ghost_arrow.svg" alt="Income Tax Notice Assistance" title="Income Tax Notice Assistance" loading="lazy" width="20" height="20" className="icon"></img>
           </div>
-        </div>
+        </div> */}
 
         <div className="section5-box-2 rounded-xl p-5 bg-white flex flex-col justify-between">
           <img src="https://tax2win.in/assets-new/img/new-theme/icon-eca.svg" alt="Expert Assisted Filing" title="Expert Assisted Filing" loading="lazy" width="57" height="57" className="icon" />

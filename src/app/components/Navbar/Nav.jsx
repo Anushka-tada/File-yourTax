@@ -237,8 +237,12 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect, useRef, useContext } from "react";
 import { LoggedDataContext } from "../../context/Context"; // Import Context
+import { useRouter } from 'next/navigation';
 
 const Nav = () => {
+
+   const router = useRouter();
+
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const [isToolsDropdownOpen, setIsToolsDropdownOpen] = useState(false);
   const [isKnowledgeDropdownOpen, setIsKnowledgeDropdownOpen] = useState(false);
@@ -258,6 +262,7 @@ const Nav = () => {
   const handleLogout = () => {
     updateLoggedUserData(null); // Clear Context API
     localStorage.removeItem("user"); // Clear Local Storage
+    router.push('/');
 };
 
 
@@ -448,7 +453,7 @@ const Nav = () => {
           )}
         </div>
 
-        <div>Pricing</div>
+        <Link href="\pricing"> Pricing</Link>
         <Link href="\contact"> Contact </Link>
 
         {/* Conditionally Render Login/Signup or Profile Button */}
@@ -473,7 +478,7 @@ const Nav = () => {
                 <p><strong>Phone:</strong> {loggedUserData.phoneNumber}</p> */}
                   <div className="drop-items flex flex-col gap-2">
                  <a href="./user-profile">  <div className="flex gap-4 p-2 rounded drop-item"> <img src="https://tax2win.in/assets-new/img/new-theme/profile.svg" alt="" height={17} width={17} /><p className="text-sm ">My Profile</p></div></a>
-                  <div className="flex gap-4 p-2 rounded drop-item" onClick={handleLogout} > <img src="https://tax2win.in/assets-new/img/new-theme/logout.svg" alt="" height={17} width={17} /><p className="text-sm ">Logout</p></div>
+                  <div className="flex gap-4 p-2 rounded drop-item cursor-pointer" onClick={handleLogout} > <img src="https://tax2win.in/assets-new/img/new-theme/logout.svg" alt="" height={17} width={17} /><p className="text-sm ">Logout</p></div>
                   </div>
               </div>
             )}

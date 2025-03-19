@@ -193,8 +193,8 @@ const EasiestWay = () => {
           />
           <h2 className="text-white text-3xl mt-2">File Your GST</h2>
           <p className="text-white mt-2">
-            It&rsquo;s quick, easy, and takes only 4 minutes to file your income tax return.
-            ITR filing plans start at just ₹49.
+          It’s quick, easy, and a trusted company to file your GST return. GST filing plans start at just ₹499/month.
+
           </p>
           <div
             className="btn-div bg-white hover:bg-sky-100 cursor-pointer py-3 inline-flex px-12 rounded-full mt-4"
