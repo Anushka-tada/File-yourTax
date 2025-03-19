@@ -21,10 +21,29 @@ const Financial = () => {
     });
   };
 
+  // const handleContinue = () => {
+  //   console.log(formData);
+  //  router.push('/basic-details'); 
+  // };
   const handleContinue = () => {
+    // Log form data for debugging
     console.log(formData);
-   router.push('/basic-details'); 
+  
+    // Get logged-in user's email from localStorage
+    const user = JSON.parse(localStorage.getItem("user")); // Retrieve logged-in user data
+    if (user && user.email) {
+      const email = user.email;
+  
+      // Update user's progress in localStorage
+      const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
+      progress[email] = 3; // Set next form (Form 3) as the current progress for this user
+      localStorage.setItem("formProgress", JSON.stringify(progress));
+    }
+  
+    // Redirect to the next form
+    router.push('/basic-details');
   };
+  
 
   return (
     <>
@@ -75,7 +94,7 @@ const Financial = () => {
         <div className="financial-btns flex flex-wrap justify-center lg:justify-between md:justify-between xl:justify-between sm:justify-between mb-10">
           <a href="\tax-return">
             <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
-              <img src="https://tax2win.in/assets-new/img/new-theme/diy-flow/back-arrow.svg" alt="" height={15} width={15} />
+              <img src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png?Expires=1836968249&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UbyR63UpwFKqNYhmOCzwA20u9i9m-8NefJS86pMPpxEWQoLF7fazDhSEfVF3vcKzDD5KH1Os3RCGguGvQGqvEYT6cp~8YwgtE6-ppFllVcZE-BwmH0A8nC5R3BrWIg40ANZQl2~qQG-iQVh0KCttfOkpBTvQTPTPbr~GKD2OgeWEIjqgUOzTcJyI0~tMjClIigEsSZ25AJSyZgMhnUIUjXMkScOIGm84wTr4ZOzRzWrw5fgv3hHp4063bIA4VC-fseCnC-nZ5LXjYWngvRYrQvpjXMtaXKsZadXkEoGDjrB1p1leTI9GqYN~AVEtGW4WqrUvxNkXxVwyj9DXyFzULQ__" alt="" height={23} width={23} />
               <p className="text-blue">Back</p>
             </div>
           </a>

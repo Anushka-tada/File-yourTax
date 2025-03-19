@@ -24,6 +24,19 @@ const Efilling_platform = () => {
 
   const router = useRouter();
 
+  // const handleContinue = () => {
+  //   const dataToStore = {
+  //     isSalary: formData.salaryPension,
+  //     isHouseProperty: formData.houseProperty,
+  //     isProfession: formData.businessProfession,
+  //     isCapitalGain: formData.capitalGains,
+  //     isOtherSource: formData.otherSources,
+  //     isForeignSource: formData.foreignSource,
+  //   };
+  //   console.log(dataToStore);
+  //   router.push('/financial-details');
+  // };
+  
   const handleContinue = () => {
     const dataToStore = {
       isSalary: formData.salaryPension,
@@ -33,10 +46,25 @@ const Efilling_platform = () => {
       isOtherSource: formData.otherSources,
       isForeignSource: formData.foreignSource,
     };
+
+    // Log the data for debugging
     console.log(dataToStore);
+
+    // Get logged-in user's email from localStorage
+    const user = JSON.parse(localStorage.getItem("user")); // Retrieve logged-in user data
+    if (user && user.email) {
+      const email = user.email;
+
+      // Update user's progress in localStorage
+      const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
+      progress[email] = 2; // Set next form (Form 2) as the current progress for this user
+      localStorage.setItem("formProgress", JSON.stringify(progress));
+    }
+
+    // Redirect to the next form
     router.push('/financial-details');
   };
-  
+
   return (
     <>
 
@@ -164,7 +192,7 @@ const Efilling_platform = () => {
        
        <div onClick={handleContinue} className="continue-btn flex flex-wrap gap-3 py-3 px-20 rounded mt-7 cursor-pointer">
           <p className='text-white'>CONTINUE</p>
-          <img src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg" alt="Continue" width="21" height="21"></img>
+          <img src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg" alt="Continue" width="26" height="26"></img>
         </div>
 
 {/* <a href="\financial-details">
