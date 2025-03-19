@@ -1,0 +1,35 @@
+@import url('../homepage/EasiestWay.css');
+
+.image{
+    width: 22px;
+    height: 22px;
+}
+.itr-btn{
+    background-color: var(--primary-color);
+    border: 1px solid var(--third-color);
+    width: 200px;
+}
+.itr-btn-p{
+    color: white;
+}
+.mobile-image{
+    width: 467px;
+    height: 492px;
+}
+.outer-div{
+    background: linear-gradient(90deg, #192833 0%, #163a58 100%);
+}
+
+
+.three-way-section{
+    background-color: var(--secondary-color);
+}
+
+.way{
+    width: 317px;
+}
+
+.get-btn{
+    width: 200px;
+    background-color: var(--third-color);
+}

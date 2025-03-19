@@ -452,7 +452,8 @@ const Nav = () => {
             </div>
           )}
         </div>
-
+        
+        <Link href="\service-page"> Service</Link>
         <Link href="\pricing"> Pricing</Link>
         <Link href="\contact"> Contact </Link>
 
