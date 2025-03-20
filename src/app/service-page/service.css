@@ -8,6 +8,11 @@
     background-color: var(--primary-color);
     border: 1px solid var(--third-color);
     width: 200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.itr-btn:hover{
+    background-color: rgb(27, 59, 93); /* Hover color */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 .itr-btn-p{
     color: white;
@@ -16,10 +21,19 @@
     width: 467px;
     height: 492px;
 }
+
+@media (max-width:550px){
+    .mobile-image{
+        padding: 10px;
+        width: 300px;
+        height: 400px;
+    }
+}
 .outer-div{
     background: linear-gradient(90deg, #192833 0%, #163a58 100%);
 }
 
+/* three way section css */
 
 .three-way-section{
     background-color: var(--secondary-color);
@@ -29,7 +43,87 @@
     width: 317px;
 }
 
-.get-btn{
+.three-way-section .get-btn{
     width: 200px;
     background-color: var(--third-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.three-way-section .get-btn:hover{
+    background-color: rgb(27, 59, 93); /* Hover color */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.discover-btn{
+    width: 290px;
+    background-color: var(--third-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.discover-btn:hover {
+    background-color: rgb(27, 59, 93); /* Hover color */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* Leverage the Benefits of Strategic Return */
+
+.leverage-benefits-section{
+    background-color: var(--secondary-color);
+
+}
+
+.benefit{
+    box-shadow:  0.00px 2.00px 9px 5px rgba(0, 0, 0, 0.15);;
+    width: 250px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.itr-filling-btn {
+    width: 190px;
+    background-color: var(--third-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.itr-filling-btn:hover{
+    background-color: rgb(27, 59, 93); /* Hover color */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Discover Why Early E-Filing ITR Filing is a Smart Move! */
+
+.smart-move-section{
+    background-color: #122a3a;
+}
+
+.smart-move-reason{
+    background-color: var(--third-color);
+    width: 270px;
+}
+
+
+/* Leverage the Advantages of Filing ITR Online */
+
+.num-image{
+    width: 31px;
+    height: 31px;
+}
+
+@media (max-width:1000px){
+    .side-image{
+        display: none;
+    }
+}
+
+/* Access Valuable Benefits by Filing Your Income Tax Return */
+
+.value-benefit{
+    width: 320px;
+    height: 400px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.valuable-benefits-section{
+    background-color: rgb(240, 240, 240);
+}
+
+@media (max-width:500px){
+    .value-benefit{
+        width: 100%;
+    }
 }

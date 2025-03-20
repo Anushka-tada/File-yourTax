@@ -1,0 +1,9 @@
+.question{
+    width: 320px;
+    box-shadow: 0.00px 1.00px 15px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.question-section{
+    background-color: rgb(247, 247, 247);
+}

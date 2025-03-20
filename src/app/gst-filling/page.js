@@ -1,15 +1,12 @@
 import React from 'react'
 import Nav from '../components/Navbar/Nav'
-import Service from './Service'
-import Plans from './Plans'
-import Footer from '../homepage/Footer'
+import GstFilling from './GstFilling'
 
 const page = () => {
   return (
     <div>
       <Nav/>
-      <Service/>
-    <Footer/>
+      <GstFilling/>
     </div>
   )
 }

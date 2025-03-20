@@ -248,12 +248,14 @@ const Nav = () => {
   const [isKnowledgeDropdownOpen, setIsKnowledgeDropdownOpen] = useState(false);
   const [isGuidesDropdownOpen, setIsGuidesDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const[isServicesOpen , setIsServicesOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false); // For user profile dropdown
 
   const productsRef = useRef(null);
   const toolsRef = useRef(null);
   const knowledgeRef = useRef(null);
   const guidesRef = useRef(null);
+  const serviceRef = useRef(null);
   const profileRef = useRef(null); // Reference for profile dropdown
 
   const { loggedUserData } = useContext(LoggedDataContext); // Access context data
@@ -273,12 +275,14 @@ const Nav = () => {
         toolsRef.current && !toolsRef.current.contains(event.target) &&
         knowledgeRef.current && !knowledgeRef.current.contains(event.target) &&
         guidesRef.current && !guidesRef.current.contains(event.target) &&
+        serviceRef.current && !serviceRef.current.contains(event.target) &&
         profileRef.current && !profileRef.current.contains(event.target) // Close profile dropdown if clicked outside
       ) {
         setIsProductsDropdownOpen(false);
         setIsToolsDropdownOpen(false);
         setIsKnowledgeDropdownOpen(false);
         setIsGuidesDropdownOpen(false);
+        setIsServicesOpen(false);
         setIsProfileDropdownOpen(false); // Close profile dropdown
       }
     };
@@ -453,7 +457,28 @@ const Nav = () => {
           )}
         </div>
         
-        <Link href="\service-page"> Service</Link>
+        <div className="knowledge flex items-center gap-1" ref={serviceRef}>
+          <div
+            onClick={() => setIsServicesOpen(!isServicesOpen)}
+            className="cursor-pointer"
+          >
+           Services
+          </div>
+          <RiArrowDropDownLine
+            className="text-3xl"
+            onClick={() => setIsServicesOpen(!isServicesOpen)}
+          />
+          {isServicesOpen && (
+            <div className="dropdown bg-white shadow-lg rounded-lg absolute mt-48 lg:mt-48 text-base w-full lg:w-auto ">
+              <ul>
+               <a href="/service-page"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">ITR Filling</li></a>
+               <a href="/gst-filling"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Filling</li></a>
+               <a href="/tax-planner"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Tax Planner</li></a>
+              </ul>
+            </div>
+          )}
+        </div>
+
         <Link href="\pricing"> Pricing</Link>
         <Link href="\contact"> Contact </Link>
 
