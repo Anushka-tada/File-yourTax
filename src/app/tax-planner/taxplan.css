@@ -1,9 +1,90 @@
+@import url('../homepage/EasiestWay.css');
+
 .question{
-    width: 320px;
+    width: 317px;
     box-shadow: 0.00px 1.00px 15px 0px rgba(0, 0, 0, 0.2);
     border: 1px solid rgb(205, 205, 205);
 }
 
 .question-section{
     background-color: rgb(247, 247, 247);
+}
+/* .text-5vw{
+    font-size: 3vw;
+} */
+
+
+
+
+
+/* Importance of Tax Planning */
+
+.importances{
+   width: 40%;
+}
+.tick-image{
+    width: 30px;
+    height: 30px;
+}
+
+.importance-section{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 800px){
+    .importances{
+        width: 96%;
+     }
+}
+
+/* Why Choose TaxBuddy as Your Guide */
+
+.discover-btn{
+    width: 290px;
+    background-color: var(--third-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.discover-btn:hover {
+    background-color: rgb(27, 59, 93); /* Hover color */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Basic Tax Planner */
+
+.basic-tax-section , .advance-tax-section{
+    
+    background-color: var(--secondary-color);
+
+}
+
+.basic-tax-planner{
+    width: 590px;
+    box-shadow: 0.00px 0.00px 28px 0px rgba(0, 0, 0, 0.23);;
+}
+.truncate{
+    text-decoration: line-through;
+    color: rgb(248, 106, 55);
+}
+.text-blue{
+    color: var(--third-color);
+}
+.plan-btn{
+    border:  1px solid var(--third-color);
+}
+.btn-p{
+    color: var(--third-color);
+}
+@media(max-width:630px){
+    .basic-tax-planner{
+        width: 100%;
+    }
+}
+
+
+/* Advance Tax Planner Plans */
+
+.tax-image{
+    width: 28px;
+    height: 33px;
 }
