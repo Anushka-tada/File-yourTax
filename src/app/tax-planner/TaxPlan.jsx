@@ -124,7 +124,7 @@ const TaxPlan = () => {
                     <h1 className='text-4xl font-semibold mb-8 '>Advance Tax Planner Plans</h1>
                     <div className='xl:mx-72 lg:mx-32 md:mx-20 sm:mx-16 mx-3 mb-10 flex flex-col items-center'>
                        <p>Our dedicated team of professionals provides personalized assistance to individuals and businesses, helping you:</p>
-                         <div className='flex gap-10 mt-8 flex-wrap'>
+                         <div className='flex gap-10 mt-8 flex-wrap lg:flex-nowrap xl:flex-nowrap'>
                           <div className='flex gap-3'>
                           <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                             <p>n-depth tax report based on your investments</p>

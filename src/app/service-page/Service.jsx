@@ -43,7 +43,7 @@ const Service = () => {
                             </div>
                         </div>
 
-                        <img src="https://static.wixstatic.com/media/5ef7f2_83a8e74e674c401eb5fa58e45adf1d8b~mv2.png/v1/fill/w_584,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iPhone13Pro-1.png" alt="" className='mobile-image' />
+                        {/* <img src="https://static.wixstatic.com/media/5ef7f2_83a8e74e674c401eb5fa58e45adf1d8b~mv2.png/v1/fill/w_584,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iPhone13Pro-1.png" alt="" className='mobile-image' /> */}
                     </div>
                 </div>
             </div>
