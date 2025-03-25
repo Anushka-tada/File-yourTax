@@ -146,7 +146,8 @@ const EasiestWay = () => {
       // If user is logged in, fetch the next form based on progress
       const email = loggedUserData.email;
       const nextFormUrl = getNextFormUrl(email);
-      router.push(nextFormUrl); // Redirect to the user's next form
+      // router.push(nextFormUrl); // Redirect to the user's next form
+      router.push("/tax-return"); 
     } else {
       // If user is not logged in, navigate to the login page
       router.push("/login");
