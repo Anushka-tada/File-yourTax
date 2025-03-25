@@ -24,9 +24,9 @@ const page = () => {
       <Best_Website />
       <Check_status />
       <Services />
-  <Feedback/>
+  {/* <Feedback/> */}
   <Component7/>
-  <Component8/>
+  {/* <Component8/> */}
   <Component9/>
   <Faq_ITR/>
   <Need_Support/>

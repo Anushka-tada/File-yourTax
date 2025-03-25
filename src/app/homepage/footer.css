@@ -1,5 +1,9 @@
 @import url('EasiestWay.css');
 
+.footer-section{
+    background-color: rgb(222, 232, 240);
+}
+
 .footer-panels , .footer-last-parts{
     border-bottom: 1px solid rgb(237, 237, 237);
 }

@@ -7,13 +7,16 @@
 }
 
 .section3 h1{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #253243;
 }
 
 .section3-box {
     width: 300px;
+}
+.section3-boxes{
+    flex-wrap: nowrap;
 }
 
 .read-btn-text{
@@ -24,9 +27,15 @@
     color:#253243;
 }
 
-@media only screen and (max-width: 800px) {
+@media  (max-width: 800px) {
     .read-btn{
        justify-content: center;
        
+    }
+ }
+
+ @media  (max-width: 1298px) {
+    .section3-boxes{
+        flex-wrap: wrap;
     }
  }

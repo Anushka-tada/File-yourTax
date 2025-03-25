@@ -8,7 +8,8 @@
    background-color: #f06c00;
 }
 .section5-box-2{
-    width: 380px !important;
+    /* width: 370px !important; */
+    width: 30%;
     border: 1px solid rgb(222, 222, 222);
 }
 .section5-box-sameline{
@@ -26,6 +27,14 @@
         
     }
  }
+ @media only screen and (max-width: 783px) {
+    .section5-box-2{
+        /* width: 370px !important; */
+        width: 100%;
+        border: 1px solid rgb(222, 222, 222);
+    }
+ }
+
 
  .text-blue{
     color: var(--third-color);

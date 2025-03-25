@@ -184,7 +184,7 @@ const EasiestWay = () => {
       </div>
 
       <div className="section1-boxes flex flex-wrap md:flex-nowrap lg:flex-nowrap gap-4">
-        <div className="box1 p-4 py-5 pb-5 rounded-xl">
+        <div className="box1 p-4 py-5 pb-5 rounded-xl flex flex-col justify-end">
           <img
             src="https://tax2win.in/assets-new/img/new-theme/self-filing-blue.svg"
             alt="File Income Tax Yourself"
@@ -197,17 +197,15 @@ const EasiestWay = () => {
           It’s quick, easy, and a trusted company to file your GST return. GST filing plans start at just ₹499/month.
 
           </p>
-          <div
-            className="btn-div bg-white hover:bg-sky-100 cursor-pointer py-3 inline-flex px-12 rounded-full mt-4"
-            onClick={handleGST}
-          >
-            <div className="flex gap-3">
+          <div className="btn-div1 bg-white hover:bg-sky-100 cursor-pointer py-3 inline-flex gap-3 px-12 rounded-full mt-4 mb-4"
+              onClick={handleGST}>
+            
               <p className="eCA">File GST Now</p>
               <img
                 src="https://tax2win.in/assets-new/img/new-theme/bdark-arrow.svg"
                 alt="File Income Tax Yourself"
               ></img>
-            </div>
+            
           </div>
         </div>
 
@@ -231,7 +229,7 @@ const EasiestWay = () => {
             maximum refund calculated for you.
           </p>
           <a href="\book-eCA">
-            <div className="btn-div flex bg-white hover:bg-sky-100 inline-flex py-3 px-12 gap-3 rounded-full mt-4">
+            <div className="btn-div1 flex bg-white hover:bg-sky-100 inline-flex py-3 px-12 gap-3 rounded-full mt-4">
               <p className="eCA">Book eCA Now</p>
               <img
                 src="https://tax2win.in/assets-new/img/new-theme/bdark-arrow.svg"

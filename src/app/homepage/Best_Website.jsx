@@ -5,14 +5,14 @@ import "./best_website.css";
 const Best_Website = () => {
   return (
     <div className="section3 flex lg:flex-nowrap flex-wrap pt-16 mt-20 items-center justify-between gap-20 px-4 lg:px-24 pb-24">
-      <img
+      {/* <img
         src="https://tax2win.in/assets-new/img/new-theme/india-map.svg"
         alt="Tax2win Income Tax"
         title="Tax2win Income Tax"
         width="553"
         height="621"
         className="hidden lg:block"
-      />
+      /> */}
       <div className="section3-text">
         <h1>Best income tax efiling website in India</h1>
         <p className="text-lg mb-9 mt-4">
@@ -20,7 +20,7 @@ const Best_Website = () => {
           get your tax return filed within minutes but get you maximum refunds
           in the shortest time.
         </p>
-        <div className="section3-boxes flex flex-wrap">
+        <div className="section3-boxes flex  items-start">
           <div className="section3-box flex items-center gap-3 mb-4">
             <img
               src="https://tax2win.in/assets-new/img/new-theme/rating.svg"
