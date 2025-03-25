@@ -3,8 +3,14 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import "./financial.css";
+import axios from "axios";
+import { useParams } from 'next/navigation';
 
 const Financial = () => {
+
+    const { id } = useParams();
+    console.log(id);
+
   const [formData, setFormData] = useState({
     financialYear: "2024-2025",
     panNumber: "",
@@ -25,25 +31,32 @@ const Financial = () => {
   //   console.log(formData);
   //  router.push('/basic-details'); 
   // };
-  const handleContinue = () => {
-    // Log form data for debugging
+  const handleContinue = async () => {
     console.log(formData);
-  
-    // Get logged-in user's email from localStorage
-    const user = JSON.parse(localStorage.getItem("user")); // Retrieve logged-in user data
-    if (user && user.email) {
-      const email = user.email;
-  
-      // Update user's progress in localStorage
-      const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
-      progress[email] = 3; // Set next form (Form 3) as the current progress for this user
-      localStorage.setItem("formProgress", JSON.stringify(progress));
+
+    try {
+        // POST data to the API
+        const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
+
+        console.log("Data sent successfully:", response.data);
+
+        const user = JSON.parse(localStorage.getItem("user")); 
+        if (user && user.email) {
+            const email = user.email;
+
+            // Update user's progress in localStorage
+            const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
+            progress[email] = 3; // Set next form (Form 3) as the current progress for this user
+            localStorage.setItem("formProgress", JSON.stringify(progress));
+        }
+
+        // Navigate to the next form
+        router.push('/basic-details');
+    } catch (error) {
+        console.error("Error sending data to the API:", error);
     }
-  
-    // Redirect to the next form
-    router.push('/basic-details');
-  };
-  
+};
+
 
   return (
     <>

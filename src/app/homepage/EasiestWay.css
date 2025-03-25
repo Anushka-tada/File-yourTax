@@ -1,7 +1,11 @@
 :root {
-    --primary-color: #23456b ;
+    /* --primary-color: #23456b ;
     --secondary-color: #e9f3fc;
-   --third-color: #2364aa;
+   --third-color: #2364aa; */
+
+   --primary-color: #cd4308 ;
+   --secondary-color: #fefdf8;
+  --third-color: #f06c00;
   }
 
 .section-1{
@@ -25,7 +29,8 @@
 }
 .box1{
     /* background: url("https://tax2win.in/assets-new/img/new-theme/service-element1-copy.svg") left bottom no-repeat #5585b6; */
-    background-color: #5585b6;
+    /* background-color: #5585b6; */
+    background-color: #f06c00;
 }
 .box-2{
     /* background: url("https://tax2win.in/assets-new/img/new-theme/service-element2-copy.svg") right bottom no-repeat #197E37; */

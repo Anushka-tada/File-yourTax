@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import "./Efilling.css"
+import axios from "axios";
+import { BASE_URL } from ".././utils/apibaseurlConfiguration";
 
 const Efilling_platform = () => {
    const[formData , setFormData] = useState({
@@ -37,33 +39,47 @@ const Efilling_platform = () => {
   //   router.push('/financial-details');
   // };
   
-  const handleContinue = () => {
-    const dataToStore = {
-      isSalary: formData.salaryPension,
-      isHouseProperty: formData.houseProperty,
-      isProfession: formData.businessProfession,
-      isCapitalGain: formData.capitalGains,
-      isOtherSource: formData.otherSources,
-      isForeignSource: formData.foreignSource,
-    };
+  
 
-    // Log the data for debugging
-    console.log(dataToStore);
+const handleContinue = async () => {
+  const dataToStore = {
+    isSalary: formData.salaryPension,
+    isHouseProperty: formData.houseProperty,
+    isProfession: formData.businessProfession,
+    isCapitalGain: formData.capitalGains,
+    isOtherSource: formData.otherSources,
+    isForeignSource: formData.foreignSource,
+  };
 
-    // Get logged-in user's email from localStorage
-    const user = JSON.parse(localStorage.getItem("user")); // Retrieve logged-in user data
+ 
+  // console.log(dataToStore);
+
+  try {
+   
+        const response = await axios.post("https://backend-data-five.vercel.app/api/itr/create", dataToStore);
+
+    console.log("Data sent successfully:", response.data);
+    const userId = response.data.data._id;
+ 
+   
+    const user = JSON.parse(localStorage.getItem("user")); 
     if (user && user.email) {
       const email = user.email;
 
       // Update user's progress in localStorage
       const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
-      progress[email] = 2; // Set next form (Form 2) as the current progress for this user
+      progress[email] = 2; 
       localStorage.setItem("formProgress", JSON.stringify(progress));
     }
 
-    // Redirect to the next form
-    router.push('/financial-details');
-  };
+
+    router.push(`/financial-details/${userId}`);
+  } catch (error) {
+   
+    console.error("Error sending data to the API:", error);
+  }
+};
+
 
   return (
     <>
