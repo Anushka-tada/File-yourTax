@@ -33,3 +33,7 @@
     }
 }
 
+.bg-sky{
+    background-color: var(--primary-color);
+}
+

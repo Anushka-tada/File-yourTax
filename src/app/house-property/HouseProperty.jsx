@@ -89,7 +89,7 @@ const HouseProperty = () => {
             console.log("API Response:", response.data);
         
             // Redirect to the next form upon success
-            router.push("/deduction");
+            router.push(`/deduction/${id}`);
           } catch (error) {
             console.error("Error while calling the API:", error.response?.data || error.message);  
           }

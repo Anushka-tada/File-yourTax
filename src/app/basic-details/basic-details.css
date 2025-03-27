@@ -105,7 +105,7 @@
 }
 
 .get-button{
-    background-color: #09345a;
+    background-color: var(--third-color);
 }
 .continue-btn{
     background-color: var(--primary-color);

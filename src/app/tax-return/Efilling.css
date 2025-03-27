@@ -13,7 +13,7 @@
 
 
 .looking-CA{
-    background: #5585B6;
+    background: var(--third-color);
 }
 
 /* Style for custom radio button */

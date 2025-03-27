@@ -8,7 +8,7 @@
 
 .connect {
     /* background: #cfe4f7; */
-    background: #ffdac6;
+    background: #e1e9ea;
 }
 
 .Navbar-outer {
@@ -51,7 +51,7 @@ li {
 } */
 
 .drop-product{
-  margin-top: 470px;
+  margin-top: 380px;
 }
 
 .drop-tool{
@@ -91,4 +91,8 @@ margin-top: 570px;
  
  .drop-item:hover p {
     color: var(--primary-color);
+ }
+
+ .connect-btn{
+    background-color: var(--primary-color);
  }

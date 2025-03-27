@@ -4,7 +4,7 @@
     background-color: #d3dbe4;
 }
 .deduction-section h1{
-    color: #253243;
+    color: #21323c;
 }
 
 .deduction-form {
@@ -12,7 +12,7 @@
 }
 
 .bg-blue{
-    background-color: #09345a;
+    background-color: var(--primary-color);
 }
 
 .form-options{
@@ -65,7 +65,7 @@
 }
 
 .get-button{
-    background-color: #09345a;
+    background-color: var(--third-color);
     
 }
 .continue-btn{

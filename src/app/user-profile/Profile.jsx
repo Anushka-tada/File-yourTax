@@ -27,7 +27,7 @@ const Profile = () => {
                 {/* Section 1: User Info */}
                 <div className="profile-section1">
                     <div className="profile-section1-inner bg-white flex flex-col gap-3 items-center justify-center py-7 rounded-md">
-                        <div className="bg-blue-600 first-letter">
+                        <div className="circle first-letter">
                             <p className="text-3xl font-semibold text-white">
                                 {loggedUserData.firstName.charAt(0).toUpperCase()}
                             </p>

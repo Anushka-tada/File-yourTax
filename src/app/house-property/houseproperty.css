@@ -29,7 +29,7 @@
 }
 
  .add-btn{
-    background-color:  #09345a;
+    background-color:  var(--third-color);
 }
 
 @media (max-width: 900px){

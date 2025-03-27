@@ -1,7 +1,8 @@
 @import url('EasiestWay.css');
 
 .footer-section{
-    background-color: rgb(222, 232, 240);
+    /* background-color: rgb(222, 232, 240); */
+    background-color: rgb(15, 15, 15);
 }
 
 .footer-panels , .footer-last-parts{
@@ -13,9 +14,12 @@
 .email-input{
     border:  1px solid rgb(206, 206, 206);
 }
-footer-section  .panel li{
-    color: #44586b;
+.footer-section  .panel li{
+    color: #e6e6e6;
 }
-footer-section   .panel-h{
-    color: #253243;
+.footer-section   .panel-h{
+    color: #ffffff;
 }
+
+
+

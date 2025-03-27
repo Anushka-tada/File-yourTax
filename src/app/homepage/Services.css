@@ -5,7 +5,7 @@
 }
 .first-box{
    /* background-color: #5585B6; */
-   background-color: #f06c00;
+   background-color: var(--primary-color);
 }
 .section5-box-2{
     /* width: 370px !important; */
@@ -18,7 +18,7 @@
 }
 .section5{
     /* background: linear-gradient(180deg, #eff7fb 0, #f8fafc 100%); */
-    background-color: var(--secondary-color);
+    background-color: rgb(221, 242, 253);;
 }
 
 @media only screen and (max-width: 1015px) {

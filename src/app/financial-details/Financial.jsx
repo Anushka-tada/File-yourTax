@@ -1,62 +1,90 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import "./financial.css";
 import axios from "axios";
-import { useParams } from 'next/navigation';
+import { useParams } from "next/navigation";
 
 const Financial = () => {
-
-    const { id } = useParams();
-    console.log(id);
+  const { id } = useParams();
+  console.log(id);
 
   const [formData, setFormData] = useState({
     financialYear: "2024-2025",
     panNumber: "",
-    dateOfBirth: ""
+    dateOfBirth: "",
   });
 
-  const router = useRouter(); 
+  const [errors, setErrors] = useState({
+    panNumber: "",
+    dateOfBirth: "",
+  });
+
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
+    });
+    setErrors({
+      ...errors,
+      [name]: "", // Clear error when user types
     });
   };
 
-  // const handleContinue = () => {
-  //   console.log(formData);
-  //  router.push('/basic-details'); 
-  // };
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {};
+
+    if (!formData.panNumber || formData.panNumber.length !== 10) {
+      isValid = false;
+      newErrors.panNumber = "Please enter a valid 10-character PAN number.";
+    }
+
+    if (!formData.dateOfBirth || !/^\d{2}-\d{2}-\d{4}$/.test(formData.dateOfBirth)) {
+      isValid = false;
+      newErrors.dateOfBirth = "Please enter a valid date (dd-mm-yyyy).";
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
   const handleContinue = async () => {
+    if (!validateForm()) {
+      return; // Stop the function if validation fails
+    }
+
     console.log(formData);
 
     try {
-        // POST data to the API
-        const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
+      // POST data to the API
+      const response = await axios.put(
+        `https://backend-data-five.vercel.app/api/itr/update/${id}`,
+        formData
+      );
 
-        console.log("Data sent successfully:", response.data);
+      console.log("Data sent successfully:", response.data);
 
-        const user = JSON.parse(localStorage.getItem("user")); 
-        if (user && user.email) {
-            const email = user.email;
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (user && user.email) {
+        const email = user.email;
 
-            // Update user's progress in localStorage
-            const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
-            progress[email] = 3; // Set next form (Form 3) as the current progress for this user
-            localStorage.setItem("formProgress", JSON.stringify(progress));
-        }
+        // Update user's progress in localStorage
+        const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
+        progress[email] = 3; // Set next form (Form 3) as the current progress for this user
+        localStorage.setItem("formProgress", JSON.stringify(progress));
+      }
 
-        // Navigate to the next form
-        router.push(`/basic-details/${id}`);
+      // Navigate to the next form
+      router.push(`/basic-details/${id}`);
     } catch (error) {
-        console.error("Error sending data to the API:", error);
+      console.error("Error sending data to the API:", error);
     }
-};
-
+  };
 
   return (
     <>
@@ -89,10 +117,11 @@ const Financial = () => {
                 value={formData.panNumber}
                 onChange={handleChange}
               />
+              {errors.panNumber && <span className="text-red-500">{errors.panNumber}</span>}
             </div>
           </div>
           <div className="input input-2 flex flex-col">
-            <label htmlFor="dateOfBirth" className="mb-1">Date of birth</label>
+            <label htmlFor="dateOfBirth" className="mb-1">Date of Birth</label>
             <input
               type="text"
               name="dateOfBirth"
@@ -101,13 +130,13 @@ const Financial = () => {
               value={formData.dateOfBirth}
               onChange={handleChange}
             />
+            {errors.dateOfBirth && <span className="text-red-500">{errors.dateOfBirth}</span>}
           </div>
         </div>
 
         <div className="financial-btns flex flex-wrap justify-center lg:justify-between md:justify-between xl:justify-between sm:justify-between mb-10">
           <a href="\tax-return">
             <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
-              <img src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png?Expires=1836968249&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UbyR63UpwFKqNYhmOCzwA20u9i9m-8NefJS86pMPpxEWQoLF7fazDhSEfVF3vcKzDD5KH1Os3RCGguGvQGqvEYT6cp~8YwgtE6-ppFllVcZE-BwmH0A8nC5R3BrWIg40ANZQl2~qQG-iQVh0KCttfOkpBTvQTPTPbr~GKD2OgeWEIjqgUOzTcJyI0~tMjClIigEsSZ25AJSyZgMhnUIUjXMkScOIGm84wTr4ZOzRzWrw5fgv3hHp4063bIA4VC-fseCnC-nZ5LXjYWngvRYrQvpjXMtaXKsZadXkEoGDjrB1p1leTI9GqYN~AVEtGW4WqrUvxNkXxVwyj9DXyFzULQ__" alt="" height={23} width={23} />
               <p className="text-blue">Back</p>
             </div>
           </a>
@@ -121,7 +150,6 @@ const Financial = () => {
               className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md cursor-pointer"
             >
               <p className="text-white font-semibold">CONTINUE</p>
-              <img src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg" alt="" />
             </div>
           </div>
         </div>

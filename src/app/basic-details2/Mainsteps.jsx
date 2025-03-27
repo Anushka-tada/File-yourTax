@@ -46,7 +46,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/tax-Retun")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/tax-Retun" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/tax-Retun" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Source of Income</li>
@@ -54,7 +54,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/financial-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/financial-details" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/financial-details" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Financial Details</li>
@@ -62,7 +62,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/basic-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/basic-details" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/basic-details" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Basic Details</li>
@@ -70,7 +70,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/basic-details2")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/basic-details2" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/basic-details2" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Basic Details 2</li>
@@ -78,7 +78,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/house-property")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/house-property" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/house-property" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">House Property Income</li>
@@ -86,7 +86,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/deduction")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/deduction" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/deduction" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Deduction</li>
@@ -94,7 +94,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/bank-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/bank-details" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/bank-details" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Bank Details</li>
@@ -102,7 +102,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/prepaid-taxes")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/prepaid-taxes" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/prepaid-taxes" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Prepaid Taxes</li>
@@ -110,7 +110,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/extra-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/extra-details" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/extra-details" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Extra Details</li>
@@ -118,7 +118,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/computation-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/computation-details" ? "bg-sky-950 text-white" : "bg-white"
+              pathname === "/computation-details" ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Computation Details</li>

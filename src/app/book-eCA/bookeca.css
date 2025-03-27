@@ -12,7 +12,7 @@ li img {
     background-color: #fafbfd;;
 }
 .ca-text{
-    color: #0c2343;
+    color: var(--primary-color);
    
 }
 .ca-form{
@@ -35,7 +35,7 @@ input{
    color: #1678fb;
 }
 .blue-text{
-    color: #003364;
+    color: var(--primary-color);
 
 }
 .ca-form {

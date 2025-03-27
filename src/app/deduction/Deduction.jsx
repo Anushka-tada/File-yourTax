@@ -129,6 +129,8 @@ import Section80D from './Section80D';
 import Donation from './Donation';
 import Other from './Other';
 import { useRouter } from 'next/navigation';
+import axios from "axios"; 
+import { useParams } from 'next/navigation';
 
 
 const Deduction = () => {
@@ -141,6 +143,8 @@ const Deduction = () => {
         Other: {}
     });
 
+    const { id } = useParams();
+
     const handleDataUpdate = (sectionName, data) => {
         setSectionData((prevData) => ({
             ...prevData,
@@ -148,10 +152,22 @@ const Deduction = () => {
         }));
     };
 
-    const handleSubmit = () => {
-        // Log data only for the currently selected section
-        console.log(sectionData[selectedSection]); 
-        router.push('/bank-details'); // Continue to the next step
+    const handleSubmit = async () => {
+       
+        console.log(sectionData[selectedSection]);
+
+        try {
+            
+            const response = await axios.put( `https://backend-data-five.vercel.app/api/itr/update/${id}`, sectionData[selectedSection]  );
+        
+            console.log("API Response:", response.data);
+        
+            // Redirect to the next form upon success
+            router.push("/bank-details");
+          } catch (error) {
+            console.error("Error while calling the API:", error.response?.data || error.message);  
+          }
+
     };
 
     const renderSelectedSection = () => {

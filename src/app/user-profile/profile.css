@@ -64,3 +64,7 @@
 .edit-p{
     color: var(--third-color);
 }
+
+.circle{
+    background-color: var(--third-color);
+}

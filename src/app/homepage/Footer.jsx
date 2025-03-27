@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* tools panel */}
 
-        <div className="panel ">
+        {/* <div className="panel ">
           <li className="text-xl font-bold mb-2 panel-h">Tax Tools</li>
 
           <ul className="flex flex-col gap-2 ">
@@ -100,7 +100,7 @@ const Footer = () => {
             <li><a href="" >80U Calculator</a></li>
             <li><a href="">Old vs New Tax Slab Regime Calculator</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* <div className="panel">
 
