@@ -295,7 +295,7 @@ const Nav = () => {
       <div className="nav-logo">
         <a href="\homepage">
           <h2 className="font-bold text-3xl logo">
-            File Your <span className="Blue">Tax</span>
+            FileYour<span className="Blue">Tax</span>
           </h2>
         </a>
       </div>

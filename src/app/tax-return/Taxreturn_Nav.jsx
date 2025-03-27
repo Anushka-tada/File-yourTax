@@ -60,7 +60,7 @@ const Taxreturn_Nav = () => {
     <div className="Navbar-oute bg-white flex items-center justify-between lg:px-32 px-4 py-3 ">
       <div className="nav-logo">
         <a href="\homepage">
-        <h2 className="font-bold text-3xl logo">File Your <span className="Blue">Tax</span></h2>
+        <h2 className="font-bold text-3xl logo">FileYour<span className="Blue">Tax</span></h2>
         </a>
       </div>
 

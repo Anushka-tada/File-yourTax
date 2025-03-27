@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import "./deduction.css";
 
 const Section80D = ({ handleDataUpdate }) => {
-    const [forms, setForms] = useState([
+    const [forms, setForms] = useState(
+        [
         { 
             isPolicyHolderSenior: 'no', 
             insuranceType: '', 
@@ -12,7 +13,8 @@ const Section80D = ({ handleDataUpdate }) => {
             medicalExpenditure: '', 
             medicalInsurancePremium: '' 
         }
-    ]);
+         ]
+);
 
     const handleAddForm = () => {
         setForms([
