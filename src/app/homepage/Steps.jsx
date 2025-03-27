@@ -9,10 +9,12 @@ const Steps = () => {
            <div>
            <div className="section2-top flex flex-wrap items-center justify-between">
                 <p className="heading section5-heading">5 Simple Steps to e-file your <span className="text-blue">GST Return</span></p>
+                <a href="/tax-return">
                 <div className="btn-div flex blue inline-flex px-12 py-3  gap-3 rounded-full">
                     <p className="eCA text-white">File Now</p>
                     <img src="https://tax2win.in/assets-new/img/new-theme/bdark-arrow.svg" alt="ITR Now" title="File Now" />
                 </div>
+                </a>
             </div>
             {/* small sections */}
             <div className="section2-boxes flex items-center  lg:overflow-hidden overflow-x-scroll mt-12">
@@ -53,10 +55,12 @@ const Steps = () => {
            <div>
            <div className="section2-top flex flex-wrap items-center justify-between">
                 <p className="heading section5-heading">5 Simple Steps to e-file your <span className="text-blue">Tax Return</span></p>
-                <div className="btn-div flex blue inline-flex px-12 py-3  gap-3 rounded-full">
+               <a href="/tax-return">
+               <div className="btn-div flex blue inline-flex px-12 py-3  gap-3 rounded-full">
                     <p className="eCA text-white">File Now</p>
                     <img src="https://tax2win.in/assets-new/img/new-theme/bdark-arrow.svg" alt="ITR Now" title="File Now" />
                 </div>
+               </a>
             </div>
             {/* small sections */}
             <div className="section2-boxes flex items-center  lg:overflow-hidden overflow-x-scroll mt-12">
