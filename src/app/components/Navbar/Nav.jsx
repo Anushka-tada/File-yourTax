@@ -334,15 +334,15 @@ const Nav = () => {
                 <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   CA Assisted Tax Filing
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   Tax Planning Optimiser
-                </li>
+                </li> */}
                 <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   Refund Status
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   TDS Solution
-                </li>
+                </li> */}
                 <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   NRI Taxes & ITR Filing
                 </li>
@@ -361,7 +361,7 @@ const Nav = () => {
         </div>
 
         {/* Tools Dropdown */}
-        <div className="tools flex items-center gap-1" ref={toolsRef}>
+        {/* <div className="tools flex items-center gap-1" ref={toolsRef}>
           <div
             onClick={() => handleDropdownToggle("tools")}
             className="cursor-pointer"
@@ -407,7 +407,7 @@ const Nav = () => {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* Knowledge Center Dropdown */}
         <div className="knowledge flex items-center gap-1" ref={knowledgeRef}>
@@ -433,7 +433,7 @@ const Nav = () => {
         </div>
 
         {/* Guides Dropdown */}
-        <div className="guide flex items-center gap-1" ref={guidesRef}>
+        {/* <div className="guide flex items-center gap-1" ref={guidesRef}>
           <div
             onClick={() => handleDropdownToggle("guides")}
             className="cursor-pointer"
@@ -477,7 +477,7 @@ const Nav = () => {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
         
         <div className="knowledge flex items-center gap-1" ref={serviceRef}>
           <div

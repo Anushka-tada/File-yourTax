@@ -51,7 +51,7 @@ const Financial = () => {
         }
 
         // Navigate to the next form
-        router.push('/basic-details');
+        router.push(`/basic-details/${id}`);
     } catch (error) {
         console.error("Error sending data to the API:", error);
     }

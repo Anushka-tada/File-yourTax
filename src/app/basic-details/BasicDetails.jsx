@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import "./basic-details.css";
+import axios from "axios"; 
+import { useParams } from 'next/navigation';
 
 const BasicDetails = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +17,10 @@ const BasicDetails = () => {
     gender: 'male',
     whatsappUpdates: false
   });
+
+  const { id } = useParams();
+      console.log(id);
+
   const [errors, setErrors] = useState({});
   const router = useRouter();
 
@@ -56,28 +62,41 @@ const BasicDetails = () => {
   //   }
   // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
   
-    // Validate the form data
-    if (validate()) {
-      console.log(formData);
-  
-      // Get logged-in user's email from localStorage
-      const user = JSON.parse(localStorage.getItem("user")); // Retrieve user info
-      if (user && user.email) {
-        const email = user.email;
-  
-        // Update the user's progress in localStorage
-        const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
-        progress[email] = 4; // Set progress to Form 4 (basic-details2)
-        localStorage.setItem("formProgress", JSON.stringify(progress));
-      }
-  
-      // Redirect to the next form
-      router.push('/basic-details2');
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (validate()) {
+    console.log("Form Data:", formData);
+
+    const user = JSON.parse(localStorage.getItem("user")); 
+
+    if (user && user.email) {
+      const email = user.email;
+
+      const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
+      progress[email] = 4; // Set progress to Form 4 (basic-details2)
+      localStorage.setItem("formProgress", JSON.stringify(progress));
     }
-  };
+
+    try {
+      
+      const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
+
+      console.log("API Response:", response.data);
+
+      // Redirect to the next form
+      router.push(`/basic-details2/${id}`);
+    } catch (error) {
+      console.error("Error while calling the API:", error.response?.data || error.message);
+    }
+  }
+};
+
+const handleBack = () => {
+  router.push(`/financial-details/${id}`);
+}
   
 
   return (
@@ -147,12 +166,12 @@ const BasicDetails = () => {
       </form>
 
       <div className="financial-btns flex flex-wrap justify-between mb-10">
-        <a href="/financial-details">
-          <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
+       
+          <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md" onClick={handleBack}>
           <img src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png?Expires=1836968249&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UbyR63UpwFKqNYhmOCzwA20u9i9m-8NefJS86pMPpxEWQoLF7fazDhSEfVF3vcKzDD5KH1Os3RCGguGvQGqvEYT6cp~8YwgtE6-ppFllVcZE-BwmH0A8nC5R3BrWIg40ANZQl2~qQG-iQVh0KCttfOkpBTvQTPTPbr~GKD2OgeWEIjqgUOzTcJyI0~tMjClIigEsSZ25AJSyZgMhnUIUjXMkScOIGm84wTr4ZOzRzWrw5fgv3hHp4063bIA4VC-fseCnC-nZ5LXjYWngvRYrQvpjXMtaXKsZadXkEoGDjrB1p1leTI9GqYN~AVEtGW4WqrUvxNkXxVwyj9DXyFzULQ__" alt="" height={23} width={23} />
             <p className="text-blue">Back</p>
           </div>
-        </a>
+       
 
         <div className="other-btns flex flex-wrap gap-4">
           <div className="get-button px-10 py-3 rounded-md">

@@ -46,12 +46,12 @@ const Best_Website = () => {
               className="mb-8"
             />
             <div className="box-text">
-              <h1>1+ Million</h1>
+              <h1>20K+</h1>
               <p>Trusted Users</p>
             </div>
           </div>
 
-          <div className="section3-box flex items-center gap-3">
+          {/* <div className="section3-box flex items-center gap-3">
             <img
               src="https://tax2win.in/assets-new/img/new-theme/rating.svg"
               alt="4.8 Star Service Rating"
@@ -64,9 +64,9 @@ const Best_Website = () => {
               <h1>Top 25</h1>
               <p>Emerging Startup of Asia</p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="section3-box flex items-center gap-3">
+          {/* <div className="section3-box flex items-center gap-3">
             <img
               src="https://tax2win.in/assets-new/img/new-theme/rating.svg"
               alt="4.8 Star Service Rating"
@@ -79,7 +79,7 @@ const Best_Website = () => {
               <h1>Authorized</h1>
               <p>by Income Tax Department</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="read-btn flex gap-2 mt-9">

@@ -177,7 +177,7 @@ const EasiestWay = () => {
               alt="4.8 Google Rating"
             />
             <p>
-              <span className="font-bold">1+ Million</span> Trusted Users
+              <span className="font-bold">20k+</span> Trusted Users
             </p>
           </div>
         </div>

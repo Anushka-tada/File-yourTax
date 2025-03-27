@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import "./basic-form.css"
+import axios from "axios"; 
+import { useParams } from 'next/navigation';
 
 const BasicForm = () => {
     const [formData, setFormData] = useState({
@@ -11,6 +13,8 @@ const BasicForm = () => {
         address2: ''
       });
 
+      const { id } = useParams();
+            console.log(id);
     
 
       const router = useRouter();
@@ -32,27 +36,42 @@ const BasicForm = () => {
         
     //   };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-      
-        // Log form data for debugging
-        console.log(formData);
-      
-        // Get logged-in user's email from localStorage
-        const user = JSON.parse(localStorage.getItem("user")); // Retrieve user info
-        if (user && user.email) {
-          const email = user.email;
-      
-          // Update the user's progress in localStorage
-          const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
-          progress[email] = 5; // Set progress to Form 5 (house-property)
-          localStorage.setItem("formProgress", JSON.stringify(progress));
-        }
-      
-        // Redirect to the next form
-        router.push('/house-property');
-      };
-      
+    
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+    
+      console.log("Form Data:", formData);
+    
+      // Update user progress in localStorage
+      const user = JSON.parse(localStorage.getItem("user")); // Retrieve user info
+      if (user && user.email) {
+        const email = user.email;
+    
+        const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
+        progress[email] = 5; // Set progress to Form 5 (house-property)
+        localStorage.setItem("formProgress", JSON.stringify(progress));
+      }
+    
+      try {
+        // Replace `${id}` with the actual ID value
+        const response = await axios.put(
+          `https://backend-data-five.vercel.app/api/itr/update/${id}`, // API endpoint
+          formData // Data to send in the request body
+        );
+    
+        console.log("API Response:", response.data);
+    
+        // Redirect to the next form upon success
+        router.push(`/house-property/${id}`);
+      } catch (error) {
+        console.error("Error while calling the API:", error.response?.data || error.message);  
+      }
+    };
+    
+    const handleBack = () => {
+        router.push(`/basic-details/${id}`);
+      }
       
     return (
         <>
@@ -84,12 +103,12 @@ const BasicForm = () => {
 
                 </div>
                 <div className="financial-btns flex flex-wrap justify-between mb-10">
-                    <a href="/basic-details">
-                        <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
+                   
+                        <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md" onClick={handleBack}>
                         <img src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png?Expires=1836968249&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UbyR63UpwFKqNYhmOCzwA20u9i9m-8NefJS86pMPpxEWQoLF7fazDhSEfVF3vcKzDD5KH1Os3RCGguGvQGqvEYT6cp~8YwgtE6-ppFllVcZE-BwmH0A8nC5R3BrWIg40ANZQl2~qQG-iQVh0KCttfOkpBTvQTPTPbr~GKD2OgeWEIjqgUOzTcJyI0~tMjClIigEsSZ25AJSyZgMhnUIUjXMkScOIGm84wTr4ZOzRzWrw5fgv3hHp4063bIA4VC-fseCnC-nZ5LXjYWngvRYrQvpjXMtaXKsZadXkEoGDjrB1p1leTI9GqYN~AVEtGW4WqrUvxNkXxVwyj9DXyFzULQ__" alt="" height={23} width={23} />
                             <p className="text-blue">Back</p>
                         </div>
-                    </a>
+                   
 
                     <div className="other-btns flex flex-wrap gap-4">
                         <div className="get-button px-10 py-3 rounded-md">

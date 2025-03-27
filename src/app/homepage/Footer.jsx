@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer-section lg:px-24 px-4 pt-16">
       <div className="footer-panels flex flex-wrap justify-center gap-20 pb-16">
-        <div className="panel">
+        <div className="panel ">
           <ul className="flex flex-col gap-2 ">
             <li className="text-xl font-bold mb-2 panel-h">Quick Links </li>
             <li><a href="" >About</a></li>
@@ -15,7 +15,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="panel">
+        <div className="panel ">
           <ul className="flex flex-col gap-2 ">
             <li className="text-xl font-bold mb-2 panel-h">Products</li>
             <li><a href="">File Income Tax Return</a></li>
@@ -28,6 +28,34 @@ const Footer = () => {
             <li><a href="">Tax Advisory Services</a></li>
             <li><a href="">Capital Gain Tax Filing</a></li>
             <li><a href="">Income Tax Notices</a></li>
+          </ul>
+        </div>
+
+        
+
+
+        <div className="panel">
+          <ul className="flex flex-col gap-2 ">
+            <li className="text-xl font-bold mb-2 panel-h">Services for Individuals
+            </li>
+            <li><a href="">Income Tax Returns Filing</a></li>
+            <li><a href="">TDS Returns Filing</a></li>
+            <li><a href="">Tax Planning &amp; Saving</a></li>
+            <li><a href="">Digital Signature Certificate</a></li>
+            <li><a href="">PAN Card Services</a></li></ul>
+        </div>
+
+        <div className="panel ">
+          <ul className="flex flex-col gap-2 ">
+            <li className="text-xl font-bold mb-2 panel-h">Services for Businesses</li>
+            <li><a href="">GST Registration</a></li>
+            <li><a href="">Income Tax Returns filing</a></li>
+            <li><a href="">GST Returns filing</a></li>
+            <li><a href="">TDS Returns filing</a></li>
+            <li><a href="">Tax Planning &amp; Saving</a></li>
+            <li><a href="">Digital Signature Certificate</a></li>
+            <li><a href="">PAN Card Services</a></li>
+            <li><a href="">Company Registration</a></li>
           </ul>
         </div>
 
@@ -74,33 +102,7 @@ const Footer = () => {
           </ul>
         </div>
 
-
         {/* <div className="panel">
-          <ul className="flex flex-col gap-2 ">
-            <li className="text-xl font-bold mb-2 panel-h">Services for Individuals
-            </li>
-            <li><a href="">Income Tax Returns Filing</a></li>
-            <li><a href="">TDS Returns Filing</a></li>
-            <li><a href="">Tax Planning &amp; Saving</a></li>
-            <li><a href="">Digital Signature Certificate</a></li>
-            <li><a href="">PAN Card Services</a></li></ul>
-        </div> */}
-
-        <div className="panel">
-          <ul className="flex flex-col gap-2 ">
-            <li className="text-xl font-bold mb-2 panel-h">Services for Businesses</li>
-            <li><a href="">GST Registration</a></li>
-            <li><a href="">Income Tax Returns filing</a></li>
-            <li><a href="">GST Returns filing</a></li>
-            <li><a href="">TDS Returns filing</a></li>
-            <li><a href="">Tax Planning &amp; Saving</a></li>
-            <li><a href="">Digital Signature Certificate</a></li>
-            <li><a href="">PAN Card Services</a></li>
-            <li><a href="">Company Registration</a></li>
-          </ul>
-        </div>
-
-        <div className="panel">
 
           <ul className="flex flex-col gap-2 ">
             <li className="text-xl font-bold mb-2 panel-h">Income Tax Guides</li>
@@ -114,13 +116,13 @@ const Footer = () => {
             <li><a href="" >Pan Card</a></li>
             <li><a href="" >Aadhar</a></li>
             <li><a href="">TDS</a></li>
-            {/* <li><a href="">Capital Gains Income</a></li>
+            <li><a href="">Capital Gains Income</a></li>
             <li><a href="" >e-verify Income Tax Return</a></li>
-            <li><a href="">Revised Income Tax Return</a></li> */}
+            <li><a href="">Revised Income Tax Return</a></li>
           </ul>
-        </div>
+        </div> */}
 
-        <div className="panel">
+        {/* <div className="panel">
 
           <ul className="flex flex-col gap-2 ">
             <li className="text-xl font-bold mb-2 panel-h">GST Guides
@@ -134,7 +136,7 @@ const Footer = () => {
             <li><a href="">GST eWay Bill</a></li>
             <li><a href="h">GST Rates</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* <div className="panel">
 
