@@ -206,9 +206,9 @@ const handleContinue = async () => {
         </div>
 
        
-       <div onClick={handleContinue} className="continue-btn flex flex-wrap gap-3 py-3 px-20 rounded mt-7 cursor-pointer">
+       <div onClick={handleContinue} className="continue-btn flex justify-center gap-3 py-3 px-20 rounded mt-7 cursor-pointer">
           <p className='text-white'>CONTINUE</p>
-          <img src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg" alt="Continue" width="26" height="26"></img>
+          <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
         </div>
 
 {/* <a href="\financial-details">

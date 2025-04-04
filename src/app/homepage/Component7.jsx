@@ -21,26 +21,28 @@ const Component7 = () => {
 
       <div className="section7-box rounded-xl px-5 py-12 bg-white flex flex-col justify-between">
         <img src="https://tax2win.in/assets-new/img/new-theme/icon_upload.svg" alt="Upload Form 16" title="Upload Form 16" loading="lazy" width="57" height="57" className="icon"/>
-       <h2 className="text-2xl font-bold mb-3 mt-2">Claim Tax Refund</h2>
-        <p className="mb-4 text-lg">If you have paid more income tax, you are eligible for a tax refund</p>
+       <h2 className="text-2xl font-bold mb-3 mt-2">File for Tax Refund </h2>
+        <p className="mb-4 text-lg">If you have overpaid income tax, you may be eligible to claim a tax refund</p>
        </div>
         
        <div className="section7-box rounded-xl px-5 py-12 bg-white flex flex-col justify-between">
         <img src="https://tax2win.in/assets-new/img/new-theme/icon_upload.svg" alt="Upload Form 16" title="Upload Form 16" loading="lazy" width="57" height="57" className="icon"/>
        <h2 className="text-2xl font-bold mb-3 mt-2">Avoid Late Filing Fee</h2>
-        <p className="mb-4 text-lg">A delay in filing ITR makes you liable to pay a fee of up to 5,000 INR</p>
+        <p className="mb-4 text-lg">Failure to file your Income Tax Return (ITR) on time may result in a
+        penalty of up to INR 5,000.</p>
        </div>
 
        <div className="section7-box rounded-xl px-5 py-12 bg-white flex flex-col justify-between">
         <img src="https://tax2win.in/assets-new/img/new-theme/icon_upload.svg" alt="Upload Form 16" title="Upload Form 16" loading="lazy" width="57" height="57" className="icon"/>
        <h2 className="text-2xl font-bold mb-3 mt-2">Obtaining Visa  </h2>
-        <p className="mb-4 text-lg">Foreign consulates may ask you to furnish your income tax returns for obtaining Visa</p>
+        <p className="mb-4 text-lg">Foreign consulates may require the submission of your Income Tax
+        Returns as part of the visa application process.</p>
        </div>
 
        <div className="section7-box rounded-xl px-5 py-12 bg-white flex flex-col justify-between">
         <img src="https://tax2win.in/assets-new/img/new-theme/icon_upload.svg" alt="Upload Form 16" title="Upload Form 16" loading="lazy" width="57" height="57" className="icon"/>
        <h2 className="text-2xl font-bold mb-3 mt-2">Easy Loan Approval </h2>
-        <p className="mb-4 text-lg">The income tax return serves as an important document for loan approval</p>
+        <p className="mb-4 text-lg">An Income Tax Return is a crucial document for obtaining loan approval.</p>
        </div>
 
       </div>

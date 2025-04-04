@@ -1,7 +1,7 @@
 @import url('../homepage/EasiestWay.css');
 
 .contact-right{
-    background-color: #1a4876;
+    background-color: var(--primary-color);
 }
 
   .contact-outer   input , textarea {

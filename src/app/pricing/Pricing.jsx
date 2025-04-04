@@ -5,7 +5,7 @@ const Pricing = () => {
     return (
         <div>
             <div className="pricing-page flex flex-col items-center xl:mx-40 lg:mx-32 md:mx-20 sm:mx-16 mx-3 my-7 px-8 rounded-lg py-6 ">
-                <h1 className='font-bold text-4xl pricing-heading my-5'>Plans based on your Selection</h1>
+                <h1 className='font-bold text-4xl pricing-heading my-5'>Designed to meet your specific needs.</h1>
                 <div className="all-pricings  p-5 flex justify-center  gap-3 flex-wrap ">
                     <div className="pricing p-4  flex flex-col justify-between rounded-md">
                         <div>
@@ -337,9 +337,10 @@ const Pricing = () => {
                 </div>
 
                <div className='flex flex-col items-center text-center my-10  xl:mx-40 lg:mx-32 md:mx-20 sm:mx-16 mx-3 gap-2'>
-               <p className='text-xl font-semibold'>*For Balance sheet & P/L / Attestation: ₹1000</p>
-                <p className='text-xl font-semibold'>*If you have received any arrears and want to claim relief then need to pay Rs. 499 over and above on mentioned plans</p>
-                <p className='text-xl font-semibold'>*18% GST will be applicable to the base plan amount</p>
+               <p className='text-xl font-semibold'>*For Balance Sheet, Profit & Loss Statement, and Attestation: ₹1000.</p>
+                <p className='text-xl font-semibold'>*If you have received any arrears and wish to claim relief, an additional charge of Rs. 499 will apply
+                beyond the stated plans.</p>
+
                </div>
             </div>
 

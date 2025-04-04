@@ -137,6 +137,7 @@ const Financial = () => {
         <div className="financial-btns flex flex-wrap justify-center lg:justify-between md:justify-between xl:justify-between sm:justify-between mb-10">
           <a href="\tax-return">
             <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
+            <img src="/assest/left-arrow.png" alt="" height={23} width={18} />
               <p className="text-blue">Back</p>
             </div>
           </a>
@@ -147,9 +148,9 @@ const Financial = () => {
             </div>
             <div
               onClick={handleContinue}
-              className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md cursor-pointer"
-            >
+              className="continue-btn flex gap-3 justify-center items-center px-10 py-3 rounded-md cursor-pointer">
               <p className="text-white font-semibold">CONTINUE</p>
+              <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
             </div>
           </div>
         </div>

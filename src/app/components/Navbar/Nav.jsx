@@ -98,13 +98,13 @@
 //             <div className="dropdown drop-tool bg-white shadow-lg rounded-lg absolute  w-full lg:w-auto">
 //                 <div className="lists flex text-base ">
 //              <ul>
-                  
+
 //                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Calculator</li>
-       
+
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">HRA Calculator</li>
-                    
+
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Rent Receipt Generator</li>
-                 
+
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">ITR Eligibility Checker</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Calculator on Section 234F</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80C Calculator</li>
@@ -113,7 +113,7 @@
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80DD Calculator</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Compound Interest Calculator</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Sukanya Samriddhi Yojana Calculator</li>
-                    
+
 //                   </ul>
 //                   <ul>
 //                   <li>Form 12BB</li>
@@ -176,13 +176,13 @@
 //             <div className="dropdown drop-guide bg-white shadow-lg rounded-lg absolute w-full lg:w-auto ">
 //                <div className="lists flex text-base gap-4">
 //              <ul>
-                  
+
 //                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700 font-extrabold">Income Tax Guides</li>
-       
+
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Aadhar</li>
-                    
+
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Capital Gains Income</li>
-                 
+
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">E-filling of ITR</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">House Property </li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Calander</li>
@@ -194,7 +194,7 @@
 //                     <li  className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Salary Income</li>
 //                     <li  className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Section 80 Deductions</li>
 //                     <li  className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">TDS</li>
-                    
+
 //                   </ul>
 //                   <ul>
 //                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700 font-extrabold">Form 12BB</li>
@@ -206,7 +206,7 @@
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Returns</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST eWay Bills</li>
 //                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Rates</li>
-                   
+
 //                   </ul>
 //                   </div>
 
@@ -306,10 +306,39 @@ const Nav = () => {
       />
 
       <div
-        className={`navbar-items ${
-          openDropdown === "menu" ? "flex" : "hidden"
-        } flex-col lg:flex lg:flex-row gap-6 text-lg lg:static absolute top-16 left-0 lg:top-auto lg:left-auto bg-white lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 lg:px-6 md:px-1 px-1 lg:px-0 mt-32 md:mt-32 lg:mt-0`}
+        className={`navbar-items ${openDropdown === "menu" ? "flex" : "hidden"
+          } flex-col lg:flex lg:flex-row gap-6 text-lg lg:static absolute top-16 left-0 lg:top-auto lg:left-auto bg-white lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 lg:px-6 md:px-1 px-1 lg:px-0 mt-32 md:mt-32 lg:mt-0`}
       >
+
+  {/* service Dropdown */}
+  <div className="knowledge flex items-center gap-1" ref={serviceRef}>
+          <div
+            onClick={() => handleDropdownToggle("service")}
+            className="cursor-pointer"
+          >
+            Services
+          </div>
+          <RiArrowDropDownLine
+            className="text-3xl"
+            onClick={() => handleDropdownToggle("service")}
+          />
+          {openDropdown === "service" && (
+            <div className="dropdown bg-white shadow-lg rounded-lg absolute mt-48 lg:mt-48 text-base w-full lg:w-auto ">
+              <ul>
+                {/* <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Flexibuddy</li></a>
+                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Mybiz CFO</li></a>
+                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">US Tax Filing </li></a>
+                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Legal Service</li></a>
+                <a href="/tax-planner"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Tax Planner</li></a>
+                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Business License RegistraƟon </li></a> */}
+                <a href="/service-page"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">ITR Filling</li></a>
+                <a href="/gst-filling"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Filling</li></a>
+              </ul>
+            </div>
+          )}
+        </div>
+
+
         {/* Products Dropdown */}
         <div className="product flex items-center gap-1" ref={productsRef}>
           <div
@@ -360,54 +389,9 @@ const Nav = () => {
           )}
         </div>
 
-        {/* Tools Dropdown */}
-        {/* <div className="tools flex items-center gap-1" ref={toolsRef}>
-          <div
-            onClick={() => handleDropdownToggle("tools")}
-            className="cursor-pointer"
-          >
-            Tools
-          </div>
-          <RiArrowDropDownLine
-            className="text-3xl"
-            onClick={() => handleDropdownToggle("tools")}
-          />
-          {openDropdown === "tools" && (
-            <div className="dropdown drop-tool bg-white shadow-lg rounded-lg absolute  w-full lg:w-auto">
-              <div className="lists flex text-base ">
-                <ul>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Calculator</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">HRA Calculator</li>   
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Rent Receipt Generator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">ITR Eligibility Checker</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Calculator on Section 234F</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80C Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Cryptocurrency Tax Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Simple Interest Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80DD Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Compound Interest Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Sukanya Samriddhi Yojana Calculator</li>
-                </ul>
-                <ul>
-                  <li>Form 12BB</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Gratuity Calculator</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">TDS Calculator</li>                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Transport Allowance Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Leave Encashment Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">House Property Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80D Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80TTU Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">80U Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">OLd vs New Tax Slab Regime Calculator</li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">IFSC code Search</li>
-                </ul>
-              </div>
-              <div className="more-tax-btn flex items-center gap-2">
-                <p>More Tax Tools</p>
-                <img src="https://tax2win.in/assets-new/img/new-theme/g_ghost_arrow.svg" alt="" width="20" height="20"></img>
-              </div>
-            </div>
-          )}
-        </div> */}
+
+        <Link href="\pricing"> Pricing</Link>
+
 
         {/* Knowledge Center Dropdown */}
         <div className="knowledge flex items-center gap-1" ref={knowledgeRef}>
@@ -432,76 +416,10 @@ const Nav = () => {
           )}
         </div>
 
-        {/* Guides Dropdown */}
-        {/* <div className="guide flex items-center gap-1" ref={guidesRef}>
-          <div
-            onClick={() => handleDropdownToggle("guides")}
-            className="cursor-pointer"
-          >
-            Guides
-          </div>
-          <RiArrowDropDownLine
-            className="text-3xl"
-            onClick={() => handleDropdownToggle("guides")}
-          />
-          {openDropdown === "guides" && (
-            <div className="dropdown drop-guide bg-white shadow-lg rounded-lg absolute w-full lg:w-auto ">
-              <div className="lists flex text-base gap-4">
-                <ul>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700 font-extrabold">Income Tax Guides</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Aadhar</li>
-                    
-                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Capital Gains Income</li>
-                                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">E-filling of ITR</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">House Property </li>
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Calander</li>
-                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Notices</li>
-                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Refund</li>
-                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Slabs</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Income Tax Verification</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Pan Card</li>
-                   <li  className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Salary Income</li>
-                  <li  className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Section 80 Deductions</li>                   <li  className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">TDS</li>
-                </ul>
-                <ul>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700 font-extrabold">Form 12BB</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Rates</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST System</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Registration</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Input Tax Credit</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Procedure</li>
-                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Returns</li>
-                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST eWay Bills</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Rates</li>
-                </ul>
-              </div>
-            </div>
-          )}
-        </div> */}
-        
-        <div className="knowledge flex items-center gap-1" ref={serviceRef}>
-          <div
-            onClick={() => handleDropdownToggle("service")}
-            className="cursor-pointer"
-          >
-           Services
-          </div>
-          <RiArrowDropDownLine
-            className="text-3xl"
-            onClick={() => handleDropdownToggle("service")}
-          />
-          {openDropdown === "service" && (
-            <div className="dropdown bg-white shadow-lg rounded-lg absolute mt-48 lg:mt-48 text-base w-full lg:w-auto ">
-              <ul>
-               <a href="/service-page"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">ITR Filling</li></a>
-               <a href="/gst-filling"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">GST Filling</li></a>
-               <a href="/tax-planner"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-green-700">Tax Planner</li></a>
-              </ul>
-            </div>
-          )}
-        </div>
 
-        <Link href="\pricing"> Pricing</Link>
+        
+
+       
         <Link href="\contact"> Contact </Link>
 
         {/* Conditionally Render Login/Signup or Profile Button */}
@@ -513,21 +431,21 @@ const Nav = () => {
               onClick={() => handleDropdownToggle("profile")}
             >
               <img
-                src="https://cdn-icons-png.flaticon.com/128/3177/3177440.png"  height={28} width={28}// Replace with user avatar if available
+                src="https://cdn-icons-png.flaticon.com/128/3177/3177440.png" height={28} width={28}
                 alt="User Profile"
                 className="rounded-full"
               />
-             
+
             </div>
             {openDropdown === "profile" && (
               <div className="dropdown bg-white shadow-lg rounded-lg absolute top-full mt-2 right-0 p-6">
                 {/* <p><strong>Name:</strong> {loggedUserData.firstName} {loggedUserData.lastName}</p>
                 <p><strong>Email:</strong> {loggedUserData.email}</p>
                 <p><strong>Phone:</strong> {loggedUserData.phoneNumber}</p> */}
-                  <div className="drop-items flex flex-col gap-2">
-                 <a href="./user-profile">  <div className="flex gap-4 p-2 rounded drop-item"> <img src="https://tax2win.in/assets-new/img/new-theme/profile.svg" alt="" height={17} width={17} /><p className="text-sm ">My Profile</p></div></a>
+                <div className="drop-items flex flex-col gap-2">
+                  <a href="./user-profile">  <div className="flex gap-4 p-2 rounded drop-item"> <img src="https://tax2win.in/assets-new/img/new-theme/profile.svg" alt="" height={17} width={17} /><p className="text-sm ">My Profile</p></div></a>
                   <div className="flex gap-4 p-2 rounded drop-item cursor-pointer" onClick={handleLogout} > <img src="https://tax2win.in/assets-new/img/new-theme/logout.svg" alt="" height={17} width={17} /><p className="text-sm ">Logout</p></div>
-                  </div>
+                </div>
               </div>
             )}
           </div>

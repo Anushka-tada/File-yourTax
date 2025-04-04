@@ -46,8 +46,8 @@ const GstFilling = () => {
 
       <div className="how-gst-service flex  flex-col items-center  xl:px-56 lg:px-52 md:px-32 sm:px-16 px-4 py-20">
         <h1 className='text-5xl font-semibold mb-5'>Discover How GST Services Works with TaxBuddy</h1>
-        <p>This is a simple process. Sit back and relax. Leave the stress of tax filing to us.
-          Let our experts help you save maximum time & taxes.</p>
+        <p>This is a simple process. Relax and unwind—let us handle your tax filing hassle-free. Our experts ensure you save both Ɵme
+        and money! </p>
 
         <div className="steps flex flex-col gap-5 mt-10">
           <div className="step flex gap-3 ">
@@ -84,7 +84,7 @@ const GstFilling = () => {
       {/* Plans based on your Selection */}
 
       <div className="plan-based-section flex flex-col items-center xl:px-40 lg:px-32 md:px-20 sm:px-16 px-3 py-7  rounded-lg py-6">
-        <h1 className='text-5xl font-semibold mb-5'>Plans based on your Selection</h1>
+        <h1 className='text-5xl font-semibold mb-5'>Designed to meet your specific needs.</h1>
 
         <div className="all-pricings  p-5 flex justify-center  gap-3 flex-wrap ">
           <div className="pricing p-4  flex flex-col justify-between rounded-md bg-white">

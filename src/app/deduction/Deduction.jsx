@@ -163,7 +163,7 @@ const Deduction = () => {
             console.log("API Response:", response.data);
         
             // Redirect to the next form upon success
-            router.push("/bank-details");
+            router.push(`/bank-details/${id}`);
           } catch (error) {
             console.error("Error while calling the API:", error.response?.data || error.message);  
           }
@@ -227,7 +227,7 @@ const Deduction = () => {
             <div className="financial-btns flex flex-wrap justify-between mb-10">
                 <a href="\house-property">
                     <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
-                        <img src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png" alt="" height={23} width={23} />
+                    <img src="/assest/left-arrow.png" alt="" height={23} width={18} />
                         <p className="text-blue">Back</p>
                     </div>
                 </a>
@@ -239,7 +239,7 @@ const Deduction = () => {
 
                     <div className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md" onClick={handleSubmit}>
                         <p className="text-white font-semibold">CONTINUE</p>
-                        <img src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg" alt="" />
+                        <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
                     </div>
                 </div>
             </div>

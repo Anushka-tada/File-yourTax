@@ -168,7 +168,7 @@ const handleBack = () => {
       <div className="financial-btns flex flex-wrap justify-between mb-10">
        
           <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md" onClick={handleBack}>
-          <img src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png?Expires=1836968249&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UbyR63UpwFKqNYhmOCzwA20u9i9m-8NefJS86pMPpxEWQoLF7fazDhSEfVF3vcKzDD5KH1Os3RCGguGvQGqvEYT6cp~8YwgtE6-ppFllVcZE-BwmH0A8nC5R3BrWIg40ANZQl2~qQG-iQVh0KCttfOkpBTvQTPTPbr~GKD2OgeWEIjqgUOzTcJyI0~tMjClIigEsSZ25AJSyZgMhnUIUjXMkScOIGm84wTr4ZOzRzWrw5fgv3hHp4063bIA4VC-fseCnC-nZ5LXjYWngvRYrQvpjXMtaXKsZadXkEoGDjrB1p1leTI9GqYN~AVEtGW4WqrUvxNkXxVwyj9DXyFzULQ__" alt="" height={23} width={23} />
+          <img src="/assest/left-arrow.png" alt="" height={23} width={18} />
             <p className="text-blue">Back</p>
           </div>
        
@@ -180,7 +180,7 @@ const handleBack = () => {
          
             <div className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md" onClick={handleSubmit}>
               <p className="text-white font-semibold">CONTINUE</p>
-              <img src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg" alt="" />
+              <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
             </div>
           
         </div>

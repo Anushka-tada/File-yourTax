@@ -2,6 +2,7 @@
 
 
 
+import Footer from '../homepage/Footer';
 import LogFooter from '../login/LogFooter';
 import Contact_footer from './Contact_footer';
 import Contactform from './Contactform';
@@ -16,8 +17,8 @@ const page = () => {
         <Nav/>
 <Contactform/>
   <Solutions/>
-  <Contact_footer/>
- <LogFooter/>
+  <Footer/>
+ 
     </div>
   );
 };

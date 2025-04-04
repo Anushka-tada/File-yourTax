@@ -3,7 +3,7 @@ import "./comp9.css"
 const Component9 = () => {
   return (
     <div className="section9 lg:px-24 px-4 text-center py-10">
-      <h1  className='section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10'>Income Tax e-filing Popular Guides</h1>
+      <h1  className='section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10'>Comprehensive Guides for Income Tax e-Filing </h1>
 
      <div className="section9-parts flex lg:flex-nowrap flex-wrap gap-6">
         <div className="section9-part1 ">

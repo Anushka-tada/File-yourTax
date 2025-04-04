@@ -42,7 +42,7 @@ const Nav = () => {
   return (
     <div className="Navbar-oute bg-white flex items-center justify-between lg:px-32 px-4 py-4 ">
       <div className="nav-logo">
-        <a href="https://tax2win.in/">
+        <a href="\homepage">
         <h2 className="font-bold text-3xl logo">File Your <span className="Blue">Tax</span></h2>
         </a>
       </div>
@@ -82,61 +82,7 @@ const Nav = () => {
           )}
         </div>
 
-        <div className="tools flex items-center gap-1" ref={toolsRef}>
-          <div
-            onClick={() => setIsToolsDropdownOpen(!isToolsDropdownOpen)}
-            className="cursor-pointer"
-          >
-            Tools
-          </div>
-          <RiArrowDropDownLine
-            className="text-3xl"
-            onClick={() => setIsToolsDropdownOpen(!isToolsDropdownOpen)}
-          />
-          {isToolsDropdownOpen && (
-            <div className="dropdown drop-tool bg-white shadow-lg rounded-lg absolute  w-full lg:w-auto">
-                <div className="lists flex text-base ">
-             <ul>
-                  
-                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Income Tax Calculator</li>
-       
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">HRA Calculator</li>
-                    
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Rent Receipt Generator</li>
-                 
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">ITR Eligibility Checker</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Calculator on Section 234F</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">80C Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Cryptocurrency Tax Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Simple Interest Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">80DD Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Compound Interest Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Sukanya Samriddhi Yojana Calculator</li>
-                    
-                  </ul>
-                  <ul>
-                  <li>Form 12BB</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Gratuity Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">TDS Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Transport Allowance Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">Leave Encashment Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">House Property Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">80D Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">80TTU Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">80U Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">OLd vs New Tax Slab Regime Calculator</li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:hover-text-green">IFSC code Search</li>
-
-                  </ul>
-                  </div>
-
-                  <div className="more-tax-btn flex items-center gap-2">
-                    <p>More Tax Tools</p>
-                    <img src="https://tax2win.in/assets-new/img/new-theme/g_ghost_arrow.svg" alt="" width="20" height="20"></img>
-                  </div>
-            </div>
-          )}
-        </div>
+        
 
         <div className="knowledge flex items-center gap-1" ref={knowledgeRef}>
           <div

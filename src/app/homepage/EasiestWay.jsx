@@ -159,7 +159,7 @@ const EasiestWay = () => {
       <div className="section1-text">
         <p className="ITR-btn inline-flex px-6 py-2 rounded-full mb-9">ITR Filing</p>
         <h1 className="section1-heading">
-          Easiest Way of Income Tax e-filing in <span className="india">India</span>
+        The most convenient and efficient way to e-file your Income Tax Return in<span className="india">India</span>
         </h1>
         <div className="rating flex flex-wrap text-lg gap-20 mt-6">
           <div className="rating-1 flex flex-wrap">
@@ -194,8 +194,7 @@ const EasiestWay = () => {
           />
           <h2 className="text-white text-3xl mt-2">File Your GST</h2>
           <p className="text-white mt-2">
-          It’s quick, easy, and a trusted company to file your GST return. GST filing plans start at just ₹499/month.
-
+          Effortless and reliable GST return filing with a trusted provider. GST filing plans start at just ₹499 per month.
           </p>
           <div className="btn-div1 bg-white hover:bg-sky-100 cursor-pointer py-3 inline-flex gap-3 px-12 rounded-full mt-4 mb-4"
               onClick={handleGST}>
@@ -225,8 +224,8 @@ const EasiestWay = () => {
           </div>
           <h2 className="text-white text-3xl mt-2">Get eCA for ITR Filing</h2>
           <p className="text-white mt-2">
-            Hire personal eCA to do Income Tax Filing for you. It is convenient & fast with
-            maximum refund calculated for you.
+          Hire a personal eCA for your Income Tax Filing. Enjoy a convenient, fast, and efficient
+          process with maximum refund calculations.
           </p>
           <a href="\book-eCA">
             <div className="btn-div1 flex bg-white hover:bg-sky-100 inline-flex py-3 px-12 gap-3 rounded-full mt-4">

@@ -62,26 +62,24 @@ const BasicForm = () => {
 
     console.log("Form Data:", formData);
 
-    // Update user progress in localStorage
-    const user = JSON.parse(localStorage.getItem("user")); // Retrieve user info
+   
+    const user = JSON.parse(localStorage.getItem("user")); 
     if (user && user.email) {
       const email = user.email;
 
       const progress = JSON.parse(localStorage.getItem("formProgress")) || {};
-      progress[email] = 5; // Set progress to Form 5 (house-property)
+      progress[email] = 5; 
       localStorage.setItem("formProgress", JSON.stringify(progress));
     }
 
     try {
-      // Replace `${id}` with the actual ID value
+     
       const response = await axios.put(
-        `https://backend-data-five.vercel.app/api/itr/update/${id}`, // API endpoint
-        formData // Data to send in the request body
-      );
+        `https://backend-data-five.vercel.app/api/itr/update/${id}`,  formData );
 
       console.log("API Response:", response.data);
 
-      // Redirect to the next form upon success
+     
       router.push(`/house-property/${id}`);
     } catch (error) {
       console.error("Error while calling the API:", error.response?.data || error.message);
@@ -144,12 +142,7 @@ const BasicForm = () => {
             className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md"
             onClick={handleBack}
           >
-            <img
-              src="https://media-hosting.imagekit.io//69ad5096714e471b/arrow-left.png?Expires=1836968249&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UbyR63UpwFKqNYhmOCzwA20u9i9m-8NefJS86pMPpxEWQoLF7fazDhSEfVF3vcKzDD5KH1Os3RCGguGvQGqvEYT6cp~8YwgtE6-ppFllVcZE-BwmH0A8nC5R3BrWIg40ANZQl2~qQG-iQVh0KCttfOkpBTvQTPTPbr~GKD2OgeWEIjqgUOzTcJyI0~tMjClIigEsSZ25AJSyZgMhnUIUjXMkScOIGm84wTr4ZOzRzWrw5fgv3hHp4063bIA4VC-fseCnC-nZ5LXjYWngvRYrQvpjXMtaXKsZadXkEoGDjrB1p1leTI9GqYN~AVEtGW4WqrUvxNkXxVwyj9DXyFzULQ__"
-              alt=""
-              height={23}
-              width={23}
-            />
+            <img src="/assest/left-arrow.png" alt="" height={23} width={18} />
             <p className="text-blue">Back</p>
           </div>
 
@@ -163,10 +156,7 @@ const BasicForm = () => {
               onClick={handleSubmit}
             >
               <p className="text-white font-semibold">CONTINUE</p>
-              <img
-                src="https://tax2win.in/assets-new/img/diy-landing/bdark-arrow.svg"
-                alt=""
-              />
+              <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
             </div>
           </div>
         </div>
