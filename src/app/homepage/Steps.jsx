@@ -53,7 +53,7 @@ const Steps = () => {
 
            <div>
            <div className="section2-top flex flex-wrap items-center justify-between">
-                <p className="heading section5-heading">Five essential steps to electronically file your <span className="text-blue"> Income Tax Return</span></p>
+                <p className="heading2 section5-heading">Five essential steps to electronically file your <span className="text-blue"> Income Tax Return</span></p>
                <a href="/tax-return">
                <div className="btn-div flex blue inline-flex px-12 py-3  gap-3 rounded-full">
                     <p className="eCA text-white">File Now</p>

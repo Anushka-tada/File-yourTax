@@ -8,14 +8,15 @@
 font-weight:700;
 font-size: 40px;
 }
-/* .box{
-      width: 200px;
-} */
+
+.heading2{
+   font-weight:700;
+   font-size: 36px;
+   }
 
 .box p{
    width: 160px;
 }
-
 
 .ITR-btn2{
    background-color: var(--secondary-color);
