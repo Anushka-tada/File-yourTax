@@ -28,7 +28,8 @@ width="100%" height="400" frameBorder="0"  allowFullScreen=""></iframe>
             
             <div className='flex justify-start gap-3'>
             <img src="https://tax2win.in/assets-new/img/location-icon.svg" alt="address" width="28" height="28" />
-            <p className='text-white'>B-19A, Gali No-8, Near Dashrathpuri Metro Gate No-1, Delhi-110045. </p>
+            <p className='text-white'><b>Head Office:</b> B-19A, Gali No-8, Near Dashrathpuri Metro Gate No-1, Delhi-110045. </p>
+            <p className='text-white'><b> Branch Office:</b> S Mart Mall, Near Power House Chowk, Chakia, East Champaran, Bihar-845412. </p>
             </div>
 
             <div className='flex gap-3 justify-start'>

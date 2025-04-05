@@ -1,5 +1,76 @@
 @import url('../homepage/EasiestWay.css');
 
+
+:root{
+    --bg-gradient: linear-gradient(90deg, #1B1B1B 0%, #144148 100%);
+}
+
+html , body{
+    overflow-x: hidden !important;
+}
+.pricing-section{
+    background-color: transparent;
+    background-image: var(--bg-gradient);
+}
+
+.pricing-text{
+    padding: 100px 0px;
+    width: 40%;   
+}
+
+@media(max-width:950px){
+    .pricing-text{
+        padding: 100px 0px;
+        width: 80%;   
+    }
+}
+
+.pricing-h{
+    line-height: 60px;
+}
+.price-btn{
+    width: 180px;
+    height: 40px;
+    background: rgb(40, 95, 105);
+}
+.price-btn2{
+    width: 180px;
+    height: 40px;
+    background: #144148b7;
+}
+
+@media(max-width:765px){
+    .price-btns{
+        width: 100%;
+    }
+    .price-btn p{
+        font-size: 12px;
+    }
+    .price-btn2 p{
+      font-size: 12px;
+    }
+}
+@media(max-width:425px){
+    .price-btns{
+        width: 100%;
+    }
+    .price-btn{
+        width: 22%;
+    }
+    .price-btn2{
+        width: 22%; 
+    }
+    .itr-inner{
+        justify-content: start !important;
+    }
+}
+.itr-section{
+    background-color: rgb(40, 95, 105);
+    padding: 40px 0px;
+}
+
+
+
 .pricing{
     width: 230px;
     box-shadow: var(--shd,0 5px 19px rgba(120, 120, 120, 0.6));
@@ -32,6 +103,84 @@
     color: #2a3947;
 
 }
-.pricing-page{
+.filling-page{
     border:  2px solid rgb(224, 224, 224);
 }
+
+
+/* //tax planning css */
+
+/* Basic Tax Planner */
+
+.basic-tax-section , .advance-tax-section{
+    
+    background-color: var(--secondary-color);
+
+}
+
+.basic-tax-planner{
+    width: 590px;
+    box-shadow: 0.00px 0.00px 28px 0px rgba(0, 0, 0, 0.23);;
+}
+.truncate{
+    text-decoration: line-through;
+    color: rgb(248, 106, 55);
+}
+.text-blue{
+    color: var(--third-color);
+}
+.plan-btn{
+    border:  1px solid var(--third-color);
+}
+.btn-p{
+    color: var(--third-color);
+}
+@media(max-width:630px){
+    .basic-tax-planner{
+        width: 100%;
+    }
+}
+
+
+/* Advance Tax Planner Plans */
+
+.tax-image{
+    width: 28px;
+    height: 33px;
+}
+
+
+
+/* gst plan css */
+.gst-pricing{
+    padding: 10px 130px;
+}
+
+.gst-plan{
+    width: 310px;
+    height: 480px;
+    box-shadow: var(--shd,0 5px 19px rgba(120, 120, 120, 0.6));
+}
+@media(max-width:1238px){
+    .gst-pricing{
+        padding: 10px 10px;
+    }
+}
+
+
+/* notice plan css */
+.notice-price{
+    width: 310px;
+    
+    box-shadow: var(--shd,0 5px 19px rgba(120, 120, 120, 0.6));
+}
+
+.itr-para{
+    width: 328px;
+}
+@media(max-width:358px){
+    .itr-para{
+        width: 100%;
+    }
+}
+
