@@ -8,12 +8,15 @@ import { loginServ } from "../services/authentication.service";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline"; // Importing Heroicons
+
 
 import { LoggedDataContext } from "../context/Context"; // Import Context
 
 const LoginForm = () => {
   const { updateLoggedUserData } = useContext(LoggedDataContext); // Access update function from Context
   const router = useRouter();
+  const [showPassword, setShowPassword] = useState(false);
 
   const [formData, setFormData] = useState({
     email: "",
@@ -90,14 +93,26 @@ const LoginForm = () => {
             value={formData.email}
             onChange={handleChange}
           />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="py-3 px-7 w-full rounded-lg bg-transparent text-lg md:w-96 lg:w-96"
-            value={formData.password}
-            onChange={handleChange}
-          />
+        <div className="relative w-full md:w-96 lg:w-96">
+      <input
+        type={showPassword ? "text" : "password"}
+        name="password"
+        placeholder="Password"
+        className="py-3 px-7 w-full rounded-lg bg-transparent text-lg border border-gray-300 focus:outline-none"
+      />
+      {/* Icon inside the input field */}
+      <span
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-700"
+        onClick={() => setShowPassword(!showPassword)}
+      >
+       {showPassword ? (
+          <EyeSlashIcon className="h-5 w-5" /> // Hide Password Icon
+        ) : (
+          <EyeIcon className="h-5 w-5" /> // Show Password Icon
+        )}
+      </span>
+    </div>
+      
         </div>
         <div className="flex justify-end md:w-96 lg:w-96 mt-2 forget-p">
           <p>Forgot Password?</p>

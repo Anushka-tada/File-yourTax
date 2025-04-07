@@ -1,0 +1,10 @@
+@import url('../../homepage/EasiestWay.css');
+
+input{
+    width: 310px;
+}
+.hire-btn{
+     background-color: var(--primary-color);
+     width: 190px;
+}
+

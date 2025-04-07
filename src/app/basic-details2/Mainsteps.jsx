@@ -30,14 +30,20 @@
 import React from "react";
 import { usePathname, useRouter } from "next/navigation"; // usePathname for route detection, useRouter for navigation
 import "./mainstep.css";
+import { useParams } from "next/navigation";
 
 const Mainsteps = () => {
   const router = useRouter(); // Hook to handle navigation
   const pathname = usePathname(); // Hook to get the current route
 
+  
+  const { id } = useParams();
+   
+
   const handleStepClick = (step) => {
-    router.push(step); // Navigate to the clicked route
+    router.push(`${step}/${id}`); // Navigate to the clicked route
   };
+
 
   return (
     <div className="main-steps-container">
@@ -70,7 +76,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/basic-details2")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/basic-details2" ? "bg-sky text-white" : "bg-white"
+              pathname === `/basic-details2/${id}` ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Basic Details 2</li>
@@ -78,7 +84,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/house-property")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/house-property" ? "bg-sky text-white" : "bg-white"
+              pathname === `/house-property/${id}` ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">House Property Income</li>
@@ -86,7 +92,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/deduction")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/deduction" ? "bg-sky text-white" : "bg-white"
+              pathname === `/deduction/${id}` ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Deduction</li>
@@ -94,7 +100,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/bank-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/bank-details" ? "bg-sky text-white" : "bg-white"
+              pathname === `/bank-details/${id}` ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Bank Details</li>
@@ -102,7 +108,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/prepaid-taxes")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/prepaid-taxes" ? "bg-sky text-white" : "bg-white"
+              pathname === `/prepaid-taxes/${id}` ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Prepaid Taxes</li>
@@ -110,7 +116,7 @@ const Mainsteps = () => {
           <button
             onClick={() => handleStepClick("/extra-details")}
             className={`px-3 py-1 rounded-full ${
-              pathname === "/extra-details" ? "bg-sky text-white" : "bg-white"
+              pathname === `/extra-details/${id}` ? "bg-sky text-white" : "bg-white"
             }`}
           >
             <li className="text-sm">Extra Details</li>

@@ -8,5 +8,5 @@
     color: var(--third-color);
 }
 .section9-btn{
-    background-color: #09345a;;
+    background-color: var(--primary-color);
 }

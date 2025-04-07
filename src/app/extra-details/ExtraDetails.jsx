@@ -206,9 +206,8 @@ const ExtraDetails = () => {
             const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
 
             console.log("API Response:", response.data);
-
-            // Redirect to the next form
-            //   router.push(`/extra-details/${id}`);
+            router.push(`/homepage`);
+           
         } catch (error) {
             console.error("Error while calling the API:", error.response?.data || error.message);
         }
@@ -419,25 +418,22 @@ const ExtraDetails = () => {
 
                 </div>
             )}
-             <div className="financial-btns flex flex-wrap justify-between mb-10">
-          <a href="\bank-details">
-            <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
-              <img src="/assest/left-arrow.png" alt="" height={23} width={18} />
-              <p className="text-blue">Back</p>
-            </div>
-          </a>
-          <div className="other-btns flex flex-wrap gap-4">
-            <div className="get-button px-10 py-3 rounded-md">
-              <p className="text-white font-semibold">GET CA ASSISTED</p>
+            <div className="financial-btns flex flex-wrap justify-between mb-10">
+                <a href="\bank-details">
+                    <div className="back-btn flex items-center gap-3 py-3 px-10 mb-4 bg-white rounded-md">
+                        <img src="/assest/left-arrow.png" alt="" height={23} width={18} />
+                        <p className="text-blue">Back</p>
+                    </div>
+                </a>
+
+
+                <div className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md" onClick={handleSubmit}>
+                    <p className="text-white font-semibold">CONTINUE</p>
+                    <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
+                </div>
+
             </div>
 
-            <div className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md" onClick={handleSubmit}>
-              <p className="text-white font-semibold">CONTINUE</p>
-              <img src="/assest/arrow-right.png" alt="Continue" width="26" height="26"></img>
-            </div>
-
-          </div>
-        </div>
 
         </div>
 

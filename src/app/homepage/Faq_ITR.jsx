@@ -20,7 +20,7 @@ const Faq_ITR = () => {
       <div className="section9-Faqs">
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(0)}>
-          <p className="text-xl font-bold question">What is e-Filing of income tax returns?</p>
+          <p className="text-xl font-bold question">1. What is e-Filing of income tax returns?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer === 0 &&
@@ -35,7 +35,7 @@ const Faq_ITR = () => {
 
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(1)}>
-          <p className="text-xl font-bold question">Who is Required to File an Income Tax Return?</p>
+          <p className="text-xl font-bold question">2. Who is Required to File an Income Tax Return?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer === 1 &&
@@ -62,7 +62,7 @@ const Faq_ITR = () => {
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(2)}>
-          <p className="text-xl font-bold question">Where can I file an Income Tax Return in India?</p>
+          <p className="text-xl font-bold question">3. Where can I file an Income Tax Return in India?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer === 2 &&
@@ -76,7 +76,7 @@ const Faq_ITR = () => {
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
-          <p className="text-xl font-bold question">What Happens If I Miss the Due Date for Filing My ITR?</p>
+          <p className="text-xl font-bold question">4. What Happens If I Miss the Due Date for Filing My ITR?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer === 3 &&
@@ -87,7 +87,7 @@ const Faq_ITR = () => {
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(4)}>
-          <p className="text-xl font-bold question">How to File an Income Tax Return Online?</p>
+          <p className="text-xl font-bold question">5. How to File an Income Tax Return Online?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer === 4 &&
@@ -112,7 +112,7 @@ const Faq_ITR = () => {
         </div>
         {visibleAnswer === 5 &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">To file an ITR using Form 16, follow these steps:</p>
+            <p className=" mb-3">6. To file an ITR using Form 16, follow these steps:</p>
 
             <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
               <li>1.	Select <b>"File It Yourself"</b> on <b>File Your Tax</b> and click <b>“File ITR Now.”</b></li>

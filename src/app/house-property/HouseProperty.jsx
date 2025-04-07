@@ -360,9 +360,9 @@ const HouseProperty = () => {
                         </div>
                    
                     <div className="other-btns flex flex-wrap gap-4">
-                        <div className="get-button px-10 py-3 rounded-md">
+                        {/* <div className="get-button px-10 py-3 rounded-md">
                             <p className="text-white font-semibold">GET CA ASSISTED</p>
-                        </div>
+                        </div> */}
 
                         <div className="continue-btn flex gap-3 items-center px-10 py-3 rounded-md cursor-pointer" onClick={handleSubmit}>
                             <p className="text-white font-semibold">CONTINUE</p>

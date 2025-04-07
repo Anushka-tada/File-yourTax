@@ -143,9 +143,9 @@ const Financial = () => {
           </a>
 
           <div className="other-btns flex flex-wrap justify-center gap-4">
-            <div className="get-button px-10 py-3 rounded-md">
+            {/* <div className="get-button px-10 py-3 rounded-md">
               <p className="text-white font-semibold">GET CA ASSISTED</p>
-            </div>
+            </div> */}
             <div
               onClick={handleContinue}
               className="continue-btn flex gap-3 justify-center items-center px-10 py-3 rounded-md cursor-pointer">

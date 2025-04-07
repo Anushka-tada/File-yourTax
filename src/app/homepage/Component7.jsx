@@ -10,11 +10,12 @@ const Component7 = () => {
      <h1 className='section5-heading lg:font-bold  md:font-bold  font-semibold text-4xl mb-2'>E-Filing Your ITR</h1>
     <p className=' mb-3 text-lg section7-p mt-5 lg:w-[148%] w-auto'>Effortlessly file your tax returns and enjoy a hassle-free tax season with e-filing</p>
 
-<div className="section7-btn flex gap-2 inline-flex px-12 py-3  gap-3 rounded-full mt-8">
+    <a href="/tax-return">
+    <div className="section7-btn flex gap-2 inline-flex px-12 py-3  gap-3 rounded-full mt-8">
     <p className='text-white font-medium'>File Now</p>
     <img src="https://tax2win.in/assets-new/img/new-theme/b_ghost_arrow.svg" alt="File Now" title="File Now"></img>
-</div>
-
+</div></a>
+ 
       </div>
 
       <div className="section7-box-part flex flex-wrap justify-center  gap-7">

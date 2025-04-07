@@ -6,8 +6,11 @@ import { signupServ } from "../services/authentication.service";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from 'next/navigation';
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 
 const Sign_Form = () => {
+
+  const [showPassword, setShowPassword] = useState(false);
 
   const router = useRouter();
 
@@ -34,7 +37,7 @@ const Sign_Form = () => {
       let response = await signupServ(formData);
       console.log(response);
       
-      if(response.data.statusCode == '200' || response.data.statusCode == '201'){
+      if(response.data.statusCode == '200'){
         // Store email in session storage
         sessionStorage.setItem('email', formData.email);
         toast.success(response.data.message);
@@ -101,14 +104,27 @@ const Sign_Form = () => {
             value={formData.phoneNumber}
             onChange={handleChange}
           />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="py-3 px-7 w-full rounded-lg bg-transparent text-lg md:w-96 lg:w-96"
-            value={formData.password}
-            onChange={handleChange}
-          />
+         <div className="relative w-full">
+      <input
+        type={showPassword ? "text" : "password"}
+        name="password"
+        placeholder="Password"
+        className="py-3 px-7 w-full rounded-lg bg-transparent text-lg border border-gray-300 focus:outline-none md:w-96 lg:w-96"
+        value={formData.password}
+        onChange={handleChange}
+      />
+      {/* Toggle Icon inside the Input Field */}
+      <span
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-700"
+        onClick={() => setShowPassword(!showPassword)}
+      >
+        {showPassword ? (
+          <EyeSlashIcon className="h-5 w-5" />
+        ) : (
+          <EyeIcon className="h-5 w-5" />
+        )}
+      </span>
+    </div>
           <button type="submit" className="sign-btn py-3 px-9 text-lg text-white rounded-lg font-medium mt-5 mb-3 md:w-96 lg:w-96 w-full mx-2">
             Sign Up
           </button>

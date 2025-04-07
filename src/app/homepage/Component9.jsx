@@ -38,11 +38,7 @@ const Component9 = () => {
         </div>
      </div>
 
-<div className="section9-btn flex gap-2 inline-flex px-12 py-3  gap-3 rounded-full mt-10 mb-16">
-     
-      <p className="text-white font-medium"> Read More Guides</p>
-      <img src="https://tax2win.in/assets-new/img/new-theme/w-borderarow.svg" alt="Read More Guides" title="Read More Guides" loading="lazy" width="22" height="22"></img>  
-</div>
+
 
     </div>
   )

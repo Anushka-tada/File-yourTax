@@ -57,6 +57,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <LoggedDataProvider>
           {/* Global ToastContainer */}
+         
           <ToastContainer
             position="top-right"
             autoClose={3000}
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
             pauseOnHover
           />
           {children}
+          <div id="popup-root"></div>
         </LoggedDataProvider>
       </body>
     </html>
