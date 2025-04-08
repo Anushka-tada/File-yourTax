@@ -40,7 +40,7 @@ const LoginForm = () => {
       let response = await loginServ(formData);
       console.log("API Response:", response);
 
-      if (response.data.statusCode == "200" || response.data.statusCode == "201") {
+      if (response.data.statusCode == "200") {
         // Store user data in context
         const userData = {
           email: response.data.data.email,
@@ -71,7 +71,7 @@ const LoginForm = () => {
         Login to File Your Tax Income Tax Return Filing Account
       </h1>
       <p className="text-lg mb-12 mt-3">File your ITR online in just 4 minutes</p>
-      <div className="login-social-btns flex gap-4 mb-4">
+      {/* <div className="login-social-btns flex gap-4 mb-4">
         <div className="login-google flex gap-2 bg-white py-3 px-10 shadow-md rounded-lg">
           <img
             src="https://tax2win.in/assets-new/img/signup/btn_google_light_normal.svg"
@@ -82,7 +82,7 @@ const LoginForm = () => {
           <p className="text-lg">Google</p>
         </div>
       </div>
-      <p className="mb-3">or</p>
+      <p className="mb-3">or</p> */}
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col">
           <input
@@ -93,26 +93,26 @@ const LoginForm = () => {
             value={formData.email}
             onChange={handleChange}
           />
-        <div className="relative w-full md:w-96 lg:w-96">
-      <input
-        type={showPassword ? "text" : "password"}
-        name="password"
-        placeholder="Password"
-        className="py-3 px-7 w-full rounded-lg bg-transparent text-lg border border-gray-300 focus:outline-none"
-      />
-      {/* Icon inside the input field */}
-      <span
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-700"
-        onClick={() => setShowPassword(!showPassword)}
-      >
-       {showPassword ? (
-          <EyeSlashIcon className="h-5 w-5" /> // Hide Password Icon
-        ) : (
-          <EyeIcon className="h-5 w-5" /> // Show Password Icon
-        )}
-      </span>
-    </div>
-      
+          <div className="relative w-full md:w-96 lg:w-96">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              className="py-3 px-7 w-full rounded-lg bg-transparent text-lg border border-gray-300 focus:outline-none"
+            />
+            {/* Icon inside the input field */}
+            <span
+              className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-700"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? (
+                <EyeSlashIcon className="h-5 w-5" /> // Hide Password Icon
+              ) : (
+                <EyeIcon className="h-5 w-5" /> // Show Password Icon
+              )}
+            </span>
+          </div>
+
         </div>
         <div className="flex justify-end md:w-96 lg:w-96 mt-2 forget-p">
           <p>Forgot Password?</p>

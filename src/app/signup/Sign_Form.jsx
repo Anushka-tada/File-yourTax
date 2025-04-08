@@ -46,11 +46,10 @@ const Sign_Form = () => {
        else{
         toast.error(response.data.message);
        }
-    
 
     } catch (error) {
       console.log(error);
-      toast.error('Signup failed. Please try again.');
+      toast.error(error.response.data.message);
     }
 
     console.log(formData);
@@ -61,16 +60,16 @@ const Sign_Form = () => {
       <ToastContainer />
       <h1 className="text-3xl sign-heading font-semibold lg:w-1/3 md:w-1/3">Sign Up</h1>
       <p className="text-lg mb-12 mt-3">Join our 1M+ customers who eFile with us</p>
-      <div className="sign-social-btns flex gap-4 mb-4">
+      {/* <div className="sign-social-btns flex gap-4 mb-4">
         <div className="sign-google flex gap-2 bg-white py-3 px-10 shadow-md rounded-lg">
           <img src="https://tax2win.in/assets-new/img/signup/btn_google_light_normal.svg" width="20px" height="20px" alt="" />
           <p className="text-lg">Google</p>
         </div>
       </div>
-      <p className="mb-3">or</p>
+      <p className="mb-3">or</p> */}
       <form onSubmit={handleSubmit}>
-        <div className='flex flex-col'>
-          <div className="flex gap-6">
+        <div className='flex flex-col items-center'>
+          <div className="flex gap-6 justify-between">
             <input
               type="text"
               name="firstName"

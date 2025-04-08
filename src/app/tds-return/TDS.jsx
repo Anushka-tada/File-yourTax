@@ -4,24 +4,24 @@ import "./tds.css"
 const TDS = () => {
     return (
         <div>
-            <div className="tds-section flex flex-col items-center py-28">
-                <h1 className='text-4xl font-semibold mb-8 '>Seamless TDS return filing by TaxBuddy</h1>
+            <div className="tds-section flex flex-col items-center py-28 px-4">
+                <h1 className='text-4xl font-semibold mb-8 text-white'>Seamless TDS return filing by TaxBuddy</h1>
                 <div className="tds-points flex flex-col gap-4">
                     <div className="tds-point flex gap-3 items-center">
                         <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                        <p>Optimized Deductions for Maximum Savings</p>
+                        <p className='text-white'>Optimized Deductions for Maximum Savings</p>
                     </div>
                     <div className="tds-point flex gap-3 items-center">
                         <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                        <p>Effortless TDS Submission</p>
+                        <p className='text-white'>Effortless TDS Submission</p>
                     </div>
                     <div className="tds-point flex gap-3 items-center">
                         <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                        <p>Swift Processing and Confirmation</p>
+                        <p className='text-white'>Swift Processing and Confirmation</p>
                     </div>
                     <div className="tds-point flex gap-3 items-center">
                         <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                        <p>Expert Support at Your Fingertips</p>
+                        <p className='text-white'>Expert Support at Your Fingertips</p>
                     </div>
 
                     <div className="tds-btn flex py-2 justify-center rounded-md mt-3">
@@ -44,7 +44,7 @@ const TDS = () => {
                         <p className='eligible-para mb-5'>According to the Income Tax Act (ITA), TDS is applicable to various payouts, including</p>
 
                     </div>
-                    <div className="eligible-points flex lg:flex-nowrap flex-wrap gap-7  mt-10">
+                    <div className="eligible-points flex flex-nowrap justify-center gap-7  mt-10">
                         <div className="eligible-point px-7 flex justify-center items-center">
                             <p>Salary income</p>
                         </div>
@@ -68,8 +68,8 @@ const TDS = () => {
                 </div>
             </div>
 
-            <div className="deducted-section flex flex-col items-center py-16">
-                <div className='flex gap-4 items-center mb-8 '>
+            <div className="deducted-section flex flex-col items-center py-16 px-4 ">
+                <div className='flex flex-wrap gap-4 items-center justify-center text-center mb-8 '>
                     <img src="https://static.wixstatic.com/media/5ef7f2_e68c880a6a314a358e500302224f3b0a~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TDS_black.png" alt="" />
                     <h1 className='text-5xl font-semibold'>Tax Deducted at Source (TDS)</h1>
                 </div>

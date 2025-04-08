@@ -1,13 +1,27 @@
 @import url('../homepage/EasiestWay.css');
 
+:root{
+    --bg-gradient: linear-gradient(90deg, #1B1B1B 0%, #144148 100%);
+}
+
+.tds-section{
+    /* background-color: transparent; */
+    background-image: var(--bg-gradient);
+}
+
 .tds-section h1{
-    color: var(--third-color);
+    /* color: var(--third-color); */
+}
+.tds-point img{
+    background-color: white;
+   border-radius: 50%;
 }
 
 .tds-btn{
     width: 180px;
   background-color: var(--primary-color);
   color: white;
+
 }
 
 .eligible-section{
@@ -62,4 +76,17 @@
     background-color: white;
     box-shadow: var(--shd, 0 5px 19px #78787899);
   
+}
+
+@media(max-width:1376px){
+      .eligible-points{
+        flex-wrap: wrap !important;
+      }
+}
+
+
+@media(max-width:1376px){
+    .eligible-inner{
+        width: 90%;
+    }
 }

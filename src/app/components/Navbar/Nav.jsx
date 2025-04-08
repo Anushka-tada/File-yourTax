@@ -244,6 +244,8 @@ const Nav = () => {
 
   // Centralized state to track which dropdown is open
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   const productsRef = useRef(null);
   const toolsRef = useRef(null);
@@ -262,13 +264,13 @@ const Nav = () => {
   };
 
   const handleDropdownToggle = (dropdownName) => {
-    // Toggle the clicked dropdown, and close others
     if (openDropdown === dropdownName) {
-      setOpenDropdown(null); // Close the dropdown if it's already open
+      setOpenDropdown(null);
     } else {
-      setOpenDropdown(dropdownName); // Open the clicked dropdown
+      setOpenDropdown(dropdownName);
     }
   };
+  
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -291,7 +293,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="Navbar-outer flex items-center justify-between lg:px-24 px-4 py-4">
+    <div className="Navbar-outer flex items-center justify-between lg:px-24 px-4 py-4 relative">
       <div className="nav-logo">
         <a href="\homepage">
           <h2 className="font-bold text-3xl logo">
@@ -302,12 +304,12 @@ const Nav = () => {
 
       <GiHamburgerMenu
         className="hamburger text-3xl cursor-pointer lg:hidden"
-        onClick={() => setOpenDropdown(openDropdown === "menu" ? null : "menu")}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
       />
 
       <div
-        className={`navbar-items ${openDropdown === "menu" ? "flex" : "hidden"
-          } flex-col lg:flex lg:flex-row gap-6 text-lg lg:static absolute top-16 left-0 lg:top-auto lg:left-auto bg-white lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 lg:px-6 md:px-1 px-1 lg:px-0 mt-32 md:mt-32 lg:mt-0`}
+        className={`navbar-items ${isMenuOpen ?  "flex" : "hidden"
+          } flex-col lg:flex lg:flex-row gap-6 text-lg lg:static absolute top-16 left-0 lg:top-auto lg:left-auto bg-white lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 lg:px-6 md:px-1 px-1 lg:px-0 `}
       >
 
   {/* service Dropdown */}
@@ -323,19 +325,13 @@ const Nav = () => {
             onClick={() => handleDropdownToggle("service")}
           />
           {openDropdown === "service" && (
-            <div className="dropdown bg-white shadow-lg rounded-lg absolute top-28 text-base w-full lg:w-auto ">
+            <div className="dropdown bg-white shadow-lg rounded-lg absolute top-16 text-base w-full lg:w-auto ">
               <ul>
-              <a href="/service-page"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">ITR Filling</li></a>
+                <a href="/service-page"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">ITR Filling</li></a>
                 <a href="/tds-return"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">TSD Return Filing</li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Accounting Services</li></a>
+                <a href="/company-registration"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Company Registration Online</li></a>
+                <a href="/accounting-service"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Accounting Services</li></a>
                 <a href="/gst-filling"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">GST Filling</li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Income Tax Notice </li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">HUF Registration & Filing</li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Company Resigtration Online</li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Appeal </li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">PF Withdrawal</li></a>
-                <a href="#"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Lower Deduction Certificate </li></a>
-                
               </ul>
             </div>
           )}
@@ -357,34 +353,34 @@ const Nav = () => {
           {openDropdown === "products" && (
             <div className="dropdown drop-product bg-white shadow-lg rounded-lg absolute w-full lg:w-auto text-base">
               <ul>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   File Your Return
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Upload Form 16
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   CA Assisted Tax Filing
                 </li>
                 {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   Tax Planning Optimiser
                 </li> */}
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Refund Status
                 </li>
                 {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   TDS Solution
                 </li> */}
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   NRI Taxes & ITR Filing
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Tax Advisory Services
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Capital Gain Tax Filing
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Income Tax Notices
                 </li>
               </ul>

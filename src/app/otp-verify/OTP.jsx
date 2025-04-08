@@ -48,7 +48,7 @@ const OTP = () => {
     try{
       console.log('OTP Data:', otpData);
        let response = await otpVerificationServ(otpData);
-       if(response.data.statusCode == '200'  || response.data.statusCode == '201'){
+       if(response.data.statusCode == '200'){
         toast.success(response.data.message);
         router.push('/login');
        }

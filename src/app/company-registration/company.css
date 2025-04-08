@@ -1,0 +1,85 @@
+@import url('../homepage/EasiestWay.css');
+
+.company-section p{
+    width: 60%;
+}
+.company-inner{
+    width: 55%;
+}
+.company-section {
+    background-color: rgb(232, 230, 230);;
+}
+
+.tds-btn{
+    width: 170px;
+  background-color: var(--primary-color);
+  color: white;
+
+}
+@media(max-width:936px){
+    .company-section p{
+        width: 85%;
+    }
+    .company-inner{
+        width: 95%;
+    }
+}
+
+
+
+
+.guide{
+    width: 60%;
+}
+@media(max-width:425px){
+    .guide{
+        width: 100%;
+    }
+}
+.image-section{
+    background-color: rgb(234, 247, 255);
+}
+.image-section img {
+    width: 60%;
+}
+.image-section p {
+    width: 60%;
+}
+.guide p{
+    color: var(--primary-color);
+}
+
+/* steps of registration section */
+
+.regist-steps-section{
+  background-color: rgb(232, 237, 234);
+}
+.regist-step p{
+   font-size: 13px;
+}
+.regist-step{
+    width: 320px;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: var(--shd, 0 5px 19px #78787899);
+
+}
+.regist-step img{
+    top: -30px;
+}
+
+/* pricing-section */
+
+.company-pricing{
+    width: 220px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6) 
+}
+.company-pricing h1{
+    color: rgb(24, 190, 227);
+}
+.pricing-btn {
+    background-color:rgb(24, 190, 227);
+    width: 170px;
+    border-radius: 7px;
+}
