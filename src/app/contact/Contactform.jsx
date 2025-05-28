@@ -34,7 +34,7 @@ width="100%" height="400" frameBorder="0"  allowFullScreen=""></iframe>
 
             <div className='flex gap-3 justify-start'>
             <img src="https://tax2win.in/assets-new/img/mobile-icon.svg" alt="call " width="28" height="28"/>
-            <p className='text-white'>+91 91166 84439</p>
+            <p className='text-white'>+91 9971097125</p>
             </div>
 
             <div className='flex gap-3 justify-start'>

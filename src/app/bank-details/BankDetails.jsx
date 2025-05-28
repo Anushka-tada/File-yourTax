@@ -152,6 +152,7 @@ import { useParams } from 'next/navigation';
 const BankDetails = () => {
   const router = useRouter();
 
+  const [isLoading , setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     bankForms: [
@@ -209,7 +210,7 @@ const BankDetails = () => {
     // console.log("Submitted Form Data:", formData);   
    
     try {
-      
+      setIsLoading(true);
       const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
 
       console.log("API Response:", response.data);
@@ -222,6 +223,14 @@ const BankDetails = () => {
   };
 
   return (
+    <>
+     {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
     <div className="bank-details flex flex-col justify-center items-center text-center pt-20">
       <h1 className="text-2xl font-semibold">ENTER YOUR BANK & AADHAAR DETAILS</h1>
       <p className="text-xl mt-1">Provide your bank details correctly to receive an income tax refund.</p>
@@ -330,7 +339,10 @@ const BankDetails = () => {
         </div>
       </div>
     </div>
-  );
+      )}
+
+    </>
+  )
 };
 
 export default BankDetails;

@@ -6,7 +6,7 @@ const LogFooter = () => {
       <div className="contact-details flex flex-wrap lg:justify-between md:justify-between justify-center pb-11  lg:px-44 md:px-32 px-4 ">
         <div className="footer-contact flex  justify-center items-center gap-2">
         <img src="https://tax2win.in/assets-new/img/calling.png" alt="File ITR Support" className="img-responsive" title="File ITR Support" width="40" height="42"/>
-        <p className="text-lg font-medium">+91 91166 84439 | <span className="text-blue">support@fileyourtax.in</span></p>
+        <p className="text-lg font-medium">+91 9971097125 | <span className="text-blue">support@fileyourtax.in</span></p>
         </div>
         {/* <div className="social-icons flex justify-center r gap-6 py-3">
             <a href="https://www.facebook.com/tax2win" >

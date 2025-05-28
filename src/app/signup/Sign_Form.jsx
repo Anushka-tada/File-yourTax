@@ -37,7 +37,7 @@ const Sign_Form = () => {
       let response = await signupServ(formData);
       console.log(response);
       
-      if(response.data.statusCode == '200'){
+      if(response.data.statusCode == '200' || response.data.statusCode == '201'){
         // Store email in session storage
         sessionStorage.setItem('email', formData.email);
         toast.success(response.data.message);

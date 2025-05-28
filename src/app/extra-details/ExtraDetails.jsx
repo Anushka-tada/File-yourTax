@@ -149,6 +149,7 @@ import { useParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 
 const ExtraDetails = () => {
+      const [isLoading , setIsLoading] = useState(false);
     const [showSection139, setShowSection139] = useState(false);
 
     const { id } = useParams();
@@ -202,7 +203,7 @@ const ExtraDetails = () => {
     const handleSubmit = async () => {
         console.log("Form Data Submitted:", formData);
         try {
-
+            setIsLoading(true);
             const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
 
             console.log("API Response:", response.data);
@@ -218,6 +219,14 @@ const ExtraDetails = () => {
     }
 
     return (
+        <>
+         {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
         <div className="extra-details flex flex-col justify-center items-center text-center pt-20">
             <h1 className="text-2xl font-semibold">ITR Details</h1>
 
@@ -436,7 +445,10 @@ const ExtraDetails = () => {
 
 
         </div>
+      )
+      }
 
+</>
     )
 
 }

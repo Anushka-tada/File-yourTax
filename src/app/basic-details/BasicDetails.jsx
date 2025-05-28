@@ -7,6 +7,8 @@ import axios from "axios";
 import { useParams } from 'next/navigation';
 
 const BasicDetails = () => {
+    const [isLoading , setIsLoading] = useState(false);
+    
   const [formData, setFormData] = useState({
     firstName: '',
     middleName: '',
@@ -81,7 +83,7 @@ const handleSubmit = async (e) => {
     }
 
     try {
-      
+      setIsLoading(true);
       const response = await axios.put(`https://backend-data-five.vercel.app/api/itr/update/${id}`, formData);
 
       console.log("API Response:", response.data);
@@ -100,6 +102,14 @@ const handleBack = () => {
   
 
   return (
+    <>
+    {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
     <div className='basic-details flex flex-col justify-center items-center text-center pt-20'>
       <h1 className="text-2xl font-semibold">ENTER PERMANENT INFORMATION TO PREPARE YOUR TAX RETURN</h1>
       <p className="text-xl mt-1">We'll keep it a secret.</p>
@@ -186,6 +196,9 @@ const handleBack = () => {
         </div>
       </div>
     </div>
+      )
+    }
+    </>
   );
 }
 

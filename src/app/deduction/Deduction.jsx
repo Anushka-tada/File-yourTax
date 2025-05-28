@@ -134,6 +134,7 @@ import { useParams } from 'next/navigation';
 
 
 const Deduction = () => {
+    const [isLoading , setIsLoading] = useState(false);
     const router = useRouter();
     const [selectedSection, setSelectedSection] = useState('Section80C');
     const [sectionData, setSectionData] = useState({
@@ -157,7 +158,7 @@ const Deduction = () => {
         console.log(sectionData[selectedSection]);
 
         try {
-            
+            setIsLoading(true);
             const response = await axios.put( `https://backend-data-five.vercel.app/api/itr/update/${id}`, sectionData[selectedSection]  );
         
             console.log("API Response:", response.data);
@@ -186,6 +187,14 @@ const Deduction = () => {
     };
 
     return (
+        <>
+          {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
         <div className="deduction-section flex flex-col justify-center items-center text-center pt-20">
             <h1 className="text-2xl font-semibold">ENTER TAX SAVING DEDUCTIONS</h1>
             <p className="text-xl mt-1">We're here to help you to get maximum deductions on your TAX</p>
@@ -244,6 +253,10 @@ const Deduction = () => {
                 </div>
             </div>
         </div>
+      )
+    }
+
+        </>
     );
 };
 

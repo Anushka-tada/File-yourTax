@@ -179,3 +179,7 @@ color: #253243;
 .text-blue{
     color: var(--third-color);
 }
+
+.loading-indicator {
+     height: 100vh;
+}

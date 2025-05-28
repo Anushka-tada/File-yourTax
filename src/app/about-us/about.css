@@ -1,0 +1,214 @@
+
+@import url('../homepage/EasiestWay.css');
+:root{
+    --bg-gradient: linear-gradient(90deg, #1B1B1B 0%, #144148 100%);
+}
+
+
+.about-page .hero-section {
+   padding: 8% 9%;
+   background-image: var(--bg-gradient);
+}
+
+.hero-section div{
+    border-left: 2px solid #4f8997;
+    padding-left: 15px;
+}
+.below-herosection{
+   padding: 5% 9%;
+   background-color: rgb(242, 246, 248);
+}
+.below-herosection hr{
+        width: 120px;
+    height: 5px;
+    background: var(--primary-color);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 15px 0px;
+}
+
+.about-page .hero-section  h1{
+  color:  var(--third-color);
+}
+
+.about-points{
+    padding: 7% 13%;
+    background-color: var(--third-color);
+}
+.about-points img {
+    width: 23%;
+}
+.about-points .about-point {
+    width: 25.5%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-right: 1px solid #244e58;;
+}
+.set-apart{
+    padding: 5% 7%;
+}
+
+.set-apart-point{
+    width: 30%;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--shd, 0 5px 19px #d3d7da);
+    justify-content: space-around;
+    transition: all 1s ease;
+}
+.set-apart-point:hover{
+    transform: scale(1.06);
+}
+.set-apart-point h3{
+    color: var(--primary-color);
+}
+
+.meet-our-founder{
+    padding: 6% 7%;
+}
+.meet-our-founder h2{
+    color: var(--primary-color);
+}
+.founder-info{
+    background-color: var(--secondary-color);
+       box-shadow: var(--shd, 0 5px 19px #d3d7da);
+       width: 50%;
+     margin: 1% 4%;
+}
+
+.journey{
+    padding: 4%;
+    width: 40%;
+        box-shadow: var(--shd, 0 5px 19px #e8ebec);
+}
+.journey h4{
+    color: rgb(75, 75, 75);
+}
+.journey-h{
+    color: black;
+}
+@media (max-width:650px) {
+   .journey{
+  
+    width: 100%;
+    
+}
+}
+
+@media (max-width:1024px) {
+    .about-points{
+    padding: 7% 5%;
+    background-color: var(--third-color);
+    
+}
+.about-points .about-point {
+    width: 45% !important;
+    margin-bottom: 7%;
+}
+
+.set-apart-point{
+    width: 44%;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--shd, 0 5px 19px #d3d7da);
+    justify-content: space-around;
+    transition: all 1s ease;
+}
+.founder-info{
+    width: 75%;
+}
+}
+
+@media (max-width:546px) {
+.about-points .about-point {
+    width: 70% !important;
+}
+.set-apart-point{
+    width: 100%;
+}
+.founder-info{
+    width: 100%;
+    margin: 0 !important;
+}
+}
+.leadership-points img{
+   width: 19px;
+   height: 19px;
+}
+.leadership-points li {
+    font-size: 18px;
+    padding: 1%;
+}
+.vision-section{
+    background-color: var(--secondary-color);
+    padding: 5% 7%;
+}
+.vision-inner{
+  background-color: white;
+  padding: 4%;
+  width: 55%;
+}
+
+.leadership-section{
+   padding: 5% 7%;
+}
+
+.testimonial{
+    padding: 5% 7%;
+}
+.inner-testi{
+    background-color: white;
+    box-shadow: var(--shd, 0 5px 19px #dadbdd);;
+}
+
+.test-prev , .test-next {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #539eaa;
+    width: 35px;
+    height: 35px;
+}
+
+.testi-part1 , .testi-part2{
+    width: 50%;
+}
+
+@media (max-width:880px) {
+ .testi-part1 , .testi-part2{
+    width: 100%;
+    height: 100% !important;
+}
+.testimonial{
+    flex-wrap: wrap;
+}
+.vision-inner{
+  background-color: white;
+  padding: 4%;
+  width: 100%;
+}
+}
+
+@media (max-width:500px) {
+ .testi-part2{
+    width: 100%;
+    height: 300px !important;
+}
+}
+
+@media (max-width:400px) {
+  .testi-part2{
+    width: 100%;
+    height: 450px !important;
+}
+}
+
+@media (max-width:300px) {
+ .testi-part2{
+    width: 100%;
+    height: 450px !important;
+}
+}

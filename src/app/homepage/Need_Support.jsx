@@ -7,7 +7,7 @@ const Need_Support = () => {
         <h2 className=" text-3xl font-semibold text-white">Need Support?</h2>
         <div className="contact flex gap-3 items-center">
           <img src="https://tax2win.in/assets-new/img/new-theme/call.svg" alt="Call Now" width="32" height="32" />
-          <h2 className=" text-white text-2xl">+91 91166 84439</h2>
+          <h2 className=" text-white text-2xl">+91 9971097125</h2>
         </div>
         <div className="mail flex gap-3 items-center">
           <img src="https://tax2win.in/assets-new/img/new-theme/mail.svg" alt="Call Now" width="32" height="32" />

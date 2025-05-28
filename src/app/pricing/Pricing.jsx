@@ -5,6 +5,7 @@ import ItrFilling from './ItrFilling';
 import TaxPlanning from './TaxPlanning';
 import GST from './GST';
 import Notice from './Notice';
+import ITRfiling from './ITRfiling';
 
 const Pricing = () => {
     const [activeComponent, setActiveComponent] = useState('ITR Filling');
@@ -12,7 +13,7 @@ const Pricing = () => {
     const renderComponent = () => {
         switch (activeComponent) {
             case 'ITR Filling':
-                return <ItrFilling />;
+                return <ITRfiling/>
             case 'Tax Planning':
                 return <TaxPlanning />;
             case 'GST':

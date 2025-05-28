@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="panel ">
           <ul className="flex flex-col gap-2 ">
             <li className="text-xl font-bold mb-2 panel-h">Quick Links </li>
-            <li><a href="" >About</a></li>
+            <li><a href="/about-us" >About</a></li>
             <li><a href="/contact" >Contact</a></li>
             <li><a href="/pricing" >Pricing</a></li>
             {/* <li><a href="" >FAQ</a></li>

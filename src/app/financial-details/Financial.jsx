@@ -10,6 +10,8 @@ const Financial = () => {
   const { id } = useParams();
   console.log(id);
 
+    const [isLoading , setIsLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     financialYear: "2024-2025",
     panNumber: "",
@@ -61,7 +63,7 @@ const Financial = () => {
     console.log(formData);
 
     try {
-      // POST data to the API
+      setIsLoading(true);
       const response = await axios.put(
         `https://backend-data-five.vercel.app/api/itr/update/${id}`,
         formData
@@ -88,6 +90,13 @@ const Financial = () => {
 
   return (
     <>
+     {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
       <div className="financial-details flex flex-col justify-center items-center text-center pt-20">
         <h1 className="text-2xl font-semibold">START YOUR INCOME TAX RETURN FILING</h1>
         <p className="text-xl mt-1">Let us do the paperwork.</p>
@@ -155,6 +164,8 @@ const Financial = () => {
           </div>
         </div>
       </div>
+      )
+    }
     </>
   );
 };

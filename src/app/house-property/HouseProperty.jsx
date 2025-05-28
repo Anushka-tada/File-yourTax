@@ -10,6 +10,8 @@ import { useParams } from 'next/navigation';
 
 const HouseProperty = () => {
 
+    const [isLoading , setIsLoading] = useState(false);
+
     const router = useRouter();
     // for self occupied
     const [showYesContent, setShowYesContent] = useState(false);
@@ -83,7 +85,7 @@ const HouseProperty = () => {
 
         console.log("Form Data:", formData);
         try {
-            
+            setIsLoading(true);
             const response = await axios.put( `https://backend-data-five.vercel.app/api/itr/update/${id}`, formData  );
         
             console.log("API Response:", response.data);
@@ -102,6 +104,13 @@ const HouseProperty = () => {
 
     return (
         <>
+          {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
             <div className="house-property flex flex-col justify-center items-center text-center pt-20">
                 <h1 className="text-2xl font-semibold">ENTER OWNED HOUSE PROPERTY DETAILS-RENT RECEIVED OR HOME LOAN INTEREST PAID</h1>
                 <p className="text-xl mt-1">Enter details about all your Self occupied / Let out property.</p>
@@ -373,6 +382,8 @@ const HouseProperty = () => {
                 </div>
 
             </div>
+      )
+    }
         </>
     )
 }

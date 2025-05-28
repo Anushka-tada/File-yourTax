@@ -4,9 +4,11 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import "./Efilling.css"
 import axios from "axios";
-import { BASE_URL } from ".././utils/apibaseurlConfiguration";
 
 const Efilling_platform = () => {
+
+  const [isLoading , setIsLoading] = useState(false);
+
    const[formData , setFormData] = useState({
     salaryPension: false,
     houseProperty: true,
@@ -26,22 +28,11 @@ const Efilling_platform = () => {
 
   const router = useRouter();
 
-  // const handleContinue = () => {
-  //   const dataToStore = {
-  //     isSalary: formData.salaryPension,
-  //     isHouseProperty: formData.houseProperty,
-  //     isProfession: formData.businessProfession,
-  //     isCapitalGain: formData.capitalGains,
-  //     isOtherSource: formData.otherSources,
-  //     isForeignSource: formData.foreignSource,
-  //   };
-  //   console.log(dataToStore);
-  //   router.push('/financial-details');
-  // };
-  
-  
 
 const handleContinue = async () => {
+
+  
+
   const dataToStore = {
     isSalary: formData.salaryPension,
     isHouseProperty: formData.houseProperty,
@@ -55,7 +46,7 @@ const handleContinue = async () => {
   // console.log(dataToStore);
 
   try {
-   
+    setIsLoading(true);
         const response = await axios.post("https://backend-data-five.vercel.app/api/itr/create", dataToStore);
 
     console.log("Data sent successfully:", response.data);
@@ -78,6 +69,9 @@ const handleContinue = async () => {
    
     console.error("Error sending data to the API:", error);
   }
+  // finally {
+  //   setIsLoading(false); 
+  // }
 };
 
 
@@ -85,7 +79,15 @@ const handleContinue = async () => {
     <>
 
       {/* income tax return e-filling */}
-      <div className='eFilling-outer flex flex-col items-center py-8 px-4'>
+      {isLoading ? (
+        <div className="loading-indicator flex flex-col items-center justify-center">
+          <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
+          <p className="text-lg font-semibold mt-3">Please wait, loading...</p>
+        </div>
+      ) :
+      (
+        <>
+         <div className='eFilling-outer flex flex-col items-center py-8 px-4'>
         <h1 className='font-bold text-3xl mb-3'>Income Tax eFiling Platform</h1>
         <p className='text-lg'>File Your Tax <span className='font-bold'>simplifies e-filing your Income Tax</span> Return! Take the first step towards ITR filing.</p>
         <p className='text-lg mb-5'>Choose your income source and file ITR today!</p>
@@ -269,6 +271,7 @@ const handleContinue = async () => {
 
 
       </div>
+
       {/* Made a mistake in your FIled ITR section */}
 
       <div className="made-a-mistake-outer flex flex-col justify-center items-center py-9">
@@ -773,6 +776,12 @@ const handleContinue = async () => {
 
 
       </div>
+      </>
+      )
+    }
+
+
+      
 
     </>
   )
