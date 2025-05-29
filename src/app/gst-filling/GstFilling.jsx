@@ -16,19 +16,19 @@ const GstFilling = () => {
         <div className="oppurtunities flex gap-8 flex-wrap lg:flex-nowrap  justify-center items-center ">
           <div className="opprunity flex flex-col gap-10 ">
             <div className='flex gap-3 items-start'>
-              <img src="https://media-hosting.imagekit.io//088844bd5f874f2d/circle.png?Expires=1837157006&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=QV2JsQLLBsXah~C6JjnaMOuQhHkgJpvP4v8VByathTyWBxWSD6JaEjPGDhG-2f4bX5wTeGzXPxMKA3cJ1XtuVG-ApRVUJXCk6yw1RNxgfGN5bw2qC5iMxOGzlCW7KEgzZn6Wir5i~gWMZZiK3zeNlWma5mH4VqJza0aGIyDYJ-zS8n9BOO02l9ttRNu-TUJgE6AWq5jMLtsoRDZQCArHfCJF~ylOlzLCWbAoGF1eGeyZCHAfhbNjW8abvCtBEfKxgWHryA8GMPwvGIyUubs3ANIh~NXZ8Cln4T3K9DL58-AIhXQ9RYjvokw-2jjlltiNFDNv1MmGhK2-~DU2NC8GRA__" alt="" className='tick-image2' />
+              <img src="https://cdn-icons-png.flaticon.com/128/1442/1442912.png" alt="" className='tick-image2' />
               <p className='text-sm para'>As India’s trusted GST filing platform, FileyourTax provides a wide array of services aimed at
 simplifying your GST compliance journey. Whether you need assistance with GST registration,
 hassle-free GST return filing, expert consultation, or dependable GST audit support, FileyourTax is
 your go-to partner.</p>
             </div>
             <div className='flex gap-3 items-start'>
-              <img src="https://media-hosting.imagekit.io//088844bd5f874f2d/circle.png?Expires=1837157006&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=QV2JsQLLBsXah~C6JjnaMOuQhHkgJpvP4v8VByathTyWBxWSD6JaEjPGDhG-2f4bX5wTeGzXPxMKA3cJ1XtuVG-ApRVUJXCk6yw1RNxgfGN5bw2qC5iMxOGzlCW7KEgzZn6Wir5i~gWMZZiK3zeNlWma5mH4VqJza0aGIyDYJ-zS8n9BOO02l9ttRNu-TUJgE6AWq5jMLtsoRDZQCArHfCJF~ylOlzLCWbAoGF1eGeyZCHAfhbNjW8abvCtBEfKxgWHryA8GMPwvGIyUubs3ANIh~NXZ8Cln4T3K9DL58-AIhXQ9RYjvokw-2jjlltiNFDNv1MmGhK2-~DU2NC8GRA__" alt="" className='tick-image2' />
+              <img src="https://cdn-icons-png.flaticon.com/128/1442/1442912.png" alt="" className='tick-image2' />
               <p className='text-sm para'>Our team of dedicated GST experts guides you through each phase of the GST process, ensuring
 accurate documentation and full compliance so your GST filing is smooth and stress-free.</p>
             </div>
             <div className='flex gap-3 items-start'>
-              <img src="https://media-hosting.imagekit.io//088844bd5f874f2d/circle.png?Expires=1837157006&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=QV2JsQLLBsXah~C6JjnaMOuQhHkgJpvP4v8VByathTyWBxWSD6JaEjPGDhG-2f4bX5wTeGzXPxMKA3cJ1XtuVG-ApRVUJXCk6yw1RNxgfGN5bw2qC5iMxOGzlCW7KEgzZn6Wir5i~gWMZZiK3zeNlWma5mH4VqJza0aGIyDYJ-zS8n9BOO02l9ttRNu-TUJgE6AWq5jMLtsoRDZQCArHfCJF~ylOlzLCWbAoGF1eGeyZCHAfhbNjW8abvCtBEfKxgWHryA8GMPwvGIyUubs3ANIh~NXZ8Cln4T3K9DL58-AIhXQ9RYjvokw-2jjlltiNFDNv1MmGhK2-~DU2NC8GRA__" alt="" className='tick-image2' />
+              <img src="https://cdn-icons-png.flaticon.com/128/1442/1442912.png" alt="" className='tick-image2' />
               <p className='text-sm para'>Join the many satisfied clients who have benefited from our premium GST services. Experience
 how FileyourTax can make GST effortless for your business today.</p>
             </div>
@@ -61,7 +61,7 @@ requirements.</p>
           <div className="step flex gap-3 ">
             <img src="https://cdn-icons-png.flaticon.com/128/13476/13476422.png" alt="" className='count-image' />
             <div>
-              <p className='text-lg font-semibold mb-2'>Step 2:Document Submission – Seamless GST Documentation</p>
+              <p className='text-lg font-semibold mb-2'>Step 2: Document Submission – Seamless GST Documentation</p>
               <p>Submit the required documents as per guidance from our tax professionals, ensuring accuracy and
 compliance.</p>
             </div>
@@ -69,7 +69,7 @@ compliance.</p>
           <div className="step flex gap-3 ">
             <img src="https://cdn-icons-png.flaticon.com/128/13476/13476465.png" alt="" className='count-image' />
             <div>
-              <p className='text-lg font-semibold mb-2'>Step 3:GST Filing – Efficient Compliance Management</p>
+              <p className='text-lg font-semibold mb-2'>Step 3: GST Filing – Efficient Compliance Management</p>
               <p>Upon your confirmation, we will promptly complete your GST filing to meet all regulatory
 deadlines.</p>
             </div>
@@ -88,7 +88,7 @@ savings and ensure compliance.</p>
       {/* Plans based on your Selection */}
 
       <div className="plan-based-section flex flex-col items-center xl:px-40 lg:px-32 md:px-20 sm:px-16 px-3 py-7  rounded-lg py-6">
-        <h1 className='text-5xl font-semibold mb-5'>Designed to meet your specific needs.</h1>
+        <h1 className='text-5xl font-semibold mb-5'>Tailored to suit your unique requirements.</h1>
 
         <div className="all-pricings  p-5 flex justify-center  gap-3 flex-wrap ">
           <div className="pricing p-4  flex flex-col justify-between rounded-md bg-white">

@@ -16,7 +16,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >Single & Multiple Employers</p>
@@ -36,7 +36,7 @@ const Plans = () => {
 
                         </div>
                         <div className="get-btn flex justify-center mb-4 w-full rounded-md py-2">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >Single & Multiple Employers</p>
@@ -71,7 +71,7 @@ const Plans = () => {
                         </div>
 
                         <div className="get-btn flex justify-center mb-4 w-full rounded-md py-2">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >Single & Multiple Employers</p>
@@ -110,7 +110,7 @@ const Plans = () => {
                         </div>
 
                         <div className="get-btn flex justify-center mb-4 w-full rounded-md py-2">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>
 
@@ -125,7 +125,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >Single & Multiple Employers</p>
@@ -153,7 +153,7 @@ const Plans = () => {
                         </div>
 
                         <div className="get-btn flex justify-center mb-4 mt-3 w-full rounded-md py-2">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>
 
@@ -172,7 +172,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >F&O Income/Loss (Non Audit)</p>
@@ -208,7 +208,7 @@ const Plans = () => {
                         </div>
 
                         <div className="get-btn flex justify-center mb-4 mt-6 w-full rounded-md py-2 ">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>   
 
@@ -222,7 +222,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >Crypto Income</p>
@@ -262,7 +262,7 @@ const Plans = () => {
                         </div>
 
                         <div className="get-btn flex justify-center mb-4 mt-6 w-full rounded-md py-2 ">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>
 
@@ -277,7 +277,7 @@ const Plans = () => {
                                 <p className='text-sm'>/Year</p>
                             </div>
                             <p className='mt-2 text-sm'>*Exclusive of Taxes</p>
-                            <p className='my-4 suited font-bold'>SUITED FOR:</p>
+                            <p className='my-4 suited font-bold'>will replace by Best For:</p>
                             <div className='flex gap-3 mt-2 items-center'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" alt="" height={18} width={20} className='image' />
                                 <p >Foreign salary(Including Foreign Tax relief)</p>
@@ -329,7 +329,7 @@ const Plans = () => {
                         </div>
 
                         <div className="get-btn flex justify-center mb-4 mt-6 w-full rounded-md py-2 ">
-                            <p className='btn-p'>Get Started Now</p>
+                            <p className='btn-p'>will replace by Take Action Now</p>
                         </div>
                     </div>
 
