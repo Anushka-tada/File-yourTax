@@ -154,7 +154,7 @@ Incorporation, officially recognizing the company.</p>
           </div>
 
           <div className="company-pricing py-5 px-2 flex flex-col items-center text-center gap-3">
-            <p className='text-xl font-semibold'>Cost of Company Registration</p>
+            <p className='text-xl font-semibold'>Section 8 Company Registration</p>
            <div>
            <h1 className='text-4xl font-bold'>₹10,000/-</h1>
            <p className='text-sm'>*Exclusive stamp duty</p>

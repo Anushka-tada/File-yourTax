@@ -10,8 +10,8 @@ const Footer = () => {
             <li><a href="/about-us" >About</a></li>
             <li><a href="/contact" >Contact</a></li>
             <li><a href="/pricing" >Pricing</a></li>
-            {/* <li><a href="" >FAQ</a></li>
-            <li><a href="">Tax Glossary</a></li> */}
+            <li><a href="/faq" >FAQ</a></li>
+            <li><a href="/tax-glossary">Tax Glossary</a></li>
           </ul>
         </div>
 
