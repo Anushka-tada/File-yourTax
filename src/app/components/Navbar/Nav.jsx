@@ -328,7 +328,7 @@ const Nav = () => {
             <div className="dropdown bg-white shadow-lg rounded-lg absolute top-16 text-base w-full lg:w-auto ">
               <ul>
                 <a href="/service-page"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">ITR Filling</li></a>
-                <a href="/tds-return"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">TSD Return Filing</li></a>
+                <a href="/tds-return"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">TDS Return Filing</li></a>
                 <a href="/company-registration"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Company Registration Online</li></a>
                 <a href="/accounting-service"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Accounting Services</li></a>
                 <a href="/gst-filling"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">GST Filling</li></a>
@@ -353,36 +353,42 @@ const Nav = () => {
           {openDropdown === "products" && (
             <div className="dropdown drop-product bg-white shadow-lg rounded-lg absolute w-full lg:w-auto text-base">
               <ul>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+              <a href="/file-yout-return">  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   File Your Return
-                </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+                </li></a>
+               <a href="/upload"> <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Upload Form 16
-                </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+                </li></a>
+              <a href="/book-eCA">
+                  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   CA Assisted Tax Filing
                 </li>
+              </a>
                 {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   Tax Planning Optimiser
                 </li> */}
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+               <a href="/refund-status">
+                 <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Refund Status
                 </li>
+               </a>
                 {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
                   TDS Solution
                 </li> */}
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+               <a href="/nri"> <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   NRI Taxes & ITR Filing
-                </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+                </li></a>
+              <a href="/tax-advisory">  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Tax Advisory Services
-                </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+                </li></a>
+              <a href="/capital-gain">
+                  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Capital Gain Tax Filing
                 </li>
-                <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
+              </a>
+              <a href="/income-tax-notice">  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Income Tax Notices
-                </li>
+                </li></a>
               </ul>
             </div>
           )}

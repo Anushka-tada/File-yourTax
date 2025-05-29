@@ -18,14 +18,14 @@ const Footer = () => {
         <div className="panel ">
           <ul className="flex flex-col gap-2 ">
             <li className="text-xl font-bold mb-2 panel-h">Products</li>
-            <li><a href="">File Your Return</a></li>
-            <li><a href="">Upload Form 16</a></li>
-            <li><a href="" >CA Assisted ITR Filing</a></li>
-            <li><a href="">Refund Status</a></li>
-            <li><a href="">NRI Taxes &amp; ITR Filing</a></li>
-            <li><a href="">Tax Advisory Services</a></li>
-            <li><a href="">Capital Gain Tax Filing</a></li>
-            <li><a href="">Income Tax Notices</a></li>
+            <li><a href="/file-yout-return">File Your Return</a></li>
+            <li><a href="/upload">Upload Form 16</a></li>
+            <li><a href="/book-eCA" >CA Assisted ITR Filing</a></li>
+            <li><a href="/refund-status">Refund Status</a></li>
+            <li><a href="/nri">NRI Taxes &amp; ITR Filing</a></li>
+            <li><a href="/tax-advisory">Tax Advisory Services</a></li>
+            <li><a href="/capital-gain">Capital Gain Tax Filing</a></li>
+            <li><a href="/income-tax-notice">Income Tax Notices</a></li>
           </ul>
         </div>
 

@@ -1,0 +1,101 @@
+:root {
+  --primary-color: rgb(20, 64, 71);
+  --secondary-color: rgb(238, 247, 249);
+  --third-color: rgb(36, 101, 111);
+}
+
+.capitalGainPage {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: var(--primary-color);
+  max-width: 85%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cgHeader {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--third-color);
+}
+
+.cgHeader h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.3rem;
+  color: var(--third-color);
+}
+
+.cgHeader p {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cgSection {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid var(--primary-color);
+  background-color: #f9fafb;
+  border-radius: 6px;
+}
+
+.cgSection h2 {
+  font-size: 1.8rem;
+  color: var(--third-color);
+  margin-bottom: 1rem;
+}
+
+.cgSection p,
+.cgSection ul {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--primary-color);
+}
+
+.cgSection ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.altBg {
+  background-color: var(--secondary-color);
+  border-left-color: var(--third-color);
+}
+
+.faqSection {
+  margin-top: 3rem;
+  background: white;
+  padding: 2rem 2rem 3rem 2rem;
+  border: 1px solid var(--third-color);
+  border-radius: 6px;
+}
+
+.faqSection h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 1.4rem;
+}
+
+.faqItem h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--third-color);
+  margin-bottom: 0.3rem;
+}
+
+.faqItem p {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  margin-left: 1rem;
+}
