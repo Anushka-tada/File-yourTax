@@ -19,3 +19,20 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+:root {
+
+  --primary-color: rgb(20, 64, 71) ;
+  --secondary-color: rgb(238, 247, 249);
+ --third-color: rgb(36, 101, 111);
+  }
+
+.tax-glossary-h , .tax-glossary-h{
+  color: var(--primary-color);
+}
+.bg-third{
+  background-color: var(--secondary-color);
+}
+.text-third{
+  color: var(--third-color);
+}
