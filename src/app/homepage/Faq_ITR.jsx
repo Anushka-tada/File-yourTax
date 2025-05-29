@@ -72,7 +72,10 @@ const Faq_ITR = () => {
               <li><b>The Income Tax e-Filing portal:</b> <a href="https://www.incometax.gov.in/iec/foportal/" className=" text-primary ">https://www.incometax.gov.in/iec/foportal/</a></li>
               <li><b>FileYourTax </b>e-filing platform, which allows users to file their returns efficiently in under four minutes.</li>
             </ol>
-            <p className="text-base">The due date for filing ITR for <b>FY 2024-25 (AY 2025-26)</b> is <b>31st July 2025</b>.</p>
+            <p className="text-base">The Central Board of Direct Taxes (CBDT) has officially extended the due date for filing Income Tax
+Returns (ITRs) for the Assessment Year (AY) <b>2025–26</b>. The original deadline of 31st July 2025 has
+been extended to 15th September 2025 for taxpayers whose accounts are not required to be
+audited</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
