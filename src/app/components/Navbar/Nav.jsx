@@ -421,11 +421,11 @@ const Nav = () => {
             onClick={() => handleDropdownToggle("knowledge")}
           />
           {openDropdown === "knowledge" && (
-            <div className="dropdown bg-white shadow-lg rounded-lg absolute mt-48 lg:mt-48 text-base w-full lg:w-auto ">
+            <div className="dropdown bg-white shadow-lg rounded-lg absolute mt-32 lg:mt-32 text-base w-full lg:w-auto ">
               <ul>
                <a href="faq"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">FAQ</li></a>
                <a href="tax-glossary"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Tax Glossary</li></a>
-         <a href="/vedio-tutorial">       <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Video Tutorials</li></a>
+         {/* <a href="/vedio-tutorial"><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">Video Tutorials</li></a> */}
               </ul>
             </div>
           )}

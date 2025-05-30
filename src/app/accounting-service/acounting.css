@@ -17,7 +17,7 @@
 
 
 .tds-btn{
-    width: 180px;
+    width: 200px;
   background-color: var(--third-color);
   color: white;
 
@@ -105,7 +105,7 @@
     width: 190px;
 }
 .book-btn{
-    width: 240px;
+    width: 285px;
   background-color: var(--third-color);
   color: white;
 }

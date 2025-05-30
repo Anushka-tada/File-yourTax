@@ -300,7 +300,7 @@ savings and ensure compliance.</p>
       {/* GST Filing: Accelerate Your GSTR-1 to GSTR-9 Process */}
 
       <div className="gst-filling py-20 flex flex-col items-center text-center">
-        <h1 className='text-4xl font-semibold mb-8'> GST Filing: Accelerate Your GSTR-1 to GSTR-9 Process </h1>
+        <h1 className='text-4xl font-semibold mb-8'>Simplify Your GST Return Filing from GSTR-1 to GSTR-9 </h1>
             <div className="gst-process flex gap-20 flex-wrap justify-center xl:px-72 lg:px-52 md:px-32 sm:px-16 px-4 mt-10">
               <div className="gst flex justify-center items-center py-4 bg-white">
                 <p className='text-lg font-bold'>GSTR-1</p>

@@ -6,26 +6,27 @@ const Accounting = () => {
         <div>
             <div className="unlock-financial-section flex flex-col items-center py-28 px-4">
                 <div className="financial-inner">
-                    <h1 className='text-4xl font-semibold mb-8 text-white'>Unlock Financial Clarity with TaxBuddy's Accounting and Bookkeeping Services</h1>
+                    <h1 className='text-4xl font-semibold mb-3 text-white'>Achieve Financial Transparency with FileyourTax's Accounting & Bookkeeping Services</h1>
+                    <p className='mb-8 text-white text-xl'>Stay on top of your business finances with expert-managed records built for accuracy and growth.</p>
                     <div className="unlock-points flex flex-col gap-4">
                         <div className="unlock-point flex gap-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                            <p className='text-white'>Precision in Financial Record Keeping</p>
+                            <p className='text-white'>Accurate and Reliable Financial Record Management</p>
                         </div>
                         <div className="unlock-point flex gap-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                            <p className='text-white'>Precision in Financial Record Keeping</p>
+                            <p className='text-white'>Customized Bookkeeping Solutions for Your Business Needs</p>
                         </div>
                         <div className="unlock-point flex gap-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                            <p className='text-white'>Precision in Financial Record Keeping</p>
+                            <p className='text-white'>Skilled in Crafting and Analyzing Financial Reports</p>
                         </div>
                         <div className="unlock-point flex gap-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/1828/1828739.png" alt="" width={22} />
-                            <p className='text-white'>Precision in Financial Record Keeping</p>
+                            <p className='text-white'>Timely Financial Insights for Smarter Decisions</p>
                         </div>
                         <div className="tds-btn flex py-2 justify-center rounded-md mt-3">
-                            <p className='text-white'>File TDS Return Now</p>
+                            <p className='text-white'>Take the First Step Today</p>
                         </div>
                     </div>
                 </div>
@@ -36,64 +37,58 @@ const Accounting = () => {
 
             <div className="account-services-section xl:px-40 lg:px-4 flex flex-col items-center text-center py-28 ">
                 <div className='service-heading'>
-                    <h1 className='text-4xl font-semibold mb-8 '>Achieve Financial Success With Our Comprehensive Accounting Services</h1>
-                    <p>Accounting services are essential for businesses and organizations to track their financial transactions, ensure
-                        compliance with regulations, make informed decisions, and maintain financial health. Here are key components of
-                        accounting services:</p>
+                    <h1 className='text-4xl font-semibold mb-8 '>Drive Financial Excellence with Our All-Inclusive Accounting Solutions</h1>
+                    <p>Robust accounting services are crucial for every business and organization — enabling you to track financial transactions, 
+                        ensure regulatory compliance, make informed decisions, and sustain financial well-being. Explore the core pillars of our
+                         comprehensive accounting support:</p>
                 </div>
                 <div className="account-services flex flex-wrap justify-center mt-8 gap-8">
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Bookkeeping:</h4>
-                        <p className='text-sm'>Recording day-to-day financial transactions, including purchases, sales, receipts, and payments.
-                            Maintaining ledgers and journals to organize and categorize financial data.</p>
+                        <h4 className=' font-bold mb-3'>Transaction Recording & Bookkeeping</h4>
+                        <p className='text-sm'>Maintain clear and organized records of daily financial activities — from purchases and sales
+                             to receipts and payments — through
+                             precise ledger and journal entries.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Consultation:</h4>
-                        <p className='text-sm'>Providing expert advice on financial strategies, budgeting, and long-term planning. Collaborating with
-                            clients to understand their financial goals and offering guidance on achieving them.</p>
+                        <h4 className=' font-bold mb-3'>Strategic Financial Consultation</h4>
+                        <p className='text-sm'>Gain expert insights on budgeting, financial planning, and growth strategies. We partner with you 
+                            to align your financial decisions with long-term business objectives.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Data Integration:</h4>
-                        <p className='text-sm' >Using technology to seamlessly integrate financial data from various sources. Minimizing
-                            errors and ensuring consistency in financial records.</p>
+                        <h4 className=' font-bold mb-3'>Integrated Financial Data Management</h4>
+                        <p className='text-sm' >Utilize modern tools to consolidate financial data across platforms, reduce inconsistencies, and enhance the accuracy of your records.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Ongoing Bookkeeping:</h4>
-                        <p className='text-sm' >Continuously updating financial records to reflect the latest transactions.
-                            Providing real-time insights into the financial status of the business.</p>
+                        <h4 className=' font-bold mb-3'>Continuous Bookkeeping Support</h4>
+                        <p className='text-sm' >Keep your books current with real-time updates on transactions, offering you an up-to-date snapshot of your financial position anytime.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Financial Reporting:</h4>
-                        <p className='text-sm' >Generating accurate and timely financial reports, including balance sheets, income statements,
-                            and cash flow statements. Offering a comprehensive overview of the organization's financial performance</p>
+                        <h4 className=' font-bold mb-3'>Comprehensive Financial Reporting</h4>
+                        <p className='text-sm' >Access accurate and timely reports, including income statements, balance sheets, and cash flow summaries — essential for internal and external review.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Tax Compliance: </h4>
-                        <p className='text-sm' >Ensuring adherence to tax regulations and filing accurate and timely tax returns. Providing guidance on
-                            tax planning to minimize liabilities and optimize financial outcomes.</p>
+                        <h4 className=' font-bold mb-3'>Tax Filing & Regulatory Compliance</h4>
+                        <p className='text-sm' >Ensure timely and accurate tax return submissions while minimizing liabilities through smart planning and adherence to tax laws.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Audit Preparation:</h4>
-                        <p className='text-sm'>Assisting in the preparation for external audits, ensuring that financial statements comply with accounting
-                            standards and regulations. Facilitating a smooth audit process.</p>
+                        <h4 className=' font-bold mb-3'>Audit Readiness Assistance</h4>
+                        <p className='text-sm'>Prepare confidently for audits with fully compliant financial statements and dedicated support to ensure a smooth review process.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Payroll Processing:</h4>
-                        <p className='text-sm'>Calculating and processing employee salaries, taxes, and benefits. Ensuring compliance with
-                            labor laws and regulations.</p>
+                        <h4 className=' font-bold mb-3'>Payroll Administration</h4>
+                        <p className='text-sm'>Process salaries, taxes, and employee benefits efficiently while staying fully compliant with labor laws and payroll regulations.</p>
                     </div>
 
                     <div className="account-service p-4 text-center">
-                        <h4 className=' font-bold mb-3'>Accounting Management:</h4>
-                        <p className='text-sm'>Creating internal reports for managerial decision-making. Analyzing financial data to provide insights
-                            into cost control, budgeting, and resource allocation.</p>
+                        <h4 className=' font-bold mb-3'>Financial Control & Management Reporting</h4>
+                        <p className='text-sm'>Leverage custom internal reports and financial analysis to support decision-making, budget planning, and optimal resource utilization.</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +97,7 @@ const Accounting = () => {
             <div className="account-package-section xl:px-40 lg:px-4 flex flex-col items-center text-center py-28">
                 <div className="package-heading flex flex-wrap justify-center px-4">
                     <img src="https://static.wixstatic.com/media/5ef7f2_a183cffcb4dd4401bee3dc7dfe8e23bb~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Account%20Sevice_black.png" alt="" width={60} />
-                    <h1 className='text-4xl font-semibold mb-8 '>Introducing our Comprehensive Accounting Service Packages</h1>
+                    <h1 className='text-4xl font-semibold mb-8 '>Complete Accounting Packages Designed for Your Success</h1>
                 </div>
 
                 <div className="all-pricings  p-5 flex justify-center  gap-3 flex-wrap mt-8">
@@ -274,43 +269,41 @@ const Accounting = () => {
             {/* Bookkeeping section */}
 
             <div className="bookkeeping-section xl:px-40 lg:px-4 flex flex-col items-center text-center py-20">
-                <h1 className='text-4xl font-semibold mb-8 px-4'>Efficient Bookkeeping Services Tailored to Your Business Needs</h1>
-                <p className='px-4'>Bookkeeping is a fundamental aspect of accounting that focuses on accurately tracking all financial activities,
-                    ensuring that a company's financial records are up-to-date, accurate, and compliant with relevant regulations.
-                    Here's a breakdown of what bookkeeping services typically entail:</p>
-
+                <h1 className='text-4xl font-semibold mb-8 px-4'>Personalized Bookkeeping for Streamlined Financial Management</h1>
+                <p className='px-4 mb-2'>Bookkeeping is a cornerstone of effective accounting, dedicated to the systematic recording and tracking of all financial transactions. It ensures that a company’s financial records remain current, accurate, and fully compliant with applicable laws and standards.</p>
+                <p className='px-4 ' >Below is a breakdown of the key components typically included in professional bookkeeping services:</p>
                 <div className="book-points flex flex-wrap justify-center gap-8 mt-10">
                     <div className="book-point p-5 flex justify-center items-center">
-                        <p>Systematic Recording of Financial Transactions</p>
+                        <p>Accurate and Systematic Financial Transaction Recording</p>
                     </div>
                     <div className="book-point p-5 flex justify-center items-center">
-                        <p>Precise Categorization of Transactions</p>
+                        <p>Detailed and Precise Transaction Classification</p>
                     </div>
                     <div className="book-point p-5 flex justify-center items-center">
-                        <p>Expert Maintenance of Ledgers</p>
+                        <p>Expert Ledger Maintenance and Management</p>
                     </div>
                     <div className="book-point p-5 flex justify-center items-center">
-                        <p>Thorough Bank Reconciliation</p>
+                        <p>Comprehensive Bank Reconciliation Services</p>
                     </div>
                     <div className="book-point  p-5 flex justify-center items-center">
-                        <p>Professional Generation of Financial Statements</p>
+                        <p>Professional Preparation of Financial Statements</p>
                     </div>
                     <div className="book-point  p-5 flex justify-center items-center">
-                        <p>Proactive Monitoring of Cash Flow</p>
+                        <p>Active Monitoring and Management of Cash Flow</p>
                     </div>
                     <div className="book-point  p-5 flex justify-center items-center">
-                        <p>Stringent Compliance and Reporting</p>
+                        <p>Strict Compliance with Regulatory Reporting Requirements</p>
                     </div>
                     <div className="book-point  p-5 flex justify-center items-center">
-                        <p>Strategic Budgeting Support</p>
+                        <p>Strategic Assistance in Budget Planning and Control</p>
                     </div>
                     <div className="book-point  p-5 flex justify-center items-center">
-                        <p>Efficient Audit Preparation</p>
+                        <p>Comprehensive Audit Support</p>
                     </div>
                 </div>
 
                 <div className="book-btn flex py-3 justify-center rounded-md mt-8">
-                        <p className='text-white'>Streamline your Bookkeeping</p>
+                        <p className='text-white'>Simplify Your Bookkeeping Process</p>
                     </div>
             </div>
         </div>
