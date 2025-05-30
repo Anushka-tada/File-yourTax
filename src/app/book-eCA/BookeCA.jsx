@@ -13,14 +13,14 @@ const BookeCA = () => {
       { 
           name: 'Expert-Assisted ITR Filing', 
           details: [
-            'Tax2win provides comprehensive tax filing services for various taxpayers, including salaried individuals, multiple Form 16 holders, Capital Gains, Business Returns, Multiple House Properties, Business Income, Capital Gains, Futures & Options, Clubbing Income, Foreign Income, ESOPs, Original Returns, Belated Returns, Revised Returns, or any tax-saving investments. Our personalized solutions maximize savings and minimize penalties.', 
-            'Tax2win online CA offers tailored support and accurate, on-time filing while keeping your information secure and confidential. Let our knowledgeable experts handle your taxes and maximize your savings while you relax.'
+            'FileyourTax caters to a wide range of taxpayers, including salaried individuals, freelancers, NRIs, and business owners. We handle complex filings involving multiple Form 16s, capital gains, business income, ESOPs, foreign income, clubbing income, and more.', 
+            'Our personalized approach helps maximize your tax savings while minimizing penalties. Trust our experienced CAs to file your returns accurately and confidentially, so you can focus on what matters most.'
         ],
           imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/expert-assisted-itr-filing.png', 
-          btn: 'Book eCA'
+          btn: 'Book eCA Consultation Now'
       },
       { 
-          name: 'Revised Return Filing', 
+          name: 'Revised & Belated Return Filing', 
           details: [
             'Filed your ITR and spotted an error? Don’t wait until it becomes a problem! Correct your mistakes with a revised return and avoid the hassle of an Income Tax Notice. Under Section 139(5) of the Income-Tax Act, 1961, you have the opportunity to amend any errors by filing a revised return, which will overwrite your original submission.', 
             'Remember, the last date to file a revised ITR is 31st December of the relevant assessment year'
@@ -29,58 +29,49 @@ const BookeCA = () => {
           btn: 'Revise your ITR' 
       },
       { 
-          name: 'Belated Return Filing', 
+          name: 'Tax Planning and Advisory ', 
           details: [
-            'Missed the 31st July deadline for filing your Income Tax Return? No need to worry—you can still file a belated return under Section 139(4) of the Income Tax Act until 31st December of the relevant assessment year.', 
-            'However, be aware of the penalties under Section 234F: if your taxable income exceeds ₹5 lakh, a fee of ₹5,000 applies; if its below ₹5 lakh, the penalty is ₹1,000. If your income falls below the basic exemption limit, no penalty is levied.'
-        ],
-          imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/belated-itr-2.png' ,
-            btn: 'File Belated Income Tax Return'
-      },
-      { 
-          name: 'Tax Planning and Advisory Services', 
-          details: [
-            'Don’t let a lack of knowledge result in a tax blunder.Take control of your taxes with Tax2win’s Tax Consultancy Services.', 
-            'Tax2win provides comprehensive tax planning services designed to help you strategically manage your finances and optimize your tax savings. Whether you are an individual, business owner, or NRI, our experienced tax advisors help you navigate the complexities of tax laws and regulations' ,
+            'Don’t let a lack of knowledge result in a tax blunder.Take control of your taxes with Fileyourtax’s Tax Consultancy Services.', 
+            'Fileyourtax provides comprehensive tax planning services designed to help you strategically manage your finances and optimize your tax savings. Whether you are an individual, business owner, or NRI, our experienced tax advisors help you navigate the complexities of tax laws and regulations' ,
             'Our tax experts navigate through 300+ tax provisions to find the best according to your tax situation. We provide personalized tax planning, investment and retirement planning, and business tax advisory and ensure that clients take advantage of all eligible deductions and credits.'
         ],
           imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/tax-planning-and-advisory-services.png' ,
            btn: 'Book Tax Consultation'
       },
       { 
-          name: 'NRI/Foreign Income Taxation', 
+          name: '	NRI & Foreign Income Taxation', 
           details: [
-            'Tax2win offers specialized tax services for Non-Resident Indians (NRIs) and individuals with foreign income. Our expert team provides comprehensive guidance on tax residency status, foreign income taxation, double taxation avoidance, earnings from share trading, property transactions, and interest income.', 
-            'Tax2win online tax experts also assist with the repatriation of funds, investment planning, and NRI tax filing, ensuring you comply with Indian tax laws and maximize your savings. Tax experts help NRIs save time and effort while reducing the risk of penalties and legal issues due to tax non-compliance.'
+            'Fileyourtax offers specialized tax services for Non-Resident Indians (NRIs) and individuals with foreign income. Our expert team provides comprehensive guidance on tax residency status, foreign income taxation, double taxation avoidance, earnings from share trading, property transactions, and interest income.', 
+            'Fileyourtax online tax experts also assist with the repatriation of funds, investment planning, and NRI tax filing, ensuring you comply with Indian tax laws and maximize your savings. Tax experts help NRIs save time and effort while reducing the risk of penalties and legal issues due to tax non-compliance.'
         ],
           imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/nri-foreign-income-taxation.png' ,
            btn: 'Consult Today'
       },
       { 
-          name: 'Respond and Resolve Tax Notices', 
+          name: 'Tax Notice Response & Resolution', 
           details: [
-            'The Income Tax Department may issue notices for various reasons, such as errors in original return filing, incomplete tax payments, or late filing. Tax2win offers professional assistance in responding to and resolving tax notices, providing you with expert guidance and peace of mind.', 
+            'The Income Tax Department may issue notices for various reasons, such as errors in original return filing, incomplete tax payments, or late filing. Fileyourtax offers professional assistance in responding to and resolving tax notices, providing you with expert guidance and peace of mind.', 
             'If you receive a tax notice from the Income Tax Department, you will be connected with a tax expert specializing in this area to navigate the process smoothly. Our experienced team will carefully review the notice and assess your situation. We help you understand the notice, gather the required documents, and prepare an appropriate response. Additionally, we also help you with filing a revised or updated return, if required.'
         ],
-          imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/respond-and-resolve-tax-notices.png' ,
+          imgUrl: 'https://emailer.Fileyourtax.in/assets/guides/ca-assisted/respond-and-resolve-tax-notices.png' ,
            btn: 'Income Tax Notice Assistance'
       },
       { 
           name: 'Updated Return Filling(ITR-U)', 
           details: [
             'If you have missed filing an income tax return or need to correct errors in a previously filed return, updated ITR filing is the solution for you. Taxpayers have a two-year window from the end of the relevant assessment year to file an updated return.', 
-            'Tax2win’s experienced tax experts are here to help you navigate the updated return process and ensure your filing is done accurately. Whether you need to declare additional income, claim deductions, or rectify any other issues, we guide you every step of the way.'
+            'Fileyourtax’s experienced tax experts are here to help you navigate the updated return process and ensure your filing is done accurately. Whether you need to declare additional income, claim deductions, or rectify any other issues, we guide you every step of the way.'
         ],
-          imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/updated-return-filing-itr-u.png' ,
+          imgUrl: 'https://emailer.Fileyourtax.in/assets/guides/ca-assisted/updated-return-filing-itr-u.png' ,
            btn: 'File Today'
       },
       { 
           name: 'Advance Tax Filing', 
           details: [
-            'If you need to pay advance tax, Tax2win can help you calculate and file your payments accurately. Advance tax payments are due in four installments throughout the financial year for taxpayers with income other than salary (e.g., business income, rent). Interest u/s 234B and 234C are charged if the advance tax is not paid by the taxpayer at specified due dates.', 
-            'Trust Tax2win online CA professionals to guide you through the process and ensure you stay on track with your tax obligations.'
+            'If you need to pay advance tax, Fileyourtax can help you calculate and file your payments accurately. Advance tax payments are due in four installments throughout the financial year for taxpayers with income other than salary (e.g., business income, rent). Interest u/s 234B and 234C are charged if the advance tax is not paid by the taxpayer at specified due dates.', 
+            'Trust Fileyourtax online CA professionals to guide you through the process and ensure you stay on track with your tax obligations.'
         ],
-          imgUrl: 'https://emailer.tax2win.in/assets/guides/ca-assisted/advance-tax-filing.png' ,
+          imgUrl: 'https://emailer.Fileyourtax.in/assets/guides/ca-assisted/advance-tax-filing.png' ,
            btn: 'Pay Advance Tax'
       }
     ]
@@ -98,20 +89,22 @@ const BookeCA = () => {
         <div className="ca-text flex flex-col mb-6 ">
           <h1 className='text-4xl'>Top Online CA Consultants for <span className='font-bold py-2 blue-text'>ITR Filing Services in India</span> </h1>
           <div className='inline-flex gap-1 rounded-full shadow py-1 px-5 my-6'>
-            <p>4.9</p>
+            <p>4.5</p>
             <img src="https://tax2win.in/assets-new/img/ca-assisted/google-rating.png" alt="" />
-            <p>10468 ratings</p>
+            <p>1998 Ratings</p>
           </div>
+
+          <h4 className="text-2xl font-semibold mb-4">Why Choose FileyourTax?</h4>
 
           <ul>
             <li className='flex gap-3 items-center mb-2 font-semibold'><img src="https://tax2win.in/assets-new/img/landing/common/tick-icon2.png" alt="" />
               <p>Lowest Tax Filing Fees in India</p>
             </li>
             <li className='flex gap-3 items-center mb-2  font-semibold'><img src="https://tax2win.in/assets-new/img/landing/common/tick-icon2.png" alt="" />
-              <p>Reliable and Secure ITR Filing Platform</p>
+              <p>Reliable & Secure ITR Filing Platform</p>
             </li>
             <li className='flex gap-3 items-center  font-semibold'><img src="https://tax2win.in/assets-new/img/landing/common/tick-icon2.png" alt="" />
-              <p>Tax Filing for all - Freelancers, NRI, Business Owners, Salaried Persons</p>
+              <p>Services for All: Freelancers, NRIs, Business Owners, Salaried Professionals</p>
             </li>
           </ul>
         </div>
@@ -126,7 +119,7 @@ const BookeCA = () => {
           <p className='font-sm'>By submitting the form, you agree to our
             <span className='text-blue-500'> Terms & Conditions </span> and <span className='text-blue-500'> Privacy Policy</span></p>
           <div className="book-btn rounded-lg mt-6 flex gap-3 justify-center w-full py-3">
-            <p className='text-white text-xl'>Book eCA Now</p>
+            <p className='text-white text-xl'>Book eCA Consultation</p>
             <img src="https://tax2win.in/assets-new/img/new-theme/b_ghost_arrow.svg" alt="" />
           </div>
           <div className="google-btn rounded-lg flex gap-3 justify-center w-full py-3 mt-4">
@@ -145,26 +138,26 @@ const BookeCA = () => {
       <div className="ratings flex flex-wrap justify-center gap-5 py-14">
         <div className="rating mx-5 flex flex-col justify-center items-center gap-1">
           <img src="https://tax2win.in/assets-new/img/tax-advisory/rating.svg" alt="" />
-          <p className='text-xl font-bold mt-2'>4.9</p>
+          <p className='text-xl font-bold mt-2'>4.5</p>
           <p className='text-lg'>Google Rating</p>
         </div>
 
         <div className="rating mx-5 flex flex-col justify-center items-center gap-1">
           <img src="https://tax2win.in/assets-new/img/tax-advisory/satisfaction.svg" alt="" />
-          <p className='text-xl font-bold mt-2'>1+ Million</p>
+          <p className='text-xl font-bold mt-2'>Over 1 Lakh</p>
           <p className='text-lg'>Satisfied Customers</p>
         </div>
 
         <div className="rating mx-5 flex flex-col justify-center items-center gap-1">
           <img src="https://tax2win.in/assets-new/img/tax-advisory/already-saved.svg" alt="" />
-          <p className='text-xl font-bold mt-2'>2500 Cr.</p>
+          <p className='text-xl font-bold mt-2'>₹500+ Crore</p>
           <p className='text-lg'>Saved Already!</p>
         </div>
 
         <div className="rating mx-5 flex flex-col justify-center items-center gap-1">
           <img src="https://tax2win.in/assets-new/img/tax-advisory/satisfaction.svg" alt="" />
-          <p className='text-xl font-bold mt-2'>10+ Years</p>
-          <p className='text-lg'>of Industry Experience</p>
+          <p className='text-xl font-bold mt-2'>7+ Years</p>
+          <p className='text-lg'> of Industry Experience</p>
         </div>
 
       </div>
@@ -173,8 +166,8 @@ const BookeCA = () => {
 
       <div className="tax-return-filling flex flex-col justify-center items-center  py-14">
         <div className="text-center">
-          <h1 className='text-4xl font-bold py-4' >File Your Tax Online CA for Income Tax Return (ITR) Filing</h1>
-          <p>Streamline your tax process with our online CA consultation services for smooth income tax return filing</p>
+          <h1 className='text-4xl font-bold py-4' >File Your Tax Online with Expert CA Assistance for Income Tax Return (ITR) Filing</h1>
+          <p>Simplify your tax filing with FileyourTax’s expert online CA consultation and seamless ITR filing services.</p>
 
         </div>
         <div className="features flex  gap-5 mt-7">
@@ -182,27 +175,23 @@ const BookeCA = () => {
             <div className='flex flex-col gap-3 bg-white step1 rounded-2xl p-5 '>
               <div className="flex items-center gap-4">
                 <img src="https://tax2win.in/assets-new/img/ca-assisted/accurate-tax-compliant.svg" alt="" height={50} width={50} />
-                <h3 className='text-xl font-semibold '>Accurate
-                  & Tax Compliant</h3>
+                <h3 className='text-xl font-semibold '>Accurate & Tax Compliant:</h3>
               </div>
-              <p className='text-lg'>Our platform offers automatic data import from your Form 16/Form 26AS and provides guided assistance throughout the tax return filing process.</p>
+              <p className='text-lg'>Our platform automatically imports data from your Form 16/Form 26AS and offers step-by-step assistance throughout the filing process, ensuring accuracy and compliance.</p>
             </div>
             <div className='flex flex-col gap-3 bg-white step1 rounded-2xl p-5 '>
               <div className="flex items-center gap-4">
                 <img src="https://tax2win.in/assets-new/img/ca-assisted/online-process.svg" alt="" height={50} width={50} />
-                <h3 className='text-xl font-semibold '>Fully
-                  online process</h3>
+                <h3 className='text-xl font-semibold '>Fully Online Process:</h3>
               </div>
-              <p className='text-lg'>A fully assisted online CA services means no need to visit the Tax Consultant office. You can also Track your e-filing through Tax2Win.</p>
+              <p className='text-lg'>Enjoy the convenience of a fully assisted online CA service—no visits to tax consultant offices required. Track your e-filing status directly through FileyourTax.</p>
             </div>
             <div className='flex flex-col gap-3 bg-white step1 rounded-2xl p-5'>
               <div className="flex items-center gap-4">
                 <img src="https://tax2win.in/assets-new/img/ca-assisted/save-taxes.svg" alt="" height={50} width={50} />
-                <h3 className='text-xl font-semibold '>Accurate
-                  & Tax Compliant</h3>
+                <h3 className='text-xl font-semibold '>Personalized Tax Advisory:</h3>
               </div>
-              <p className='text-lg'>Our online CA consultants can assist you with tax-saving investments based on your tax record, and you'll also gain access to
-                financial guides and tools that help you manage your finances more efficiently.</p>
+              <p className='text-lg'>Receive expert advice on tax-saving investments tailored to your profile, along with access to financial tools to manage your wealth more effectively.</p>
             </div>
           </div>
         </div>
@@ -224,38 +213,32 @@ const BookeCA = () => {
           <div className="work flex flex-wrap lg:flex-nowrap md:flex-nowrap items-start gap-5 rounded-xl p-9">
             <img src="https://tax2win.in/assets-new/img/ca-assisted/hire-your-personal-eca.svg" alt="" width={40} height={40} />
             <div className='flex flex-col gap-4 '>
-              <h2 className='text-xl font-bold'>Get online CA consultation & Upload the Documents</h2>
-              <p className='text-lg'>Everything you’ve loved about a CA, you’ve had all in one place. For this, all you need to
-                do is just enter your name, email & phone no. Make a payment of our professional fees and get
-                your personal online CA services.</p>
+              <h2 className='text-xl font-bold'>Get Online CA Consultation & Upload Documents</h2>
+              <p className='text-lg'>Register with your name, email, and phone number. Pay the professional fee and gain access to your dedicated online CA.</p>
             </div>
           </div>
 
           <div className="work flex flex-wrap lg:flex-nowrap md:flex-nowrap items-start gap-5 rounded-xl p-9">
             <img src="https://tax2win.in/assets-new/img/ca-assisted/eca-reviews.svg" alt="" width={40} height={40} />
             <div className='flex flex-col gap-4 '>
-              <h2 className='text-xl font-bold'>CA Consultants Reviews Your Documents & Calls You</h2>
-              <p className='text-lg'>Every Document is thoroughly studied for its accuracy and completeness. Further, our CA consultants will call
-                you to discuss your income, investments & deductions to help you get the maximum refund.</p>
+              <h2 className='text-xl font-bold'>CA Reviews Your Documents & Consults You</h2>
+              <p className='text-lg'>Our CA experts meticulously verify your documents and connect with you to discuss income, deductions, and investments to maximize your tax benefits.</p>
             </div>
           </div>
 
           <div className="work flex flex-wrap lg:flex-nowrap md:flex-nowrap items-start gap-5 rounded-xl p-9">
             <img src="https://tax2win.in/assets-new/img/ca-assisted/relaxicon.svg" alt="" width={40} height={40} />
             <div className='flex flex-col gap-4'>
-              <h2 className='text-xl font-bold'>Relax & Leave All Hardwork to us</h2>
-              <p className='text-lg'>Leave all the hard work on us, to maximise deductions and save taxes for you.
-                We know everything about the tax laws applicable on you. We also check Form 26AS with the Department
-                to get you the max. benefit of your TDS.</p>
+              <h2 className='text-xl font-bold'>Relax & Let Us Handle the Process</h2>
+              <p className='text-lg'>We take care of all complexities—ensuring maximum deductions, verifying your Form 26AS with the tax department, and optimizing your tax savings.</p>
             </div>
           </div>
 
           <div className="work flex flex-wrap lg:flex-nowrap md:flex-nowrap items-start gap-5 rounded-xl p-9">
             <img src="https://tax2win.in/assets-new/img/ca-assisted/itr-file.svg" alt="" width={40} height={40} />
             <div className='flex flex-col gap-4 '>
-              <h2 className='text-xl font-bold'>Approve ITR, and Filing is Done</h2>
-              <p className='text-lg'>A detailed summary of your Income Tax Return is sent to you for your approval.
-                Once you approve it, the return can be filed from the dashboard.</p>
+              <h2 className='text-xl font-bold'>Approve Your ITR & Complete Filing</h2>
+              <p className='text-lg'>You receive a detailed summary of your Income Tax Return for approval. Once approved, your ITR is filed directly from your dashboard.</p>
             </div>
           </div>
 

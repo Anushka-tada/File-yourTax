@@ -1,127 +1,176 @@
-:root {
-  --primary-color: rgb(20, 64, 71);
-  --secondary-color: rgb(238, 247, 249);
-  --third-color: rgb(36, 101, 111);
+@import url('../homepage/EasiestWay.css');
+
+li img {
+    width: 19px;
+    height: 19px;
+}
+.ca-text{
+    width: 60%;
+   
+}
+.cs-consulltants{
+    background-color: #fafbfd;;
+}
+.ca-text h1{
+    color: var(--primary-color);
+   
+}
+.ca-form{
+    width: 436px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
-.nriPage {
-  font-family: sans-serif;
-  color: var(--primary-color);
-  background-color: #fff;
+.book-btn{
+    background-color: var(--primary-color);
+
+}
+input , textarea{
+    width: 100%;
+    border: 1px solid rgb(188, 188, 188);
+}
+.google-btn{
+    border: 1px solid #1678fb;
+}
+.google-btn p{
+   color: #1678fb;
+}
+.blue-text{
+    color: var(--primary-color);
+
+}
+.ca-form {
+    position: relative;
+  }
+  
+  .ca-form .banner {
+    position: absolute;
+    top: -11px;
+    left: -11px;
+
+  }
+
+
+  @media (max-width: 490px){
+    .ca-form{
+        width: 90%;
+    }
+    .ca-text{
+        width: 90%;
+       
+    }
+  }
+
+  @media (max-width: 800px){
+    
+    .ca-text{
+        width: 100%;
+       
+    }
+  }
+
+  .tax-return-filling{
+    background: var(--secondary-color);
+  }
+
+  .step1{
+    width: 420px;
+    border: 1px solid rgb(228, 228, 228);
+  }
+ 
+  @media (max-width: 465px){
+    
+   .step1{
+    width: 90%;
+   }
 }
 
-.nriHeader {
-  padding: 3rem 1rem;
-  background-color: var(--secondary-color);
-  text-align: center;
-}
+@media (max-width: 665px){
+    
+    .tax-return-filling{
+padding: 15px;
+    }
+ 
+   }
 
-.nriHeader h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
 
-.nriHeader p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #444;
-}
+.whoNeed{
+  padding: 4% 10%;
+   background-color: rgb(246, 243, 243);
+} 
 
-.nriSection {
-  padding: 3rem 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.altBg {
-  background-color: var(--secondary-color);
-}
-
-.nriSection h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.whoNeed h1{
   color: var(--third-color);
 }
-
-.nriSection p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #333;
+.whoNeed p{
+  line-height: 35px;
+  font-size: 22px;
+}
+.nriInclude {
+  padding: 4% 5%;
+}
+.nriInclude h1{
+   color: var(--third-color);
 }
 
-.faqSection {
-  padding: 4rem 1rem;
-  background-color: #f9f9f9;
+.why-choose{
+  padding: 8% 8%;
 }
 
-.faqSection h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-}
-
-.faqList {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.faqItem {
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
-}
-
-.faqItem h4 {
-  font-size: 1.1rem;
-  color: var(--third-color);
-}
-
-.faqItem p {
-  margin-top: 0.5rem;
-  color: #444;
-  line-height: 1.5;
-}
-
-.nriIntroBanner {
-  background-color: var(--third-color);
-  padding: 4rem 1.5rem;
-  color: white;
-  text-align: center;
-}
-
-.nriIntroContent {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.nriIntroContent h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.nriIntroContent p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.nriIntroBtn {
-  background-color: var(--secondary-color);
-  color: var(--third-color);
-  padding: 0.8rem 1.8rem;
-  border: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.nriIntroBtn:hover {
+.choose-point{
   background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .2);
+}
+.choose-point h1{
+  color: var(--third-color);
+}
+.hearClients{
+  background-color: rgb(238, 247, 249);
+  padding: 5% 8%;
+}
+.hearClients h1{
   color: var(--primary-color);
+}
+.review{
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  height: 200px;
+  width: 600px !important;
+}
+.review img {
+  width: 20%;
+  margin: 7px 0px;
+}
+
+.Faq{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    /* transition: opacity 2s ease, max-height 2s ease; */
+}
+
+
+
+
+ul.custom-circle li::before {
+  content: '•'; /* Unicode character for filled circle */
+  color: black; /* You can change the color */
+  font-size: 1.5em; /* Size of the circle */
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; /* Adjust the position */
+}
+ol.custom-circle li::before {
+  content: '•'; /* Unicode character for filled circle */
+  color: black; /* You can change the color */
+  font-size: 1.5em; /* Size of the circle */
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; /* Adjust the position */
+}
+.question{
+  color: #2e3846;
+}
+.Faq p{
+  color: #323f50;
 }

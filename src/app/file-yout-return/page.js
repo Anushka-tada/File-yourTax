@@ -9,6 +9,7 @@ export default function page() {
     <>
       <Nav />
     <Efilling_platform/>
+    <Need_Support/>
       <Footer />
     </>
   );

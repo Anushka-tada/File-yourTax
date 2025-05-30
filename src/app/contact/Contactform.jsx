@@ -4,8 +4,10 @@ const Contactform = () => {
   return (
    <div className="contact-outer bg-slate-100 flex justify-center ">
     
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14228.241045568315!2d75.786518!3d26.933304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ad8de1da8bc13a9!2sTax2win!5e0!3m2!1sen!2sin!4v1515057762465" 
-width="100%" height="400" frameBorder="0"  allowFullScreen=""></iframe>
+{/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14228.241045568315!2d75.786518!3d26.933304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ad8de1da8bc13a9!2sTax2win!5e0!3m2!1sen!2sin!4v1515057762465" 
+width="100%" height="400" frameBorder="0"  allowFullScreen=""></iframe> */}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.373805798284!2d85.05419267525365!3d26.411411076949587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecd6db7d0dc83b%3A0x4848c403c0c412bf!2sS%20Mart%20Shopping%20Mall!5e0!3m2!1sen!2sin!4v1748603933504!5m2!1sen!2sin"
+ width="100%" height="400" frameBorder="0" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 <div className="map"></div>
      <div className='contactForm flex flex-wrap lg:flex-nowrap lg:justify-between  gap-8 bg-white lg:w-3/4 lg:mt-20 rounded-s-lg'>
 

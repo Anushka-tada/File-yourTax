@@ -364,7 +364,7 @@ const Nav = () => {
             <div className="dropdown drop-product bg-white shadow-lg rounded-lg absolute w-full lg:w-auto text-base">
               <ul>
               <a href="/file-yout-return">  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
-                  File Your Return
+                  File Your ITR
                 </li></a>
                <a href="/upload"> <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   Upload Form 16

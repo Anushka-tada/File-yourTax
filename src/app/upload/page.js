@@ -8,10 +8,7 @@ export default function Page() {
     <>
       <Nav />
       <div className="min-h-screen" style={{ backgroundColor: 'rgb(238, 247, 249)' }}>
-        <Head>
-          <title>Tax2win - File Your Income Tax Return</title>
-          <meta name="description" content="File your ITR easily with Tax2win" />
-        </Head>
+        
 
         <main className="container mx-auto px-4 py-8">
           <div 
@@ -22,21 +19,21 @@ export default function Page() {
               className="text-2xl font-bold text-center mb-2"
               style={{ color: 'rgb(20, 64, 71)' }}
             >
-              Tax2win
+             FileyourTax
             </h1>
             
             <h2 
               className="text-lg font-semibold text-center mb-6 uppercase tracking-wider"
               style={{ color: 'rgb(36, 101, 111)' }}
             >
-              Upload Form 16
+           Upload your Form 16
             </h2>
             
             <p 
               className="text-center mb-8 leading-relaxed"
               style={{ color: 'rgb(36, 101, 111)' }}
             >
-              Income Tax Return Filing is easy with Tax2win and the smartest way to online file your taxes return is to just upload your form 16 and get your ITR prepared automatically.
+             Filing your Income Tax Return is easy with FileyourTax. Just upload your Form 16 and get your ITR prepared automatically.
             </p>
             
             <div 
@@ -62,7 +59,7 @@ export default function Page() {
                 boxShadow: '0px 4px 8px rgba(20, 64, 71, 0.3)'
               }}
             >
-              Upload Form 16
+              UPLOAD FROM 16
             </button>
           </div>
         </main>

@@ -36,6 +36,7 @@ import { LoggedDataProvider } from "./context/Context";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'; // Import Toastify styles
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
