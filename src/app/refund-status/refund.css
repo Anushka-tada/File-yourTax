@@ -10,7 +10,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-.header {
+/* .header {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -143,4 +143,103 @@
   font-size: 1.05rem;
   color: #444;
   line-height: 1.7;
+} */
+
+.ca-text{
+    width: 55%; 
+}
+.ca-text h1{
+    color: var(--primary-color);  
+}
+.ca-form{
+    width: 436px;
+    border-bottom: 3px solid var(--primary-color);
+}
+ @media (max-width:1345px) {
+  .ca-text{
+    width: 45%;
+}
+.ca-form{
+  width: 50%;
+  margin-right: 0px !important;
+}
+}
+  @media (max-width: 490px){
+    .ca-form{
+        width: 90%;
+    }
+    .ca-text{
+        width: 90%;
+       
+    }
+  }
+.header button{
+   background-color: var(--primary-color);
+   padding: 6px 15px;
+}  
+.book-btn{
+    background-color: var(--primary-color);
+}
+input , select{
+    width: 100%;
+    border: 1px solid rgb(188, 188, 188);
+}
+.Refund-questions{
+  max-width: 1200px;
+  justify-self: center;
+  padding: 2%;
+  border-top: 3px solid var(--third-color);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .2);;
+  border-radius: 10px;
+}
+.refund-que{
+   padding-bottom: 15px;
+   border-bottom: 1px solid rgb(227, 227, 227);
+}
+.image{
+  padding: 15px;
+  border: 1px solid rgb(227 , 227 , 227);
+  margin-bottom: 15px;
+ 
+}
+.fys{
+  background-color: var(--primary-color);
+  padding: 3%;
+}
+.fys button{
+    padding: 6px 30px;
+    height: 50px;
+    background-color: white;
+}
+
+table td , table th{
+  border: 1px solid rgb(199, 195, 195);
+  padding: 2%;
+}
+
+.faqOuter{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    /* transition: opacity 2s ease, max-height 2s ease; */
+}
+ul.custom-circle li::before {
+  content: '•'; /* Unicode character for filled circle */
+  color: black; /* You can change the color */
+  font-size: 1.5em; /* Size of the circle */
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; /* Adjust the position */
+}
+ol.custom-circle li::before {
+  content: '•'; /* Unicode character for filled circle */
+  color: black; /* You can change the color */
+  font-size: 1.5em; /* Size of the circle */
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; /* Adjust the position */
+}
+.question{
+  color: #2e3846;
+}
+.Faq p{
+  color: #323f50;
 }

@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const page = () => {
   const Testimonial = [
     {
@@ -39,43 +38,43 @@ const page = () => {
   ];
 
   var settings = {
-  dots: false,
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 2000,    
-  autoplaySpeed: 3000, 
-  cssEase: "linear",
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-};
+    dots: false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
-const initialOpenState = Array(10).fill(true);
+  const initialOpenState = Array(10).fill(true);
   const [visibleAnswer, setVisibleAnswer] = useState(initialOpenState);
 
   const toggleAnswer = (index) => {
@@ -90,19 +89,19 @@ const initialOpenState = Array(10).fill(true);
     <>
       <Nav />
 
- <div className="ca-consultants py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
+      <div className="ca-consultants py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
         <div className="ca-text flex flex-col mb-6 ">
           <h1 className=" text-6xl font-bold mb-3">
-            Filing Taxes in India as an NRI?{" "}
+            Tax Filing in India for NRIs – “Seamless & Secure"
           </h1>
           <h2 className="text-4xl font-semibold ">
-            Let Us Make It Simple for You!
+            Simplifying Compliance, Maximizing Benefits
           </h2>
 
           <p className="text-xl font-semibold my-4 mb-7">
-            Whether you're earning income from property, investments, or capital
-            gains in India, our expert team ensures you stay compliant with
-            Indian tax laws while optimizing your tax benefits
+            If you earn income in India—be it from property, investments, or
+            capital gains—our seasoned experts ensure full compliance with
+            Indian tax laws while maximizing your tax benefits.
           </p>
 
           <ul className="flex gap-3 ">
@@ -121,7 +120,7 @@ const initialOpenState = Array(10).fill(true);
                 alt=""
               />
               <p className="text-lg">
-                <b>1+ Million</b> satisfied customers
+                <b>20k +</b>Clients Served
               </p>
             </li>
           </ul>
@@ -132,7 +131,7 @@ const initialOpenState = Array(10).fill(true);
                 alt=""
               />
               <p className="text-lg">
-                <b>500+ Crore</b> Saved Already!
+                <b>500+ Crore</b> in Tax Savings
               </p>
             </li>
             <li className="flex gap-3 items-center mb-2  font-semibold">
@@ -141,31 +140,33 @@ const initialOpenState = Array(10).fill(true);
                 alt=""
               />
               <p className="text-lg">
-                <b>7+ Years</b> of Industry Experience
+                <b>7+ Years</b> of Trusted Experience
               </p>
             </li>
           </ul>
         </div>
         <div className="ca-form lg:p-9 md:p-9 p-4 xl:p-9 lg:me-28 shadow-lg rounded-lg flex flex-col items-center">
-          <h1 className="text-2xl font-bold">Start Your NRI Tax Journey</h1>
+          <h1 className="text-2xl font-bold">
+            Start Your NRI Tax Filing Today
+          </h1>
           <div>
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Name"
               className="py-3 px-5 mb-3 mt-8 rounded-md"
             />
             <input
               type="text"
-              placeholder="Email Address"
+              placeholder="Email"
               className="py-3 px-5 mb-3 rounded-md"
             />
             <input
               type="text"
-              placeholder="Mobile Number"
+              placeholder="Mobile"
               className="py-3  px-5 mb-6 rounded-md"
             />
             <textarea
-              placeholder="Message"
+              placeholder="Comment"
               rows={2}
               className="py-3 px-5 mb-6 rounded-md"
             />
@@ -185,14 +186,13 @@ const initialOpenState = Array(10).fill(true);
 
       <div className="whoNeed text-center">
         <h1 className=" text-4xl font-bold mb-3">
-          Who Needs to File NRI Taxes?
+          Who Should File Taxes as an NRI?
         </h1>
         <p className="text-xl font-semibold my-4 mb-7">
-          NRIs earning income from India, such as income from salary ( if
-          services are rendered in India), rental income, interest on NRO
-          accounts, dividend income from Indian companies, capital gains from
-          sale of property situated in India and other Indian Income, need to
-          file ITR.
+          Any Non-Resident Indian (NRI) who earns income in India—such as from
+          salary (for services rendered in India), rent, interest on NRO
+          accounts, dividends, or capital gains from property—is required to
+          file an Income Tax Return (ITR) in India.
         </p>
       </div>
 
@@ -200,7 +200,7 @@ const initialOpenState = Array(10).fill(true);
 
       <div className="nriInclude">
         <h1 className=" text-4xl font-bold mb-20 text-center">
-          Our NRI Tax Filing Services Include
+          Our Specialized NRI Tax Services
         </h1>
         <div className="flex justify-center gap-4  items-center lg:flex-nowrap flex-wrap">
           <div>
@@ -210,41 +210,48 @@ const initialOpenState = Array(10).fill(true);
             <div className="flex gap-2">
               <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
               <p className="font-semibold text-xl">
-                Residential Status Determination
+                Accurate Residential Status Evaluation
               </p>
             </div>
             <div className="flex gap-2">
               <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
               <p className="font-semibold text-xl">
-                Income Tax Return Filing (ITR) for Indian Income
+                Filing ITR for Indian-Sourced Income
               </p>
             </div>
             <div className="flex gap-2">
               <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
               <p className="font-semibold text-xl">
-                DTAA (Double Tax Avoidance Agreement) Benefits
+                DTAA (Double Tax Avoidance Agreement) Claim Support
               </p>
             </div>
             <div className="flex gap-2">
               <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
               <p className="font-semibold text-xl">
-                Relief on Foreign Income Taxed in India
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
-              <p className="font-semibold text-xl">Capital Gains Calculation</p>
-            </div>
-            <div className="flex gap-2">
-              <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
-              <p className="font-semibold text-xl">
-                Claiming Refunds of TDS deducted in India
+                Relief for Taxes Paid Abroad
               </p>
             </div>
             <div className="flex gap-2">
               <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
               <p className="font-semibold text-xl">
-                Tax Planning for Property Sales or Purchases
+                {" "}
+                Capital Gains Computation
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
+              <p className="font-semibold text-xl">Claiming TDS Refunds</p>
+            </div>
+            <div className="flex gap-2">
+              <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
+              <p className="font-semibold text-xl">
+                Tax Planning for Property Sale/Purchase
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/list_tick.png"></img>
+              <p className="font-semibold text-xl">
+                Cryptocurrency Taxation Guidance
               </p>
             </div>
           </div>
@@ -255,7 +262,7 @@ const initialOpenState = Array(10).fill(true);
 
       <div className="why-choose text-center">
         <h1 className=" text-4xl font-bold mb-20 text-center">
-          Why Choose Tax2win for NRI Tax Filing?
+          Why Choose FileyourTax for Your NRI Taxes?
         </h1>
         <div className="row flex gap-3 lg:flex-nowrap  flex-wrap">
           <div className="choose-point flex flex-col items-center">
@@ -265,11 +272,10 @@ const initialOpenState = Array(10).fill(true);
             ></img>
             <h3 className=" text-xl font-bold mb-2 text-center">
               {" "}
-              Dedicated NRI Experts{" "}
+              Trusted NRI Tax Experts
             </h3>
             <p className="text-lg">
-              Specialized tax consultants with deep knowledge of NRI taxation
-              laws.
+              Seasoned professionals with in-depth knowledge of NRI tax laws.
             </p>
           </div>
 
@@ -279,11 +285,11 @@ const initialOpenState = Array(10).fill(true);
               className="mb-3"
             ></img>
             <h3 className=" text-xl font-bold mb-2 text-center">
-              End-to-End Support{" "}
+              End-to-End Tax Support
             </h3>
             <p className="text-lg">
-              From determining residential status to claiming DTAA benefits, we
-              handle it all.
+              From residential status determination to DTAA claims, we manage
+              everything.
             </p>
           </div>
 
@@ -293,11 +299,11 @@ const initialOpenState = Array(10).fill(true);
               className="mb-3"
             ></img>
             <h3 className=" text-xl font-bold mb-2 text-center">
-              Safe & Secure Filing
+              100% Secure Filing
             </h3>
             <p className="text-lg">
-              Authorized by ITD and compliant with the highest data security
-              standards.
+              Authorized by the Income Tax Department with industry-grade data
+              protection
             </p>
           </div>
 
@@ -307,197 +313,494 @@ const initialOpenState = Array(10).fill(true);
               className="mb-3"
             ></img>
             <h3 className=" text-xl font-bold mb-2 text-center">
-              Global Reach
+              Global Accessibility
             </h3>
             <p className="text-lg">
-              Accessible from anywhere in the world, we ensure your tax
-              obligations are met on time.
+              No matter where you live, our services are accessible online and
+              hassle-free. Let us handle the complexities of Indian taxation
+              while you focus on what matters most.
             </p>
           </div>
         </div>
       </div>
 
       <div className="hearClients">
-  <h1 className=" text-4xl font-bold mb-10 text-center" >  Hear From Our Clients </h1>
-  <div className=" flex flex-col gap-5">
-    <Slider {...settings}>
-      {Testimonial.map((point, index) => (
-        <div key={index} className="review m-5">
-          <h3 className="text-xl font-semibold  mb-1">{point.title}</h3>
-          <img src="https://tax2win.in/assets-new/img/testimonials/five-star.png"></img>
-          <p className="text-sm text-secondary font-medium mb-2">
-            {point.shortDesc}
-          </p>
-          <p className="">{point.description}</p>
+        <h1 className=" text-4xl font-bold mb-10 text-center">
+          {" "}
+          What Our Clients Say{" "}
+        </h1>
+        <div className=" flex flex-col gap-5">
+          <Slider {...settings}>
+            {Testimonial.map((point, index) => (
+              <div key={index} className="review m-5">
+                <h3 className="text-xl font-semibold  mb-1">{point.title}</h3>
+                <img src="https://tax2win.in/assets-new/img/testimonials/five-star.png"></img>
+                <p className="text-sm text-secondary font-medium mb-2">
+                  {point.shortDesc}
+                </p>
+                <p className="">{point.description}</p>
+              </div>
+            ))}
+          </Slider>
         </div>
-      ))}
-    </Slider>
-  </div>
-</div>
-
-     
-
-    {/* faq-section */}
-
-
-    <div className="section10 py-16 lg:px-24 px-4 text-center">
-      <h1 className="section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10">Frequently Asked Questions (FAQ's)</h1>
-      <div className="section9-Faqs">
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(0)}>
-          <p className="text-xl font-bold question">1.
-                    Who is a Non-Resident of India (NRI)?
-                  </p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[0] &&
-          <div className="answer text-left my-3">
-            <p className="text-base mb-2">"Non-Resident" is a person who is not Resident in India. The residential status of an
-               individual in a given year determines whether the individual is a Resident or Non-Resident for that given year.Thus,
-                the residential status of an individual needs to be determined every year. For more details, </p>
-           
-          </div>}
-
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(1)}>
-          <p className="text-xl font-bold question">2.How to determine my Residential Status in India?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[1] &&
-          <div className="answer text-left my-3">
-            <p className="text-base mb-3">You are considered as "Resident in India" for a financial year if you stayed in India -</p>
-
-            <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
-              <li>for a period of 182 days or more during the Financial year; Or</li>
-              <li>for 60 days in the financial year and for a total of 365 days in the preceding 4 years.</li>
-            </ol>
-            <p className="text-base mb-3">There are certain exceptions to the above condition of 60 Days i.e. only the test of first condition is done in these cases:</p>
-
-            <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
-              
-              <li>If you are an Indian citizen who has left India in the financial year as a crew member of an Indian ship or for the purposes of employment abroad; or</li>
-              <li>f you are a Person of Indian Origin(PIO) or a citizen of India who comes on a visit to India;</li>
-            </ol>
-            <p>Therefore, you are a Non-Resident if you do not fulfil any of the above conditions. However, for Indian citizens or Persons of Indian Origin (PIO) who visit India, the 60-day criteria is extended to 120 days if their total Indian income exceeds ₹15 lakh. Additionally, an Indian citizen earning over ₹15 lakh (excluding foreign income) and not liable to tax in any other country will be deemed a resident.</p>
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(2)}>
-          <p className="text-xl font-bold question">3. How to file income tax return for NRI?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[2] &&
-          <div className="answer text-left my-3">
-           
-            <p className="text-base">Yes, NRIs can file their income tax returns online either through the Income Tax Department's official portal or by using online tax filing platforms. Navigating the complexities of NRI taxation can be challenging. At Tax2win, our experienced tax professionals are here to simplify the process for you. No matter where you are located, our team is dedicated to helping you in file your taxes accurately and efficiently considering the tax laws.</p>
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
-          <p className="text-xl font-bold question">4. What are the Documents Required for NRI Tax Filing?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[3] &&
-          <div className="answer text-left my-3">
-             <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle" >
-              <li>PAN Card: Mandatory for filing taxes.</li>
-              <li>Passport: For identity and nationality verification.</li>
-              <li>Salary Slips & Form 16: Details of salary income.</li>
-              <li>Bank Account Details: Indian account for tax refunds.</li>
-                <li>Investment Details: Declare Indian investments.</li>
-                  <li>Tax Payment Receipts: Proof of tax payments.</li>
-                    <li>Foreign Assets Info: Details of foreign accounts/investments.</li>
-                      <li>Rent Receipts: If earning rental income.</li>
-                      <p>Indian Property Details: Information on owned property in India.</p>
-             </ol>
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(4)}>
-          <p className="text-xl font-bold question">5. Do NRI’s have to pay taxes in India?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[4] &&
-          <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">The answer is YES. After you have determined your residential status, the next step is to identify whether your income is taxable or not in India as per your residential status determined under Income Tax Act,1961.</p>
-
-            <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-              <li>For Resident Individuals: Your Global income is taxable in India i.e. income earned whether in India or outside India is taxable in India.</li>
-              <li>For Non-Resident Indians: Only income earned or accrued in India or deemed to be so is taxable in India. Therefore, your income from any country besides India is not taxable in India.</li>
-            </ul>
-
-            <p className=" mb-3">For professional assistance, expert <b>CAs at File Your Tax</b> can ensure accuracy, maximize deductions, and optimize tax refunds.</p>
-
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(5)}>
-          <p className="text-xl font-bold question">6. Should I be present in India at the time of filing of my ITR?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[5] &&
-          <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">No. You are not required to be physically present to file & verify your income tax returns. You can file income tax return online from anywhere in the world. You can now e-verify your ITR from anywhere . You can send signed copy of ITR-V to the CPC Income Tax 
-              Department, Bengaluru or e-verify the same within 30 days from the date of filing your ITR.</p>
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(6)}>
-          <p className="text-xl font-bold question">7.What are the deductions which are allowed and not allowed to NRI?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[6] &&
-          <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Yes, an ITR can be e-filed without Form 16. Salary slips and essential documents such as <b>Form 26AS, AIS,
-            and TIS</b> provide the necessary income and deduction details for filing a return.</p>
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(7)}>
-          <p className="text-xl font-bold question">8.What will be taxability of rental income from property situated in India ?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[7] &&
-          <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Failure to file an ITR within the due date may result in penalties and interest, including:</p>
-            <ol className="flex flex-col gap-1 mb-3 list-decimal pl-3 custom-circle" >
-              <li><b>Late Filing Fee</b>: Up to <b>₹10,000</b>, depending on the delay.</li>
-              <ol className="flex flex-col gap-1 mb-3 list-decimal pl-3 custom-circle" >
-                <li>o	₹5,000 for belated ITRs filed after the due date but before <b>31st December</b>.</li>
-                <li>o	₹10,000 for returns filed after <b>31st December</b>.</li>
-              </ol>
-              <li><b>Interest on Outstanding Tax:</b> Charged at <b>1% per month</b> on the unpaid tax amount from the due date until payment.</li>
-              <li><b>Loss of Tax Benefits:</b> Late filers may lose benefits such as <b>carry-forward of losses and TDS refunds</b>.</li>
-              <li><b>Prosecution:</b> Willful failure to file an ITR may result in prosecution under <b>Section 276CC</b>, leading to fines and imprisonment.</li>
-            </ol>
-          </div>}
-
-        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(8)}>
-          <p className="text-xl font-bold question">9. I have a property in India that I want to sell. What are the tax implications on the same if I am an NRI?</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[8] &&
-          <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Once an ITR is filed, taxpayers must:</p>
-            <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
-              <li>Check their <b>email inbox</b> for confirmation and the <b>ITR-V acknowledgment.</b></li>
-              <li><b>Verify the ITR within 30 days</b>, as processing only begins after verification. Unverified returns will be considered invalid.</li>
-              <li>Carefully <b>review the ITR-V </b>for accuracy.</li>
-              <li><b>Track the status of any tax refund</b> to stay updated on processing timelines.</li>
-            </ol>
-
-          </div>}
-
-          <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(9)}>
-          <p className="text-xl font-bold question">10. Important Note on ITR Verification</p>
-          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
-        </div>
-        {visibleAnswer[9]&&
-          <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">ITR verification is a mandatory step for processing. <b>The time limit for verification is now 30
-            days</b> (reduced from 120 days for returns filed on or after <b> 1st August 2022</b> ).</p>
-               <p className=" mb-3">Failure to verify an ITR within this period will result in the 
-                return being <b>invalid,</b> meaning it will be treated as if no return was filed.</p>
-           
-          </div>}
-
-
       </div>
-    </div>
+
+      {/* faq-section */}
+
+      <div className="section10 py-16 lg:px-24 px-4 text-center">
+        <h1 className="section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10">
+          Frequently Asked Questions (FAQ's)
+        </h1>
+        <div className="section9-Faqs">
+          <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(0)}
+          >
+            <p className="text-xl font-bold question">
+              Who Qualifies as an NRI?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[0] && (
+            <div className="answer text-left my-3">
+              <p className="text-base mb-2">
+                An individual is considered a Non-Resident if they do not meet
+                the conditions of residency under Indian tax laws. Residential
+                status is determined annually based on physical presence in
+                India.
+              </p>
+            </div>
+          )}
+          </div>
+
+          <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(1)}
+          >
+            <p className="text-xl font-bold question">
+              2. How Is My Residential Status Determined?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[1] && (
+            <div className="answer text-left my-3">
+              <p className="text-base mb-3">
+                You are considered a Resident in India if:
+              </p>
+
+              <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
+                <li>
+                  {" "}
+                  You spend 182 days or more in India during the financial year,
+                  or
+                </li>
+                <li>
+                  {" "}
+                  You spend 60 days or more in the financial year and 365 days
+                  or more during the 4 preceding years.
+                </li>
+              </ol>
+              <p className="text-base mb-3">Exceptions apply to:</p>
+
+              <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
+                <li>
+                  {" "}
+                  Indian citizens leaving India for employment or as crew of an
+                  Indian ship
+                </li>
+                <li>
+                  {" "}
+                  Persons of Indian Origin (PIO) visiting India In these cases,
+                  only the 182-day condition is applicable
+                </li>
+              </ol>
+              <p>
+                If total Indian income exceeds ₹15 lakh, the 60-day threshold is
+                increased to 120 days for PIOs or Indian citizens.
+              </p>
+            </div>
+          )}
+          </div>
+
+        <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(2)}
+          >
+            <p className="text-xl font-bold question">
+              3. Can NRIs File Their ITR Online?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[2] && (
+            <div className="answer text-left my-3">
+              <p className="text-base">
+                Absolutely. NRIs can file ITRs online via the Income Tax
+                Department portal or through professional platforms like
+                FileyourTax. Our dedicated team simplifies the entire process—no
+                matter where you are in the world.
+              </p>
+            </div>
+          )}
+        </div>
+
+         <div className="faqOuter">
+           <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(3)}
+          >
+            <p className="text-xl font-bold question">
+             4. Key Documents for NRI Tax Filing
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[3] && (
+            <div className="answer text-left my-3">
+              <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
+                <li>	PAN Card.</li>
+                <li>	Passport (for identity and travel details)</li>
+                <li>	Form 16 / Salary Slips (if applicable)</li>
+                <li>	Indian Bank Account Details (for tax refunds)</li>
+                <li>	Investment & Property Details</li>
+                <li>	Tax Deducted at Source (TDS) Certificates</li>
+                <li>	Rent Receipts </li>
+                <li>	Foreign Asset Declarations (if applicable)</li>
+      
+              </ol>
+            </div>
+          )}
+         </div>
+
+         <div className="faqOuter">
+           <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(4)}
+          >
+            <p className="text-xl font-bold question">
+              5. Do NRIs Have to Pay Tax in India?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[4] && (
+            <div className="answer text-left my-3 text-base">
+              <p className=" mb-3"> Yes </p>
+
+              <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
+                <li><b>Residents:</b> Taxed on global income
+                </li>
+                <li><b>Non-Residents (NRIs):</b> Only Indian-sourced income is taxable </li>
+              </ul>
+
+            </div>
+          )}
+         </div>
+
+          <div className="faqOuter" >
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(5)}
+          >
+            <p className="text-xl font-bold question">
+              6. Is Physical Presence in India Required for Filing?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[5] && (
+            <div className="answer text-left my-3 text-base">
+              <p className=" mb-3">
+               No. NRIs can file and e-verify their ITR completely online, from anywhere in the world. Physical signatures 
+               or couriered forms are no longer mandatory if e-verification is done within 30 days.
+              </p>
+            </div>
+          )}
+          </div>
+
+          <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(6)}
+          >
+            <p className="text-xl font-bold question">
+              7.Which Deductions Can NRIs Claim?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[6] && (
+            <div className="answer text-left my-3 text-base">
+                <table className="table-1 table-auto border-collapse border border-gray-300 mb-5">
+                  <thead>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 px-4 py-2 text-left font-bold">Section</th>
+                      <th className="border border-gray-300 px-4 py-2 text-left font-bold">Deduction</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 ">80C</td>
+                      <td className="border border-gray-300 px-4 py-2">Life insurance premiums, ELSS, children’s tuition fees,
+                         principal repayment on home loan</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 ">80D</td>
+                      <td className="border border-gray-300 px-4 py-2">Health insurance premiums</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 ">80E</td>
+                      <td className="border border-gray-300 px-4 py-2">Interest on education loans</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 ">80TTA</td>
+                      <td className="border border-gray-300 px-4 py-2">Interest up to ₹10,000 on savings bank accounts</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 ">80G</td>
+                      <td className="border border-gray-300 px-4 py-2">Donations to eligible charities</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 ">House Property</td>
+                      <td className="border border-gray-300 px-4 py-2">Deduction on home loan interest and property tax</td>
+                    </tr>
+                  
+                  </tbody>
+                </table>
+                <p className="mb-3">Not Available for NRIs:</p>
+                <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
+                  <li>	PPF, NSC, Post Office schemes, RGESS</li>
+                  <li>	Section 80U, 80DD, 80DDB for disability-related deductions</li>
+                </ul>
+            </div>
+          )}
+          </div>
+
+          <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(7)}
+          >
+            <p className="text-xl font-bold question">
+             How Is Rental Income Taxed for NRIs?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[7] && (
+            <div className="answer text-left my-3 text-base">
+              <p className=" mb-3">
+                Rental income from Indian properties is fully taxable in India for NRIs. Standard deductions and a basic exemption of ₹2.5 lakh may apply.
+              </p>
+             
+            </div>
+          )}
+          </div>
+
+         <div className="faqOuter" >
+           <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(8)}
+          >
+            <p className="text-xl font-bold question">
+              9. Selling Property in India as an NRI – What Are the Tax Rules?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[8] && (
+            <div className="answer text-left my-3 text-base">
+              <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
+                <li>	If held for over 24 months → Long-Term Capital Gains (LTCG) apply </li>
+                <li>	LTCG is taxed at 12.5% from 23rd July 2024</li>
+                <li>	Indexation benefits and exemptions (e.g., under Section 54) can reduce tax liability</li>
+                <li>	For inherited property, date and cost of acquisition by the original owner are considered </li>
+              </ol>
+            </div>
+          )}
+         </div>
+
+
+          <div className="faqOuter" >
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(9)}
+          >
+            <p className="text-xl font-bold question">
+              10. I’m Moving Abroad for a Job. Do I Qualify as an NRI?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[9] && (
+            <div className="answer text-left my-3 text-base">
+              <p className=" mb-3">If your stay in India is under the prescribed limits (see residential status rules),
+                 you’ll qualify as an NRI. Your foreign salary credited abroad is not taxable in India if your status
+                  is confirmed as NRI. </p>
+             
+            </div>
+          )}
+          </div>
+
+         <div className="faqOuter">
+           <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(10)}
+          >
+            <p className="text-xl font-bold question">
+              11. Is Foreign Income Taxable in India?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[10] && (
+            <div className="answer text-left my-3 text-base">
+              <p className="mb-3">Foreign income is not taxable for NRIs unless:</p>
+              <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
+                <li>•	It is received directly in India</li>
+                <li>•	It arises from a business or profession in India</li>
+              </ol>
+            </div>
+          )}
+         </div>
+
+        <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(11)}
+          >
+            <p className="text-xl font-bold question">
+              12. What Is DTAA and How Can NRIs Benefit?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[11] && (
+            <div className="answer text-left my-3 text-base">
+             <p className="mb-3">The Double Tax Avoidance Agreement (DTAA) prevents income from being taxed twice—once in India and once abroad. To claim relief under DTAA, obtain a Tax Residency Certificate (TRC) from the country of residence</p>
+            </div>
+          )}
+        </div>
+
+          <div className="faqOuter">
+            <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(12)}
+          >
+            <p className="text-xl font-bold question">
+              13. What Are the Tax Rates for NRIs?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[12] && (
+            <div className="answer text-left my-3 text-base">
+             <p className="mb-3">The same slab rates apply as for resident individuals.
+Note: Senior citizen exemptions do not apply to NRIs.
+</p>
+            </div>
+          )}
+          </div>
+
+         <div className="faqOuter">
+           <div
+            className="Faq w-full flex justify-between py-6"
+            onClick={() => toggleAnswer(13)}
+          >
+            <p className="text-xl font-bold question">
+              14.How Can NRIs Pay Tax in India?
+            </p>
+            <img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+              alt=""
+              height="24"
+              width="24"
+            />
+          </div>
+          {visibleAnswer[13] && (
+            <div className="answer text-left my-3 text-base">
+              <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
+                <li>1.	Determine Taxable Income </li>
+                <li>2.	Obtain PAN if not already held</li>
+                <li>3.	Compute Tax Liability including deductions and exemptions</li>
+                <li>4.	Pay Tax Online through challan or during ITR filing</li>
+                <li>5.	File Return via ITD portal or with assistance from FileyourTax</li>
+                <li>6.	E-Verify Return within 30 days</li>
+              </ol>
+            </div>
+          )}
+         </div>
+          
+
+        </div>
+      </div>
+
+      <div className="flex justify-between end-price ">
+        <p className="font-semibold text-xl">Expert-Assisted NRI Tax Filing</p>
+        <div className="flex gap-2 items-center">
+          <p className=" line-through text-gray-600 ">₹8900</p>
+          <p className="font-bold text-4xl ">₹8000</p>
+          <p>+ taxes</p>
+          <button className="text-white font-bold text-lg rounded-full" >  Buy Now </button>
+        </div>
+      </div>
 
       <Need_Support />
       <Footer />

@@ -221,24 +221,24 @@ export default function Home() {
 
   const stats = [
     { icon: <LucideCheckCircle />, value: '4.5', text: 'Google Rating' },
-    { icon: <LucideUsers />, value: '1+ Million', text: 'Happy Customers' },
-    { icon: <LucideFileText />, value: '2000+', text: 'Taxes Handled' },
-    { icon: <LucideClock />, value: '10+ Years', text: 'of Industry Experience' }
+    { icon: <LucideUsers />, value: '20k +', text: 'Satisfied Clients' },
+    { icon: <LucideFileText />, value: '20k+', text: 'Returns Processed' },
+    { icon: <LucideClock />, value: '17+ Years', text: ' of Professional Experience' }
   ];
 
   const services = [
-    { icon: <LucideWallet />, title: 'Advance Tax Consultation', description: 'Get ahead of your taxes with our advance planning services.' },
-    { icon: <LucideBarChart />, title: 'Tax Saving on Salary Income', description: 'Maximize your savings on your yearly salary.' },
-    { icon: <LucideDollarSign />, title: 'Tax Saving on Capital Gains', description: 'Optimize tax on your investment earnings.' },
-    { icon: <LucideBell />, title: 'Responding to Income Tax Notices', description: 'Expert help when you need it most.' }
+    { icon: <LucideWallet />, title: 'Advance Tax Planning', description: 'Plan ahead to manage tax liabilities efficiently and avoid surprises.' },
+    { icon: <LucideBarChart />, title: 'Tax Savings on Salary Income', description: 'Unlock deductions and exemptions to optimize your take-home pay.' },
+    { icon: <LucideDollarSign />, title: ' Capital Gains Tax Advisory', description: 'Expert guidance to minimize taxes on investment and property income.' },
+    { icon: <LucideBell />, title: ' Income Tax Notice Handling', description: 'Receive professional support to respond accurately and confidently to any tax notices' }
   ];
 
   const steps = [
-    { icon: <LucideUserCheck />, title: 'Book a call with expert' },
-    { icon: <LucideMessageSquare />, title: 'Explain Your Query' },
-    { icon: <LucideDollarSign />, title: 'Understand Pricing' },
-    { icon: <LucideWallet />, title: 'Pay the Fees' },
-    { icon: <LucidePhone />, title: 'Get personalized Consultation' }
+    { icon: <LucideUserCheck />, title: 'Schedule a Consultation' },
+    { icon: <LucideMessageSquare />, title: 'Discuss Your Tax Concerns' },
+    { icon: <LucideDollarSign />, title: 'Get Transparent Pricing' },
+    { icon: <LucideWallet />, title: 'Make Payment' },
+    { icon: <LucidePhone />, title: 'Receive Tailored Tax Advice' }
   ];
 
   const initialOpenState = Array(10).fill(true);
@@ -268,17 +268,16 @@ export default function Home() {
                 <span className="text-[var(--primary-blue)] font-medium">Tax2Win</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Tax Consultancy &<br />Advisory Services
+                Tax Consultancy &<br />Advisory Solutions
               </h1>
               <p className="text-gray-600 mb-6">
-                From early income tax planning and filing to notice management and
-                optimizing tax strategies, we guide you every step of the way with expert
-                advice.
+               From proactive tax planning and accurate return filing to expert handling of income tax notices and strategic advisory—FileYourTax is your trusted partner at every step.
               </p>
+              <p>Request a Free Quote</p>
             </div>
             <div className="contact-form">
               <h3 className="text-gray-700 font-medium mb-4 text-center">
-                Enter your details to help us connect with you
+               Enter your details, and our team will get in touch.
               </h3>
               <form onSubmit={handleSubmit}>
                 <input
@@ -323,9 +322,9 @@ export default function Home() {
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">
-            Your Go-To Tax <span className="text-[var(--primary-blue)]">Consultants!</span>
+Why Choose FileYourTax?
           </h2>
-          <p className="text-center text-gray-600 mb-10">Experience. Expertise. Excellence.</p>
+          <p className="text-center text-gray-600 mb-10">Expertise. Efficiency. Excellence.</p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-20">
             {stats.map((stat, index) => (
@@ -362,7 +361,7 @@ export default function Home() {
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-            How to get <span className="text-[var(--primary-blue)]">Tax Consultancy Services?</span>
+           How It Works
           </h2>
           
           <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
@@ -385,11 +384,11 @@ export default function Home() {
           
           <div className="comparison-section">
             <div className="comparison-list no">
-              <h3 className="text-xl font-semibold mb-4">Say 'NO' to</h3>
+              <h3 className="text-xl font-semibold mb-4">Say Goodbye To...</h3>
               <div className="space-y-3">
-                {['Tax Blunders', 'Stress', 'Confusion', 'Running around CA offices', 
-                  'Notices from Income Tax Department', 'Spending hours figuring out taxes',
-                  'Penalties and legal complications', 'Errors'].map((item, index) => (
+                {['Tax Errors & Misreporting', 'Last-Minute Rush & Panic', 'Inaccurate Filings', 'Tedious Visits to CA Offices', 
+                  'Income Tax Notices', 'Legal Penalties'
+                    ].map((item, index) => (
                   <div key={index} className="comparison-item">
                     <LucideCheckCircle className="w-5 h-5 mt-0.5 flex-shrink-0" />
                     <span>{item}</span>
@@ -399,11 +398,11 @@ export default function Home() {
             </div>
             
             <div className="comparison-list yes">
-              <h3 className="text-xl font-semibold mb-4">Say 'YES' to</h3>
+              <h3 className="text-xl font-semibold mb-4">Say Yes To...</h3>
               <div className="space-y-3">
-                {['Personalized Experience', 'Utmost Benefits of Tax Expertise', 
-                  'End-to-end Solutions', '30+ years of industry experience',
-                  'Saving taxes legally', 'Compliance', 'Peace of mind'].map((item, index) => (
+                {['Personalized Tax Strategies', 'Legally Maximized Tax Savings', 
+                  'Expert-Driven Compliance', 'End-to-End Tax Solutions',
+                  'Peace of Mind', 'Support from 100+ Skilled Tax Professionals'].map((item, index) => (
                   <div key={index} className="comparison-item">
                     <LucideCheckCircle className="w-5 h-5 mt-0.5 flex-shrink-0" />
                     <span>{item}</span>
@@ -423,7 +422,7 @@ export default function Home() {
               We manage things! 100+ tax professionals to find the best tax solutions!
             </p>
             <button className="bg-[var(--primary-blue)] text-white px-6 py-2 rounded-full whitespace-nowrap  transition-colors">
-              Get Tax Advice Now →
+              Get Expert Tax Advice Now
             </button>
           </div>
         </div>
@@ -437,91 +436,90 @@ export default function Home() {
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(0)}>
           <p className="text-xl font-bold question">1.
-                    Why is it Important to Plan Taxes?
+                    Why is tax planning essential?
                   </p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[0] &&
           <div className="answer text-left my-3">
-            <p className="text-base mb-2">Tax planning involves using legal methods to minimize tax liability and maximize tax savings. Tax planning can help individuals and businesses save money, increase cash flow, and meet financial goals. Therefore, it is important to plan your taxes effectively. </p>
+            <p className="text-base mb-2">Effective tax planning uses legitimate strategies to reduce tax liabilities, enhance cash flow, and achieve personal or business financial goals. </p>
            
           </div>}
 
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(1)}>
-          <p className="text-xl font-bold question">2. How does Tax2win assist in responding to income tax notices?</p>
+          <p className="text-xl font-bold question">2. How does FileYourTax help with income tax notices?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[1] &&
           <div className="answer text-left my-3">
-            <p className="text-base mb-3">Our team of experienced CAs provides expert guidance and support to help you respond to income tax notices promptly and accurately, ensuring compliance and peace of mind.</p>
+            <p className="text-base mb-3">Our qualified Chartered Accountants provide prompt and accurate assistance to respond to notices, ensuring full compliance and minimizing potential risks.</p>
 
            
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(2)}>
-          <p className="text-xl font-bold question">3. Why should I pre-book ITR filing for FY 2024-25?</p>
+          <p className="text-xl font-bold question">3. Why should I pre-book my ITR filing for FY 2024–25?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[2] &&
           <div className="answer text-left my-3">
            
-            <p className="text-base">Pre-booking your ITR filing ensures that you secure an early slot, avoiding last-minute rush and potential delays. It also allows us to provide personalized attention to your tax filing needs.</p>
+            <p className="text-base">Pre-booking secures an early slot, avoids last-minute delays, and ensures personalized attention to your return filing.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
-          <p className="text-xl font-bold question">4. What should I do if I have questions about my tax planning?</p>
+          <p className="text-xl font-bold question">4. Whom can I contact for tax planning assistance?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[3] &&
           <div className="answer text-left my-3">
-             <p className="text-base mb-3">You can reach out to our dedicated team of CAs anytime for personalized assistance and answers to your tax planning questions.</p>
+             <p className="text-base mb-3">You can reach out to our dedicated support team or tax experts any time. We’re here to help you with personalized guidance.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(4)}>
-          <p className="text-xl font-bold question">5. Is there a cost for these post-filing services?</p>
+          <p className="text-xl font-bold question">5. Are there charges for post-filing services?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[4] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">The answer is YES. After you have determined your residential status, the next step is to identify whether your income is taxable or not in India as per your residential status determined under Income Tax Act,1961.</p>
+            <p className=" mb-3">Yes, charges apply. Tax implications depend on your residential status:</p>
 
             <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-              <li>For Resident Individuals: Your Global income is taxable in India i.e. income earned whether in India or outside India is taxable in India.</li>
-              <li>For Non-Resident Indians: Only income earned or accrued in India or deemed to be so is taxable in India. Therefore, your income from any country besides India is not taxable in India.</li>
+              <li><b>Resident Individuals:</b> Global income is taxable in India.</li>
+              <li><b>Non-Resident Individuals (NRIs)</b>: Only income earned or accrued in India is taxable.
+Our expert team ensures precise compliance and maximum deductions.
+.</li>
             </ul>
-
-            <p className=" mb-3">For professional assistance, expert <b>CAs at File Your Tax</b> can ensure accuracy, maximize deductions, and optimize tax refunds.</p>
 
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(5)}>
-          <p className="text-xl font-bold question">6. How to hire tax expert for year-round support at Tax2win?</p>
+          <p className="text-xl font-bold question">6. Non-Resident Individuals (NRIs)</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[5] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">No. You are not required to be physically present to file & verify your income tax returns. You can file income tax return online from anywhere in the world. You can now e-verify your ITR from anywhere . You can send signed copy of ITR-V to the CPC Income Tax 
-              Department, Bengaluru or e-verify the same within 30 days from the date of filing your ITR.</p>
+            <p className=" mb-3">No. You can file and verify your Income Tax Return online from anywhere. If not e-verifying, you can send the signed ITR-V to the CPC office in Bengaluru within 30 days.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(6)}>
-          <p className="text-xl font-bold question">7.What is the role of a tax advisory consultant?</p>
+          <p className="text-xl font-bold question">7. What is the role of a tax advisory consultant?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[6] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Yes, an ITR can be e-filed without Form 16. Salary slips and essential documents such as <b>Form 26AS, AIS,
-            and TIS</b> provide the necessary income and deduction details for filing a return.</p>
+            <p className=" mb-3">A tax advisor educates and guides clients on tax laws and compliance, helping them reduce liabilities while staying within legal boundaries.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(7)}>
-          <p className="text-xl font-bold question">8.What is the difference between tax advisory and consulting?</p>
+          <p className="text-xl font-bold question">8. How is tax advisory different from tax consulting?</p>
           <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
         </div>
         {visibleAnswer[7] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Tax advisory focuses on providing guidance and education on tax laws and compliance to help clients understand their obligations and minimize liabilities. In contrast, tax consulting offers a broader scope, analyzing a client’s overall financial situation and recommending strategies that include tax planning, business structuring, and financial optimization. Essentially, tax advisory is about compliance, while tax consulting encompasses strategic financial advice.</p>
+            <p className=" mb-3">Tax Advisory focuses on legal compliance, documentation, and education.</p>
+            <p className=" mb-3" >Tax Consulting encompasses broader financial strategies, including tax planning, structuring, and business optimization.</p>
             
           </div>}
 
