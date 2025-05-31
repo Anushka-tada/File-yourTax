@@ -4,7 +4,7 @@
   --third-color: rgb(36, 101, 111);
 }
 
-.noticesPage {
+/* .noticesPage {
   max-width: 85%;
   margin: 2rem auto;
   padding: 1rem 2rem;
@@ -131,4 +131,193 @@
   .noticeCards {
     flex-direction: column;
   }
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Main colors */
+  --primary-color: rgb(20, 64, 71);
+  --primary-light: rgb(36, 101, 111);
+  --primary-dark: rgb(20, 64, 71);
+  --secondary-color: #475569;
+  --accent-color: #f97316;
+  
+  /* Background colors */
+  --bg-light: #f8fafc;
+  --bg-dark: #1e293b;
+  --card-bg: #ffffff;
+  
+  /* Text colors */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-light: #94a3b8;
+  --text-white: #ffffff;
+  
+  /* Border colors */
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+  
+  /* Success/Error colors */
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
 }
+
+@layer base {
+  body {
+    @apply bg-[#f8fafc] text-[#0f172a];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl leading-tight;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl leading-snug;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .notice-card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg border border-[#e2e8f0];
+  }
+
+  .section-title {
+    @apply text-xl font-semibold text-[#144047] mb-4;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-[#144047] text-white px-4 py-2 rounded-md hover:bg-[#144047] transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-[#475569] text-white px-4 py-2 rounded-md hover:bg-[#334155] transition-colors;
+  }
+
+  .btn-outline {
+    @apply border border-[#144047] text-[#144047] px-4 py-2 rounded-md hover:bg-[#eff6ff] transition-colors;
+  }
+
+  .tag {
+    @apply inline-block px-2 py-1 text-xs font-medium rounded-full;
+  }
+
+  .tag-blue {
+    @apply bg-blue-100 text-[#144047];
+  }
+
+  .tag-yellow {
+    @apply bg-amber-100 text-amber-800;
+  }
+
+  .tag-red {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .tag-green {
+    @apply bg-green-100 text-[#24656F];
+  }
+}
+
+
+html , body {
+  overflow-x: hidden;
+}
+
+li img {
+    width: 19px;
+    height: 19px;
+}
+.ca-text{
+    width: 55%;
+   
+}
+
+.cs-consulltants{
+    background-color: #fafbfd;;
+}
+.ca-text h1{
+    color: var(--primary-color);
+   
+}
+.ca-form{
+    width: 436px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.book-btn{
+    background-color: var(--primary-color);
+
+}
+input , textarea{
+    width: 100%;
+    border: 1px solid rgb(188, 188, 188);
+}
+.google-btn{
+    border: 1px solid #1678fb;
+}
+.google-btn p{
+   color: #1678fb;
+}
+.blue-text{
+    color: var(--primary-color);
+
+}
+.ca-form {
+    position: relative;
+  }
+  
+  .ca-form .banner {
+    position: absolute;
+    top: -11px;
+    left: -11px;
+
+  }
+  @media (max-width:1345px) {
+  .ca-text{
+    width: 45%;
+}
+.ca-form{
+  width: 50%;
+  margin-right: 0px !important;
+}
+}
+
+
+  @media (max-width: 490px){
+    .ca-form{
+        width: 90%;
+    }
+    .ca-text{
+        width: 90%;
+       
+    }
+  }
+
+  @media (max-width: 800px){
+    
+    .ca-text{
+        width: 100%;
+       
+    }
+  }

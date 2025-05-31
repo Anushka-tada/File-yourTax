@@ -1,13 +1,18 @@
 @import url('../homepage/EasiestWay.css');
 
+html , body {
+  overflow-x: hidden;
+}
+
 li img {
     width: 19px;
     height: 19px;
 }
 .ca-text{
-    width: 60%;
+    width: 55%;
    
 }
+
 .cs-consulltants{
     background-color: #fafbfd;;
 }
@@ -48,6 +53,15 @@ input , textarea{
     left: -11px;
 
   }
+  @media (max-width:1345px) {
+  .ca-text{
+    width: 45%;
+}
+.ca-form{
+  width: 50%;
+  margin-right: 0px !important;
+}
+}
 
 
   @media (max-width: 490px){
@@ -149,8 +163,39 @@ padding: 15px;
     /* transition: opacity 2s ease, max-height 2s ease; */
 }
 
+@media (max-width: 1024px) {
+    .choose-point {
+      width:48% !important
+    }
+    .review{
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  height: 300px;
+  width:  400px !important;
+}
+.ca-text h1{
+  font-size: 35px;
+}
+.ca-text h2{
+  font-size: 25px;
+}
+}
 
+@media (max-width: 800px) {
 
+    .review{
+ 
+  height: 300px;
+  width:  100% !important;
+}
+}
+
+@media (max-width: 540px) {
+    .choose-point {
+      width:100% !important
+    }
+}
 
 ul.custom-circle li::before {
   content: '•'; /* Unicode character for filled circle */
@@ -173,4 +218,10 @@ ol.custom-circle li::before {
 }
 .Faq p{
   color: #323f50;
+}
+
+@media (max-width:800px) {
+    .whoNeed h1 , .ca-text h1 , .hearClients h1 , .nriInclude h1 , .why-choose h1{
+   font-size: 25px !important;
+}
 }

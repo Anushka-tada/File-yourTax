@@ -58,9 +58,9 @@ const page = () => {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 2
       }
@@ -202,7 +202,7 @@ const initialOpenState = Array(10).fill(true);
         <h1 className=" text-4xl font-bold mb-20 text-center">
           Our NRI Tax Filing Services Include
         </h1>
-        <div className="flex justify-center gap-4  items-center">
+        <div className="flex justify-center gap-4  items-center lg:flex-nowrap flex-wrap">
           <div>
             <img src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/section-img.png"></img>
           </div>
@@ -257,7 +257,7 @@ const initialOpenState = Array(10).fill(true);
         <h1 className=" text-4xl font-bold mb-20 text-center">
           Why Choose Tax2win for NRI Tax Filing?
         </h1>
-        <div className="row flex gap-3">
+        <div className="row flex gap-3 lg:flex-nowrap  flex-wrap">
           <div className="choose-point flex flex-col items-center">
             <img
               src="https://tax2win.in/assets-new/img/new-theme/pricing-landing/tax-filling.svg"
@@ -365,25 +365,20 @@ const initialOpenState = Array(10).fill(true);
         </div>
         {visibleAnswer[1] &&
           <div className="answer text-left my-3">
-            <p className="text-base mb-3">Individuals, including Non-Resident Indians (NRIs), must file an Income Tax Return (ITR) if their <b>Gross Total Income (GTI)</b> exceeds the <b>basic exemption limit</b>.</p>
+            <p className="text-base mb-3">You are considered as "Resident in India" for a financial year if you stayed in India -</p>
 
             <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
-              <li>Under the <b>old tax regime</b>, the basic exemption limit is <b>₹2.5 lakh</b>.</li>
-              <li>Under the <b>new tax regime</b>, the basic exemption limit is <b>₹3 lakh</b>.</li>
-              <li>For <b>senior citizens</b> (aged 60–79 years), the exemption limit is <b>₹3 lakh</b>.</li>
-              <li>For <b> super senior citizens</b> (aged 80 years and above), the exemption limit is <b>₹5 lakh</b>.</li>
+              <li>for a period of 182 days or more during the Financial year; Or</li>
+              <li>for 60 days in the financial year and for a total of 365 days in the preceding 4 years.</li>
             </ol>
-            <p className="text-base mb-3">Additionally, individuals must file an ITR even if their income is below the exemption limit if they meet any of the following criteria:</p>
+            <p className="text-base mb-3">There are certain exceptions to the above condition of 60 Days i.e. only the test of first condition is done in these cases:</p>
 
             <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
-              <li>Deposited an amount or aggregate exceeding <b>₹1 crore</b> in one or more current accounts with a bank or cooperative bank.</li>
-              <li>Incurred an aggregate expenditure exceeding <b>₹2 lakh</b> on foreign travel for oneself or any other person.</li>
-              <li>Paid <b>₹1 lakh or more</b> as an electricity bill.</li>
-              <li>Business sales turnover exceeds <b>₹60 lakh</b> in the financial year.</li>
-              <li>Professional gross receipts exceed <b>₹10 lakh</b> in the financial year.</li>
-              <li>Total <b>TDS or TCS exceeds ₹25,000</b> (₹50,000 for senior citizens).</li>
-              <li>Deposited <b>₹50 lakh or more</b> in one or more savings accounts.</li>
+              
+              <li>If you are an Indian citizen who has left India in the financial year as a crew member of an Indian ship or for the purposes of employment abroad; or</li>
+              <li>f you are a Person of Indian Origin(PIO) or a citizen of India who comes on a visit to India;</li>
             </ol>
+            <p>Therefore, you are a Non-Resident if you do not fulfil any of the above conditions. However, for Indian citizens or Persons of Indian Origin (PIO) who visit India, the 60-day criteria is extended to 120 days if their total Indian income exceeds ₹15 lakh. Additionally, an Indian citizen earning over ₹15 lakh (excluding foreign income) and not liable to tax in any other country will be deemed a resident.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(2)}>
@@ -392,15 +387,8 @@ const initialOpenState = Array(10).fill(true);
         </div>
         {visibleAnswer[2] &&
           <div className="answer text-left my-3">
-            <p className="text-base mb-2">Taxpayers can file their ITR electronically through:</p>
-            <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
-              <li><b>The Income Tax e-Filing portal:</b> <a href="https://www.incometax.gov.in/iec/foportal/" className=" text-primary ">https://www.incometax.gov.in/iec/foportal/</a></li>
-              <li><b>FileYourTax </b>e-filing platform, which allows users to file their returns efficiently in under four minutes.</li>
-            </ol>
-            <p className="text-base">The Central Board of Direct Taxes (CBDT) has officially extended the due date for filing Income Tax
-Returns (ITRs) for the Assessment Year (AY) <b>2025–26</b>. The original deadline of 31st July 2025 has
-been extended to 15th September 2025 for taxpayers whose accounts are not required to be
-audited</p>
+           
+            <p className="text-base">Yes, NRIs can file their income tax returns online either through the Income Tax Department's official portal or by using online tax filing platforms. Navigating the complexities of NRI taxation can be challenging. At Tax2win, our experienced tax professionals are here to simplify the process for you. No matter where you are located, our team is dedicated to helping you in file your taxes accurately and efficiently considering the tax laws.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
@@ -409,9 +397,17 @@ audited</p>
         </div>
         {visibleAnswer[3] &&
           <div className="answer text-left my-3">
-            <p className="text-base mb-2">If a taxpayer fails to file their ITR before the due date, they may still submit a <b>belated return</b> by
-              <b>31st December of the assessment year</b>, unless extended by the government. However, a belated return is subject to penalties under
-              <b>Section 234F</b>, depending on the delay.</p>
+             <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle" >
+              <li>PAN Card: Mandatory for filing taxes.</li>
+              <li>Passport: For identity and nationality verification.</li>
+              <li>Salary Slips & Form 16: Details of salary income.</li>
+              <li>Bank Account Details: Indian account for tax refunds.</li>
+                <li>Investment Details: Declare Indian investments.</li>
+                  <li>Tax Payment Receipts: Proof of tax payments.</li>
+                    <li>Foreign Assets Info: Details of foreign accounts/investments.</li>
+                      <li>Rent Receipts: If earning rental income.</li>
+                      <p>Indian Property Details: Information on owned property in India.</p>
+             </ol>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(4)}>
@@ -420,14 +416,11 @@ audited</p>
         </div>
         {visibleAnswer[4] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Filing an ITR online is a straightforward process and can be done in minutes through File Your Tax:</p>
+            <p className=" mb-3">The answer is YES. After you have determined your residential status, the next step is to identify whether your income is taxable or not in India as per your residential status determined under Income Tax Act,1961.</p>
 
             <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-              <li>1.	Visit <b>File Your Tax</b> and click on <b>“File ITR Now.”</b></li>
-              <li>2.	Select your <b>source of income</b> and proceed.</li>
-              <li>3.	Upload <b>Form 16</b> if you are a salaried individual (or proceed without it).</li>
-              <li>4.	Enter relevant details such as <b>Financial Year, PAN, Aadhaar, deductions, and bank details.</b></li>
-              <li>5.	Review your tax computation and click <b>“File My ITR.”</b></li>
+              <li>For Resident Individuals: Your Global income is taxable in India i.e. income earned whether in India or outside India is taxable in India.</li>
+              <li>For Non-Resident Indians: Only income earned or accrued in India or deemed to be so is taxable in India. Therefore, your income from any country besides India is not taxable in India.</li>
             </ul>
 
             <p className=" mb-3">For professional assistance, expert <b>CAs at File Your Tax</b> can ensure accuracy, maximize deductions, and optimize tax refunds.</p>
@@ -440,14 +433,8 @@ audited</p>
         </div>
         {visibleAnswer[5] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">6. To file an ITR using Form 16, follow these steps:</p>
-
-            <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-              <li>1.	Select <b>"File It Yourself"</b> on <b>File Your Tax</b> and click <b>“File ITR Now.”</b></li>
-              <li>2.	Upload <b>Form 16</b>, and the system will automatically extract the relevant details.</li>
-              <li>3.	Verify and modify the tax computation if required.</li>
-              <li>4.	Click <b>"File My Return"</b> to complete the process.</li>
-            </ul>
+            <p className=" mb-3">No. You are not required to be physically present to file & verify your income tax returns. You can file income tax return online from anywhere in the world. You can now e-verify your ITR from anywhere . You can send signed copy of ITR-V to the CPC Income Tax 
+              Department, Bengaluru or e-verify the same within 30 days from the date of filing your ITR.</p>
           </div>}
 
         <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(6)}>
