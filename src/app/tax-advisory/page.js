@@ -200,6 +200,7 @@ import { useState } from 'react';
 import { LucidePhone, LucideUsers, LucideCheckCircle, LucideClock, LucideFileText, LucideWallet, LucideBarChart, LucideBell, LucideUserCheck, LucideMessageSquare, LucideDollarSign, LucideArrowRight } from 'lucide-react';
 import Nav from "../components/Navbar/Nav";
 import Footer from "../homepage/Footer";
+import Need_Support from "../homepage/Need_Support";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -239,6 +240,17 @@ export default function Home() {
     { icon: <LucideWallet />, title: 'Pay the Fees' },
     { icon: <LucidePhone />, title: 'Get personalized Consultation' }
   ];
+
+  const initialOpenState = Array(10).fill(true);
+    const [visibleAnswer, setVisibleAnswer] = useState(initialOpenState);
+  
+    const toggleAnswer = (index) => {
+      setVisibleAnswer((prev) => {
+        const newVisible = [...prev];
+        newVisible[index] = !newVisible[index]; // Toggle current index
+        return newVisible;
+      });
+    };
 
   return (
     <>
@@ -417,6 +429,110 @@ export default function Home() {
         </div>
       </section>
     </main>
+
+
+<div className="section10 py-16 lg:px-24 px-4 text-center">
+      <h1 className="section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10">Frequently Asked Questions (FAQ's)</h1>
+      <div className="section9-Faqs">
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(0)}>
+          <p className="text-xl font-bold question">1.
+                    Why is it Important to Plan Taxes?
+                  </p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[0] &&
+          <div className="answer text-left my-3">
+            <p className="text-base mb-2">Tax planning involves using legal methods to minimize tax liability and maximize tax savings. Tax planning can help individuals and businesses save money, increase cash flow, and meet financial goals. Therefore, it is important to plan your taxes effectively. </p>
+           
+          </div>}
+
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(1)}>
+          <p className="text-xl font-bold question">2. How does Tax2win assist in responding to income tax notices?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[1] &&
+          <div className="answer text-left my-3">
+            <p className="text-base mb-3">Our team of experienced CAs provides expert guidance and support to help you respond to income tax notices promptly and accurately, ensuring compliance and peace of mind.</p>
+
+           
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(2)}>
+          <p className="text-xl font-bold question">3. Why should I pre-book ITR filing for FY 2024-25?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[2] &&
+          <div className="answer text-left my-3">
+           
+            <p className="text-base">Pre-booking your ITR filing ensures that you secure an early slot, avoiding last-minute rush and potential delays. It also allows us to provide personalized attention to your tax filing needs.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
+          <p className="text-xl font-bold question">4. What should I do if I have questions about my tax planning?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[3] &&
+          <div className="answer text-left my-3">
+             <p className="text-base mb-3">You can reach out to our dedicated team of CAs anytime for personalized assistance and answers to your tax planning questions.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(4)}>
+          <p className="text-xl font-bold question">5. Is there a cost for these post-filing services?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[4] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">The answer is YES. After you have determined your residential status, the next step is to identify whether your income is taxable or not in India as per your residential status determined under Income Tax Act,1961.</p>
+
+            <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
+              <li>For Resident Individuals: Your Global income is taxable in India i.e. income earned whether in India or outside India is taxable in India.</li>
+              <li>For Non-Resident Indians: Only income earned or accrued in India or deemed to be so is taxable in India. Therefore, your income from any country besides India is not taxable in India.</li>
+            </ul>
+
+            <p className=" mb-3">For professional assistance, expert <b>CAs at File Your Tax</b> can ensure accuracy, maximize deductions, and optimize tax refunds.</p>
+
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(5)}>
+          <p className="text-xl font-bold question">6. How to hire tax expert for year-round support at Tax2win?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[5] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">No. You are not required to be physically present to file & verify your income tax returns. You can file income tax return online from anywhere in the world. You can now e-verify your ITR from anywhere . You can send signed copy of ITR-V to the CPC Income Tax 
+              Department, Bengaluru or e-verify the same within 30 days from the date of filing your ITR.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(6)}>
+          <p className="text-xl font-bold question">7.What is the role of a tax advisory consultant?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[6] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">Yes, an ITR can be e-filed without Form 16. Salary slips and essential documents such as <b>Form 26AS, AIS,
+            and TIS</b> provide the necessary income and deduction details for filing a return.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(7)}>
+          <p className="text-xl font-bold question">8.What is the difference between tax advisory and consulting?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[7] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">Tax advisory focuses on providing guidance and education on tax laws and compliance to help clients understand their obligations and minimize liabilities. In contrast, tax consulting offers a broader scope, analyzing a client’s overall financial situation and recommending strategies that include tax planning, business structuring, and financial optimization. Essentially, tax advisory is about compliance, while tax consulting encompasses strategic financial advice.</p>
+            
+          </div>}
+
+       
+
+
+      </div>
+    </div>
+
+
+    <Need_Support/>
      <Footer/>
     </>
   );
