@@ -1,0 +1,105 @@
+
+
+/* Custom styles for Tax2win */
+.bg-teal-gradient {
+  background: linear-gradient(0deg, #1a2e31 0%, #205f69 100%);;
+}
+
+/* Animation for feature items */
+.feature-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom bullet points */
+.custom-bullet {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-bullet::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: rgb(20, 64, 71);
+  border-radius: 50%;
+}
+
+/* FAQ animations */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-content.active {
+  max-height: 500px;
+}
+
+/* Logo hover effect */
+.logo-item {
+  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.logo-item:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Button animations */
+.btn-primary {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:after {
+  left: 100%;
+}
+
+/* Form input focus effects */
+.form-input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 133, 153, 0.2);
+  transition: all 0.2s ease;
+}
+
+/* Chat widget pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.chat-widget {
+  animation: pulse 2s infinite;
+}

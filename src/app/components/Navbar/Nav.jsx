@@ -361,7 +361,7 @@ const Nav = () => {
             onClick={() => handleDropdownToggle("products")}
           />
           {openDropdown === "products" && (
-            <div className="dropdown drop-product bg-white shadow-lg rounded-lg absolute w-full lg:w-auto text-base">
+            <div className="dropdown drop-product bg-white shadow-lg rounded-lg absolute w-full lg:w-auto text-base z-20">
               <ul>
               <a href="/file-yout-return">  <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   File Your ITR
@@ -382,9 +382,11 @@ const Nav = () => {
                   Refund Status
                 </li>
                </a>
-                {/* <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-blue-700">
+               <a href="/tds-solution">
+                 <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   TDS Solution
-                </li> */}
+                </li>
+               </a>
                <a href="/nri"> <li className="py-2 hover:bg-gray-100 cursor-pointer hover:text-cyan-800">
                   NRI Taxes & ITR Filing
                 </li></a>

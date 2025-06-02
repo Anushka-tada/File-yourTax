@@ -27,7 +27,7 @@ const page = () => {
       <Nav />
       <div className="refund-page">
         {/* Header */}
-        <div className="header  py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
+        <div className="header  pb-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
           <div className="ca-text">
             <h1 className=" text-4xl font-semibold mb-3">
               <span className="font-bold">Income Tax Refund Status -</span>{" "}

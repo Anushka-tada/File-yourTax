@@ -147,13 +147,12 @@ export default function page() {
       <section className="py-12 pt-20 px-4 md:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
           <div className="md:w-7/12 md:pr-8">
-            <h2 className=" font-medium mb-2">Maximize Your Gain, Minimize Your Taxes</h2>
+            <h2 className=" font-medium mb-2">Optimize Your Capital Gains. Minimize Your Tax Burden.</h2>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#144047] mb-4">
-              Expert Assisted Capital <br /> Gains Filing
+             Expert-Assisted Capital Gains Tax Filing – <br/>Powered by FileYourTax
             </h1>
             <p className="text-gray-700 mb-6">
-              Whether you sold property, shares, mutual funds, bonds, gold or any other asset, we're 
-              here to help you navigate tax implications and save more.
+             Whether you've sold real estate, equity shares, mutual funds, digital assets, or any other capital asset <b>—FileYourTax</b> offers comprehensive, expert-driven support to ensure accurate tax filing and maximum savings under the Income Tax Act.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -256,9 +255,10 @@ export default function page() {
       {/* Features Section */}
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#144047] mb-12">
-            Who Can Buy this Assisted Capital Gains Plan?
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#144047] mb-5">
+            Who Should Opt for This Service?
           </h2>
+          <p className='mb-12 text-lg text-center font-semibold'>Our Capital Gains Assistance Plan is ideal for:</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-start">
@@ -266,7 +266,7 @@ export default function page() {
                 <div className="p-2 bg-blue-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Taxpayers who transacted in both Indian and property</p>
+                <p className="text-gray-700 font-medium">Individuals transacting in <b>immovable property</b> (sale, purchase, or exchange)</p>
               </div>
             </div>
             
@@ -275,7 +275,7 @@ export default function page() {
                 <div className="p-2 bg-blue-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Crypto traders investing in virtual digital assets/income</p>
+                <p className="text-gray-700 font-medium">Investors involved in <b>cryptocurrency and virtual digital assets</b></p>
               </div>
             </div>
             
@@ -284,7 +284,7 @@ export default function page() {
                 <div className="p-2 bg-blue-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Taxpayers with trading or any foreign currency</p>
+                <p className="text-gray-700 font-medium">Taxpayers with <b>foreign currency transactions or foreign assets</b></p>
               </div>
             </div>
             
@@ -293,7 +293,7 @@ export default function page() {
                 <div className="p-2 bg-blue-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Property sale or exchange CA advice consultation included</p>
+                <p className="text-gray-700 font-medium">Residents and NRIs involved in <b>property sale</b> requiring <b>dedicated CA consultation</b></p>
               </div>
             </div>
             
@@ -302,7 +302,7 @@ export default function page() {
                 <div className="p-2 bg-blue-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"/><path d="M15 7h6v6"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Invest and optimize sequence requirements and tax planning</p>
+                <p className="text-gray-700 font-medium">Individuals with <b>multiple real estate income sources</b></p>
               </div>
             </div>
             
@@ -311,7 +311,7 @@ export default function page() {
                 <div className="p-2 bg-blue-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Multiple house property income</p>
+                <p className="text-gray-700 font-medium">Taxpayers earning capital gains or losses from <b>equity shares or mutual funds</b></p>
               </div>
             </div>
           </div>
@@ -322,7 +322,7 @@ export default function page() {
                 <div className="p-2 bg-green-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Profit or loss from the sale of shares, mutual funds</p>
+                <p className="text-gray-700 font-medium">Traders reporting income from <b>Futures & Options (F&O)</b></p>
               </div>
             </div>
             
@@ -331,18 +331,18 @@ export default function page() {
                 <div className="p-2 bg-green-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
                 </div>
-                <p className="text-gray-700 font-medium">Income from other sources</p>
+                <p className="text-gray-700 font-medium">Individuals with <b>income from other sources</b> requiring capital gains treatment</p>
               </div>
             </div>
             
-            <div className="flex flex-col items-start">
+            {/* <div className="flex flex-col items-start">
               <div className="flex items-center mb-4">
                 <div className="p-2 bg-green-50 rounded-full mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#24656F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
                 <p className="text-gray-700 font-medium">Futures and options income</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -351,7 +351,7 @@ export default function page() {
       <section className="py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-[#144047] mb-12">
-            Our Capital Gains Services Include
+            Scope of Our Capital Gains Services
           </h2>
           
           <div className="space-y-8">
@@ -362,17 +362,17 @@ export default function page() {
                 </div>
               </div>
               <div className="md:w-3/4">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Capital Gains Tax Filing:</h3>
-                <p className="text-gray-700 mb-1">Expert-assisted capital gains tax filing for individuals dealing with gains from listed shares, mutual funds, property, etc.</p>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">Capital Gains Tax Filing</h3>
+                <p className="text-gray-700 mb-1">Professional preparation and filing of your capital gains tax return—covering all classes of assets including listed/unlisted securities, mutual funds, and property.</p>
                 
-                <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-2">Crypto-Gains Assistance:</h3>
-                <p className="text-gray-700 mb-1">Specialized support for calculating and filing taxes on cryptocurrency transactions.</p>
+                <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-2">Crypto Gains Computation & Filing</h3>
+                <p className="text-gray-700 mb-1">Specialized support for reporting capital gains from digital assets in compliance with VDA regulations.</p>
                 
-                <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-2">Expert Guidance on Exemptions:</h3>
-                <p className="text-gray-700 mb-1">Help with utilizing exemptions under Section 54F, 54EC, and others.</p>
+                <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-2">Capital Gains Computation & Indexation</h3>
+                <p className="text-gray-700 mb-1">Accurate calculation of long-term and short-term gains/losses, incorporating indexation, cost inflation adjustments, and set-offs.</p>
                 
-                <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-2">Capital Gains Computation:</h3>
-                <p className="text-gray-700 mb-1">Precise calculation of your capital gains and loss relief for liabilities, handled by professionals.</p>
+                <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-2">Advisory on Exemptions & Reinvestments</h3>
+                <p className="text-gray-700 mb-1">Expert guidance on exemptions available under Sections 54, 54F, 54EC, and strategic investment advice for tax optimization.</p>
               </div>
             </div>
           </div>
@@ -383,7 +383,7 @@ export default function page() {
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-[#144047] mb-12">
-            Why Choose Us?
+           Why Choose FileYourTax?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -391,9 +391,9 @@ export default function page() {
               <div className="flex justify-center mb-4">
                 <Shield className="h-12 w-12 text-gray-700" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Trusted Expertise</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">Domain Expertise</h3>
               <p className="text-gray-600 text-sm">
-                Our team of chartered tax professionals ensures accurate filing, providing you peace of mind and complete confidence in your returns.
+              Our team of qualified Chartered Accountants and tax professionals specializes in capital gains taxation and offers solutions tailored to your asset class and holding structure.
               </p>
             </div>
             
@@ -401,9 +401,9 @@ export default function page() {
               <div className="flex justify-center mb-4">
                 <HeadphonesIcon className="h-12 w-12 text-gray-700" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">End-to-End Support</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">Comprehensive Assistance</h3>
               <p className="text-gray-600 text-sm">
-                We guide you through the entire process, from document organization and calculations to final filing and post-filing support.
+              We manage the entire process—from document collection and computation to filing and post-filing representation.
               </p>
             </div>
             
@@ -411,9 +411,9 @@ export default function page() {
               <div className="flex justify-center mb-4">
                 <FileText className="h-12 w-12 text-gray-700" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Effortless Tax Filing</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">Seamless Digital Experience</h3>
               <p className="text-gray-600 text-sm">
-                Our intuitive platform simplifies the tax filing process, allowing you to focus on what matters most to you.
+              A fully digitized workflow ensures convenience, compliance, and speed—without physical visits.
               </p>
             </div>
             
@@ -423,7 +423,7 @@ export default function page() {
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Transparent Pricing</h3>
               <p className="text-gray-600 text-sm">
-                No hidden fees or surprises - know exactly what you're paying for upfront.
+               All services are priced transparently, with no hidden charges or unexpected fees.
               </p>
             </div>
           </div>
@@ -432,7 +432,7 @@ export default function page() {
 
       {/* Green CTA Banner */}
       <section className="py-8 px-4 md:px-8 bg-[#24656F] text-white">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="mb-4 md:mb-0">
             <div className="flex items-center">
               <span className="mr-2">
@@ -440,14 +440,16 @@ export default function page() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </span>
+              <div>
+                <h2 className='font-bold text-xl mb-3'>Capital Gains: A Critical Component of Your Tax Profile</h2>
               <p className="font-medium">
-                Capital gains can significantly impact your tax liability. Our experts are here to ensure you file correctly,
-                claim all eligible deductions, and maximize your tax savings.
+              Capital gains can materially affect your tax obligations. With our support, you can ensure compliance, claim available exemptions, and strategically plan to reduce your taxable income.
               </p>
+              </div>
             </div>
           </div>
           <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-2 px-6 rounded-md transition duration-300">
-            Connect Today
+            Book a Consultation →
           </button>
         </div>
       </section>
@@ -456,7 +458,7 @@ export default function page() {
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-[#144047] mb-12">
-            From Challenges to Solutions: How Tax2Win Revolutionized Capital Gains Tax Planning
+           Case Studies: Turning Tax Complexities into Strategic Opportunities
           </h2>
           
           <div className="space-y-6">
@@ -470,7 +472,7 @@ export default function page() {
                   <div className="bg-green-50 p-2 rounded-full mr-3">
                     <FileText className="h-5 w-5 text-[#24656F]" />
                   </div>
-                  <h3 className="font-semibold text-gray-800">Case Study 1</h3>
+                  <h3 className="font-semibold text-gray-800">Case Study 1: Sale of Land in India</h3>
                 </div>
                 <button className="text-gray-500">
                   {caseStudy1Open ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
@@ -480,36 +482,24 @@ export default function page() {
               {caseStudy1Open && (
                 <div className="p-4 border-t border-gray-200 bg-gray-50">
                   <div className="mb-4">
-                    <h4 className="font-semibold text-[#24656F] mb-2">Scenario:</h4>
+                    <h4 className="font-semibold text-[#24656F] mb-2">Client Query:</h4>
                     <p className="text-gray-700 mb-2">
-                      I want to sell a part of my own land. Is there any way to save on capital gains tax?
+                     I plan to sell a parcel of land I’ve held for several years. How can I reduce my capital gains tax liability?
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Solution:</h4>
+                    <h4 className="font-semibold text-gray-700 mb-2">Our Expert Solution:</h4>
                     <p className="text-gray-700 text-sm mb-3">
-                      Yes, you have multiple ways to save capital gains tax. If the property has been held for longer than 24 months and 
-                      therefore will be considered under long-term capital gains.
-                    </p>
-                    <p className="text-gray-700 text-sm mb-3">
-                      The most common way to reduce tax payable, is to utilize indexation benefit, on the cost of long-term capital gains. 
-                      This helps you to account for inflation, and thereby reduces your gains.
+                      As the land qualifies as a <b>long-term capital asset</b> (held - 24 months), we apply <b>indexation</b> to adjust the purchase price.
                     </p>
                     <p className="text-gray-700 text-sm mb-3">
-                      The first option, described in Section 54F of the Income Tax Act, provides an exemption if the sale proceeds are used to purchase or 
-                      construct a residential house. You should know that you should have bought the new house within 1 year before or 2 years after the 
-                      sale of land, or constructed the new house within 3 years of sale of the land.
+                      The client is advised to reinvest the gains under <b>Section 54F </b>to purchase or construct a new residential property within the specified time.
                     </p>
                     <p className="text-gray-700 text-sm mb-3">
-                      Another option under Section 54EC allows you to invest in capital gains bonds issued by specific financial institutions, such as REC, NHAI, 
-                      IRFC, PFC, and others. You need to invest within 6 months of the sale of the land and hold the bond for 5 years to qualify for the 
-                      exemption. Up to ₹50 lakh can be invested under Section 54EC, and the bonds need to be kept for 5 years.
+                      Alternatively, the client may invest up to ₹50 lakh in <b>54EC capital gains bonds </b>(REC, NHAI, etc.) within 6 months of sale for tax exemption.
                     </p>
-                    <p className="text-gray-700 text-sm">
-                      The entire sale consideration is not required for investment under Section 54EC - only a portion (of up to Rs.50 lakh) can be invested 
-                      and also claims for exemption under these sections can be made within the 2 years of the purchase period.
-                    </p>
+                    
                   </div>
                 </div>
               )}
@@ -525,7 +515,7 @@ export default function page() {
                   <div className="bg-green-50 p-2 rounded-full mr-3">
                     <FileText className="h-5 w-5 text-[#24656F]" />
                   </div>
-                  <h3 className="font-semibold text-gray-800">Case Study 2</h3>
+                  <h3 className="font-semibold text-gray-800">Case Study 2: NRI Selling Indian Property</h3>
                 </div>
                 <button className="text-gray-500">
                   {caseStudy2Open ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
@@ -535,24 +525,22 @@ export default function page() {
               {caseStudy2Open && (
                 <div className="p-4 border-t border-gray-200 bg-gray-50">
                   <div className="mb-4">
-                    <h4 className="font-semibold text-[#24656F] mb-2">Scenario:</h4>
+                    <h4 className="font-semibold text-[#24656F] mb-2">Client Query:</h4>
                     <p className="text-gray-700 mb-2">
-                      I am residing in Canada. I am faced with a situation where my traditional house property in India is being sold. Now I want to save tax, and that's why I am seeking advice. Can you properly guide me?
+                      I’m a Canadian resident planning to sell inherited property in India. How do I manage taxation?
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Solution:</h4>
+                    <h4 className="font-semibold text-gray-700 mb-2">Our Expert Solution:</h4>
                     <p className="text-gray-700 text-sm mb-3">
-                      For an NRI selling property in India, the capital gains would be subject to taxation in India. The buyer of an Indian property 
-                      from a non-resident must withhold tax at the time of payment. The property's sale value, rather than the actual sale price, is considered as 
-                      the sale value for tax purposes. Furthermore, the cost needs to be taken along with indexation, which means the purchase amount will be indexed 
-                      by the cost inflation index of the year. Additionally, the cost needs to be uplifted using indexation, which means the purchase amount will be 
-                      multiplied by a factor depending on the year of purchase and year of sale.
+                      Capital gains are taxable in India, and the <b> buyer must deduct TDS</b> at applicable rates during payment.
                     </p>
-                    <p className="text-gray-700 text-sm">
-                      For tax deducted at source by the buyer, you can get a TDS certificate and claim credit for it in your tax return. Also note that tax paid 
-                      by another under the Income-tax Act on your behalf can be claimed as credit in your tax return.
+                    <p className="text-gray-700 text-sm mb-3">
+                     We ensure that the <b>cost of acquisition is indexed</b> based on the purchase year and sale year using CII.
+                    </p>
+                    <p className="text-gray-700 text-sm mb-3">
+                      Guidance is provided on <b>claiming TDS credit</b> and declaring the gain in the Indian ITR. We also review potential <b>Double Taxation Avoidance Agreement (DTAA)</b> benefits.
                     </p>
                   </div>
                 </div>
@@ -569,7 +557,7 @@ export default function page() {
                   <div className="bg-green-50 p-2 rounded-full mr-3">
                     <FileText className="h-5 w-5 text-[#24656F]" />
                   </div>
-                  <h3 className="font-semibold text-gray-800">Case Study 3</h3>
+                  <h3 className="font-semibold text-gray-800">Case Study 3: Capital Gains Reinvestment Deferred</h3>
                 </div>
                 <button className="text-gray-500">
                   {caseStudy3Open ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
@@ -579,24 +567,52 @@ export default function page() {
               {caseStudy3Open && (
                 <div className="p-4 border-t border-gray-200 bg-gray-50">
                   <div className="mb-4">
-                    <h4 className="font-semibold text-[#24656F] mb-2">Scenario:</h4>
+                    <h4 className="font-semibold text-[#24656F] mb-2">Client Query:</h4>
                     <p className="text-gray-700 mb-2">
-                      I had an LTCG of Rs.50 lakhs on the sale of a residential property in June'r 2023. However, I am not ready to
-                      reinvest the LTCG amount to purchase a new property immediately. How can I save tax?
+                     I earned LTCG of ₹50 lakh from property sale in June 2023, but I’m not ready to reinvest immediately. Can I still claim exemption?
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Solution:</h4>
+                    <h4 className="font-semibold text-gray-700 mb-2">Our Expert Solution:</h4>
                     <p className="text-gray-700 text-sm mb-3">
-                      If you're not able to invest in a new property immediately, but still want the exemption, you can deposit the LTCG amount in a Capital Gains Account with any 
-                      bank under the Capital Gain Account Scheme (CGAS). This way, you can withdraw the money when you're ready to 
-                      invest in a new property within the specified time frame of 2/3 years.
+                      The client is advised to deposit the gains in a <b>Capital Gains Account Scheme (CGAS)</b> with an authorized bank before the filing due date.
+                    </p>
+                    <p className="text-gray-700 text-sm mb-3">
+                     This preserves the client’s eligibility under Section <b>54/54F</b> while allowing time (up to 2/3 years) to reinvest in a new residential property.
+                    </p>
+                    <p className="text-gray-700 text-sm mb-3">
+                     We assist with CGAS documentation and ensure timely withdrawal aligned with compliance norms.
                     </p>
                   </div>
                 </div>
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+       <section className="py-8 px-4 md:px-8 bg-[#e9eaea]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+          <div className="mb-4 md:mb-0">
+            <div className="flex items-center">
+              <span className="mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </span>
+              <div>
+                <h2 className='font-bold text-xl mb-3'>Take Control of Your Capital Gains Tax Today</h2>
+              <p className="font-medium">With the evolving complexity of tax laws, our expert-led services ensure you stay compliant, maximize exemptions, and optimize your financial outcomes.
+              </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button className="bg-[#407d7d] text-white font-medium py-2 px-6 rounded-md transition duration-300">
+           Book Your Expert Consultation Now →
+          </button>
+          <p>Precision. Planning. Peace of Mind.</p>
           </div>
         </div>
       </section>

@@ -142,8 +142,8 @@ import Need_Support from '../homepage/Need_Support';
 const noticeData = [
   {
     id: 'notice-143-1a',
-    title: 'Notice under Section 143(1)(a)',
-    description: 'Intimation notice for arithmetic errors or incorrect claims in your filed return.',
+    title: 'Section 143(1)(a): Intimation of Adjustment',
+    description: ' Nature: Preliminary intimation indicating discrepancies in your filed return such as incorrect claims or mathematical errors.',
     category: 'assessment',
     section: 'Section 143(1)(a) of Income Tax Act',
     priority: 'Medium',
@@ -151,8 +151,8 @@ const noticeData = [
   },
   {
     id: 'notice-143-2',
-    title: 'Notice under Section 143(2)',
-    description: 'Scrutiny notice requiring you to provide additional information about your return.',
+    title: 'Section 143(2): Scrutiny Assessment',
+    description: 'Nature: Issued when your return is selected for scrutiny. Requires submission of additional documentation and clarification.',
     category: 'verification',
     section: 'Section 143(2) of Income Tax Act',
     priority: 'High',
@@ -160,8 +160,8 @@ const noticeData = [
   },
   {
     id: 'notice-139-9',
-    title: 'Notice under Section 139(9)',
-    description: 'Defective return notice requiring you to correct errors in your filed return.',
+    title: 'Section 139(9): Defective Return',
+    description: 'Nature: Indicates your Income Tax Return is considered defective. You must revise and resubmit the return.',
     category: 'assessment',
     section: 'Section 139(9) of Income Tax Act',
     priority: 'High',
@@ -169,8 +169,8 @@ const noticeData = [
   },
   {
     id: 'notice-154',
-    title: 'Notice under Section 154',
-    description: 'Rectification notice allowing you to correct mistakes in assessment orders.',
+    title: 'Section 154: Rectification of Mistake',
+    description: 'Nature:  Permits correction of mistakes apparent from records in assessment orders.',
     category: 'assessment',
     section: 'Section 154 of Income Tax Act',
     priority: 'Medium',
@@ -178,8 +178,8 @@ const noticeData = [
   },
   {
     id: 'notice-245',
-    title: 'Notice under Section 245',
-    description: 'Set-off of refunds against tax remaining payable notice.',
+    title: 'Section 245: Adjustment of Refund Against Outstanding Demand',
+    description: 'Nature: Notifies intention to adjust your tax refund against existing tax dues.',
     category: 'refund',
     section: 'Section 245 of Income Tax Act',
     priority: 'Medium',
@@ -187,8 +187,8 @@ const noticeData = [
   },
   {
     id: 'notice-156',
-    title: 'Notice under Section 156',
-    description: 'Demand notice requiring you to pay additional tax as determined by assessment.',
+    title: 'Section 156: Demand Notice',
+    description: 'Nature: Issued when additional tax liability arises after assessment; mandates payment of specified demand.',
     category: 'demand',
     section: 'Section 156 of Income Tax Act',
     priority: 'High',
@@ -206,60 +206,43 @@ const categories = [
 
 const faqs = [
   {
-    question: "What should I do if I receive an income tax notice?",
-    answer: "First, don't panic. Read the notice carefully to understand what information the tax department requires. Check the due date for response, gather all necessary documents, and respond within the timeline. If needed, consult a tax professional."
+    question: "1. What should I do upon receiving a notice under Section 143(2)?",
+    answer: "This is a scrutiny notice. Immediate professional consultation is advised to prepare documentation and submit appropriate responses to the assessing officer."
   },
   {
-    question: "How much time do I have to respond to a notice?",
-    answer: "The time to respond varies by notice type. Generally, you have 7 to 30 days to respond. The specific deadline will be mentioned in your notice. It's crucial to respond within this timeframe to avoid penalties."
+    question: "2. Is a notice issued even if I filed my ITR correctly?",
+    answer: ": Yes. Notices may still be issued for random scrutiny, verification, or information requests even if returns are filed correctly."
   },
   {
-    question: "Can I get an extension for responding to a tax notice?",
-    answer: "Yes, in certain cases you can request an extension. Submit a formal request explaining why you need additional time. However, extension approval is at the discretion of the tax officer."
+    question: "3. How can I verify if a notice is authentic?",
+    answer: "Use the Document Identification Number (DIN) on the official Income Tax portal to validate the authenticity of the notice."
   },
   {
-    question: "What happens if I ignore an income tax notice?",
-    answer: "Ignoring a tax notice can result in penalties, additional interest charges, and in severe cases, legal proceedings. The tax department may also make a determination without your input."
-  },
-
-    {
-    question: "What to do if I get a tax notice?",
-    answer: "If you get an income tax notification, you should understand why the notice has been sent. Notices may be sent due to various reasons. For example, Notices may be sent for the details and papers required by the Income Tax Department, and it still needs to be submitted. In such a case, you need to provide the details as required. If there is any error in the ITR, then notices may be sent to rectify the error. In such a case, you should rectify any error in your return and respond to the notice within the time specified by the income tax department to avoid possible penalties."
-  },
-  {
-    question: "What happens if you don't respond to the tax notice?",
-    answer: "If you don't respond to the income tax notice, there can be different types of consequences depending upon the type of Notice you have received. Such consequences include fines of up to INR 10,000 and also imprisonment for up to a year."
-  },
-  {
-    question: "How do you reply to notice?",
-    answer: "You can reply to an income tax notice online. You can visit the online website of the income tax department, which is used for the e-filing of returns. Log into your online account, go to the compliance section, and respond to the notice you have received."
-  },
-  {
-    question: "How do I pay my tax on demand?",
-    answer: "You can pay your tax on-demand online. To do so, you can visit the e-filing website of the income tax department and log into your account. You can then check the amount of outstanding tax demand under Response to Outstanding Tax Demand under the pending actions option. Then, under the Pay Now column, choose Click Here. You would be taken to the NSDL website to fill out the online form and pay the tax on demand. Also, you can directly pay tax by clicking the Pay Now option for the respective DRN (Demand Reference Number) on the Response to Outstanding Demand page."
-  },
+    question: "4. Can I handle the notice without professional help?",
+    answer: "While simple cases can be managed independently, complex notices (e.g., under Sections 143(2), 139(9), or 156) should be handled by qualified professionals to avoid errors."
+  }
 ];
 
 const steps = [
   {
     icon: <FileText className="h-8 w-8 text-[#144047]" />,
-    title: "Understand Your Notice",
-    description: "Carefully read the notice to understand its purpose, requirements, and deadlines."
+    title: "1.	Review and Understand the Notice",
+    description: "Read carefully to identify the section, reason, and required actions."
   },
   {
     icon: <CheckCircle className="h-8 w-8 text-[#144047]" />,
-    title: "Gather Required Documents",
-    description: "Collect all necessary documents mentioned in the notice for an appropriate response."
+    title: "2.	Compile Relevant Documentation",
+    description: "Gather documents such as filed ITR, Form 26AS, AIS, TIS, and supporting proofs."
   },
   {
     icon: <CalendarClock className="h-8 w-8 text-[#144047]" />,
-    title: "Respond Within Deadline",
-    description: "Ensure you respond before the deadline to avoid penalties or further notices."
+    title: "3.	Comply Within the Deadline",
+    description: "Respond within the stipulated period to avoid further legal or financial consequences."
   },
   {
     icon: <AlertCircle className="h-8 w-8 text-[#144047]" />,
-    title: "Seek Expert Help If Needed",
-    description: "For complex notices, consult with a tax professional for proper guidance."
+    title: "4.	Consult a Tax Professional (Recommended)",
+    description: "For notices involving scrutiny, demand, or legal interpretation, seek expert consultation for proper representation."
   },
 ];
 
@@ -288,6 +271,17 @@ export default function Home() {
     }
   };
 
+  const initialOpenState = Array(10).fill(true);
+    const [visibleAnswer, setVisibleAnswer] = useState(initialOpenState);
+  
+    const toggleAnswer = (index) => {
+      setVisibleAnswer((prev) => {
+        const newVisible = [...prev];
+        newVisible[index] = !newVisible[index]; // Toggle current index
+        return newVisible;
+      });
+    };
+
   return (
 
    
@@ -300,16 +294,11 @@ export default function Home() {
      <div >
        <div className="ca-consultants py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
         <div className="ca-text flex flex-col mb-6 ">
-          <h1 className=" text-5xl font-bold mb-3">
-           
-Income Tax Notice: Check & Authenticate ITR Notices Online
-          </h1>
+          <h1 className=" text-5xl font-bold mb-3">Income Tax Notices: Expert Guidance from Assessment to Resolution</h1>
+          <p className='text-2xl font-semibold'>Authenticate, Review, and Respond to ITR Notices with Confidence</p>
          
           <p className="text-xl font-semibold my-4 mb-7">
-          An income tax notice is a written communication sent by the Income Tax Department to a taxpayer alerting him to an issue with his tax account. The notice can be sent for different reasons, such as filing/ non-filing their income tax return, making the assessment, asking for certain details, etc. When the Income Tax Department sends a notice, the taxpayer has to act on it within the given timeline and resolve the matter with the tax authorities.
-
-
-          </p>
+         An Income Tax Notice is a formal communication issued by the Income Tax Department to inform taxpayers about discrepancies, compliance requirements, assessments, or outstanding obligations related to their income tax filings. Prompt and appropriate response is essential to avoid penalties, interest, or legal consequences. </p>
 
           <ul className="flex gap-3 ">
             <li className="flex gap-3 items-center mb-2 font-semibold">
@@ -318,7 +307,7 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
                 alt=""
               />
               <p className="text-lg">
-                5500+ Notices Resolved
+                500+ Notices Successfully Resolved
               </p>
             </li>
             <li className="flex gap-3 items-center mb-2  font-semibold">
@@ -327,19 +316,19 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
                 alt=""
               />
               <p className="text-lg">
-               Trusted by 1 Million+
+               1k + Clients Served
               </p>
             </li>
             <li className="flex gap-3 items-center mb-2  font-semibold">
               <img     src="	https://tax2win.in/assets-new/img/new-theme/pricing-landing/experiance.svg"
                 alt=""></img>
-              <p  className="text-lg">Secure & Safe</p>
+              <p  className="text-lg">Secure, Confidential & End-to-End Assistance</p>
             </li>
           </ul>
          
         </div>
         <div className="ca-form lg:p-9 md:p-9 p-4 xl:p-9 lg:me-28 shadow-lg rounded-lg flex flex-col items-center">
-          <h1 className="text-2xl font-bold">Got Income Tax Notice</h1>
+          <h1 className="text-2xl font-bold">Received an Income Tax Notice? Let Us Help You.</h1>
           <div>
             <input
               type="text"
@@ -359,7 +348,7 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
           </div>
 
           <div className="book-btn rounded-lg mt-6 flex gap-3 justify-center w-full py-3">
-            <p className="text-white text-xl">Connect Now</p>
+            <p className="text-white text-xl">Get Expert Assistance</p>
             <img
               src="https://tax2win.in/assets-new/img/new-theme/b_ghost_arrow.svg"
               alt=""
@@ -373,9 +362,9 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
       {/* Main Content */}
       <div className="container-custom py-12">
         <div className="mb-10">
-          <h2 className="text-3xl font-bold text-center mb-2">Income Tax Notices Guide</h2>
+          <h2 className="text-3xl font-bold text-center mb-2">Understanding Income Tax Notices</h2>
           <p className="text-center text-gray-600 max-w-3xl mx-auto">
-            Understand different types of income tax notices, their purposes, and how to respond effectively
+           Explore the various types of notices issued under the Income Tax Act and learn how to address each one within the statutory timelines
           </p>
         </div>
 
@@ -389,7 +378,7 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
               <input
                 type="text"
                 className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                placeholder="Search notice by keyword..."
+                placeholder="Search by Section or Keyword"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -411,6 +400,7 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
         </div>
 
         {/* Notice Cards */}
+        <h1 className='text-center text-2xl font-semibold mt-5'>Common Types of Income Tax Notices & Their Implications</h1>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredNotices.length > 0 ? (
             filteredNotices.map((notice) => (
@@ -430,16 +420,16 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
                 <p className="text-gray-600 text-sm mb-4">
                   {notice.description}
                 </p>
-                <div className="flex items-center text-sm text-gray-500 mb-4">
+                {/* <div className="flex items-center text-sm text-gray-500 mb-4">
                   <FileText className="h-4 w-4 mr-2" />
                   {notice.section}
-                </div>
+                </div> */}
                 <div className="mt-auto pt-2 border-t border-gray-100">
                   <a 
                     href={`/guide/${notice.id}`}
                     className="inline-flex items-center text-[#144047] font-medium "
                   >
-                    View detailed guide
+                  View Complete Guide
                     <ArrowUpRight className="ml-1 h-4 w-4" />
                   </a>
                 </div>
@@ -458,10 +448,10 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
       <div className="bg-gray-50 py-16">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-3">How to Handle Income Tax Notices</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-3">Step-by-Step: How to Handle an Income Tax Notice</h2>
+            {/* <p className="text-gray-600 max-w-2xl mx-auto">
               Follow these steps to effectively respond to any income tax notice you receive
-            </p>
+            </p> */}
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -481,7 +471,7 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
           
           <div className="mt-12 text-center">
             <button className="btn-primary">
-              Download Complete Guide
+             Download the Complete Response Guide
             </button>
           </div>
         </div>
@@ -527,13 +517,183 @@ Income Tax Notice: Check & Authenticate ITR Notices Online
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">Still have questions about your income tax notice?</p>
           <button className="btn-outline">
             Contact Our Tax Experts
           </button>
+        </div> */}
+      </div>
+
+      <div className='container-custom py-16 '>
+          <div className=" mb-12">
+          <h2 className="text-3xl font-bold text-center mb-10">Why Choose FileYourTax for Notice Handling?</h2>
+
+         <div className='flex mx-auto gap-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
+          <p className=" max-w-2xl  text-xl mb-3"> 100% Digital Process – No physical visits required</p>
+         </div>
+
+         <div className='flex mx-auto gap-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
+          <p className=" max-w-2xl  text-xl mb-3"> CA-Assisted Resolution for Complex Notices</p>
+         </div>
+
+         <div className='flex mx-auto gap-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
+          <p className=" max-w-2xl  text-xl mb-3">End-to-End Document Preparation and Filing</p>
+         </div>
+
+         <div className='flex mx-auto gap-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
+          <p className=" max-w-2xl  text-xl mb-3">Timely Compliance to Prevent Penalties</p>
+         </div>
+
+         <div className='flex mx-auto gap-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
+          <p className=" max-w-2xl  text-xl mb-3">Transparent Pricing, No Hidden Costs</p>
+         </div>
+        </div>
+
+           <div className="mt-12 text-center">
+          <p className="text-gray-600 mb-4">Need Immediate Assistance with a Tax Notice?</p>
+          <button className="btn-outline">
+        Schedule Your Consultation Now
+          </button>
         </div>
       </div>
+
+      <div className="section10 py-16 lg:px-24 px-4 text-center">
+      <div className="section9-Faqs">
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(0)}>
+          <p className="text-xl font-bold question"> What should I do if I receive an income tax notice? </p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[0] &&
+          <div className="answer text-left my-3">
+            <p className="text-base mb-2">Receiving an income tax notice can be concerning, but it’s important to stay calm. Begin by thoroughly reviewing the notice to understand the reason it was issued, the section of the Income Tax Act involved, and the response timeline. Verify the details mentioned and identify the documents or clarifications required. Ensure you respond within the stipulated time to avoid penalties or further proceedings. For complex or technical matters, it is advisable to seek assistance from a qualified tax professional to ensure proper compliance and representation.</p>
+           
+          </div>}
+
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(1)}>
+          <p className="text-xl font-bold question"> How much time do I have to respond to a notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[1] &&
+          <div className="answer text-left my-3">
+            <p className="text-base mb-3">The time to respond varies by notice type. Generally, you have 7 to 30 days to respond. The specific deadline will be mentioned in your notice. It's crucial to respond within this timeframe to avoid penalties.</p>
+
+           
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(2)}>
+          <p className="text-xl font-bold question"> How much time do I have to respond to an income tax notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[2] &&
+          <div className="answer text-left my-3">
+           
+            <p className="text-base">The response timeline depends on the type of notice received. Typically, the Income Tax Department allows a window ranging from <b>7 to 30 days</b> for compliance. The exact deadline will be clearly mentioned in the notice itself. It is essential to adhere to this timeline, as failure to respond within the stipulated period may lead to penalties, interest, or further legal action. Prompt action ensures smoother resolution and avoids unnecessary complications.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(3)}>
+          <p className="text-xl font-bold question"> Can I get an extension for responding to a tax notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[3] &&
+          <div className="answer text-left my-3">
+             <p className="text-base mb-3">Yes, in certain circumstances, you may request an extension to respond to an income tax notice. To do so, you must submit a formal written request to the concerned Assessing Officer, clearly stating the reason for the delay and justifying the need for additional time. Approval of such extensions is entirely at the discretion of the tax authority and is granted based on the merits of the case. It is advisable to make the request well before the original deadline to improve the chances of acceptance.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(4)}>
+          <p className="text-xl font-bold question"> What happens if I ignore an income tax notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[4] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">Ignoring an income tax notice can lead to serious consequences. The Income Tax Department may impose <b>penalties</b>, levy <b>interest on outstanding dues</b>, and initiate <b>reassessment or best judgment assessment</b> without your input. In certain cases, continued non-compliance may result in <b>prosecution, asset attachment</b>, or other legal actions. Timely response is critical to avoid escalation and to ensure your rights and interests are protected.</p>
+
+           
+
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(5)}>
+          <p className="text-xl font-bold question"> What should I do if I receive a tax notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[5] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">Upon receiving an income tax notice, the first step is to carefully review its contents to understand the reason for issuance. Notices may be issued for various reasons, such as missing documentation, discrepancies in your filed return, or requests for clarification. If the notice seeks additional information or documents, you must furnish the required details within the specified timeframe. In cases involving errors in your Income Tax Return (ITR), you should promptly rectify the discrepancies and respond accordingly. Timely and accurate compliance is essential to avoid penalties, interest, or further legal action. Seeking assistance from a tax professional is advisable for complex issues.</p>
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(6)}>
+          <p className="text-xl font-bold question"> What happens if you don’t respond to a tax notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[6] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">Failure to respond to an income tax notice can lead to serious consequences, depending on the nature of the notice issued. Potential repercussions include:</p>
+
+             <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
+              <li><b>Monetary penalties </b>of up to ₹10,000 under Section 272A(1).</li>
+              <li><b>Interest </b>on unpaid taxes or incorrect filings.</li>
+              <li><b>Best judgment assessment</b>where the Assessing Officer finalizes your tax liability without your input.</li>
+              <li><b>Prosecution </b>which in certain cases may lead to <b>imprisonment of up to one year</b>, especially in cases involving willful evasion or fraudulent behavior.</li>
+            </ul>
+
+            <p className=" mb-3"><p className=" mb-3">Failure to respond to an income tax notice can lead to serious consequences, depending on the nature of the notice issued. Potential repercussions include:</p>
+</p>
+
+
+          </div>}
+
+        <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(7)}>
+          <p className="text-xl font-bold question"> How do I respond to an income tax notice?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[7] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">You can respond to an income tax notice through the Income Tax Department’s official e-filing portal. Follow these steps:</p>
+
+           <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
+              <li>1.	<b>Log in</b> to the <a href='https://www.incometax.gov.in' className='text-blue-500'>Income Tax e-filing portal</a> using your User ID (PAN), password, and captcha code.</li>
+              <li>2.	Navigate to the <b>‘e-Proceedings’</b> or <b>‘Compliance’</b> section, depending on the type of notice received.</li>
+              <li>3.	Select the relevant notice and <b>submit your response</b> along with any required documents or explanations.</li>
+              <li>4.	Once submitted, you may also download the <b>acknowledgment</b> for your records.</li>
+            </ul>
+
+            <p className=" mb-3" >It is important to respond accurately and within the prescribed deadline. For complex notices, consider seeking assistance from a qualified tax consultant to ensure proper compliance..</p>
+            
+          </div>}
+
+
+          <div className="Faq w-full flex justify-between py-6" onClick={() => toggleAnswer(8)}>
+          <p className="text-xl font-bold question"> How do I pay my tax on demand?</p>
+          <img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e" alt="" height="24" width="24" />
+        </div>
+        {visibleAnswer[8] &&
+          <div className="answer text-left my-3 text-base">
+            <p className=" mb-3">You can pay your tax on demand easily through the Income Tax Department’s e-filing portal by following these steps:</p>
+
+           <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
+              <li>1.	<b>Log in</b> to the <a href='https://www.incometax.gov.in' className='text-blue-500'>Income Tax e-filing portal</a> using your PAN and password.</li>
+              <li>2. Navigate to the <b>‘Pending Actions’</b> section and select <b>‘Response to Outstanding Tax Demand’</b>.</li>
+              <li>3.	Locate the relevant <b>Demand Reference Number (DRN)</b> and click on the <b>‘Pay Now’</b> option.</li>
+              <li>4.	You will be redirected to the <b>TIN NSDL (now Protean) portal</b> to complete the payment.</li>
+                    <li>5.	Fill in the required details in <b>Challan No./ITNS 280</b>, select the appropriate assessment year and payment type, and proceed with the payment using your preferred mode (net banking, debit card, etc.).</li>
+              <li>6. Upon successful payment, save or print the challan receipt for your records.</li>
+            </ul>
+
+            <p className=" mb-3" >Ensure that the payment is made before the due date to avoid interest and penalties.</p>
+            
+          </div>}
+
+      </div>
+    </div>
+
+
       <Need_Support/>
     <Footer/>
     
