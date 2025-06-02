@@ -91,10 +91,10 @@ const page = () => {
 
       <div className="ca-consultants py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
         <div className="ca-text flex flex-col mb-6 ">
-          <h1 className=" text-6xl font-bold mb-3">
+          <h1 className=" text-5xl font-bold mb-3">
             Tax Filing in India for NRIs – “Seamless & Secure"
           </h1>
-          <h2 className="text-4xl font-semibold ">
+          <h2 className="text-3xl font-semibold ">
             Simplifying Compliance, Maximizing Benefits
           </h2>
 
@@ -370,9 +370,9 @@ const page = () => {
           {visibleAnswer[0] && (
             <div className="answer text-left my-3">
               <p className="text-base mb-2">
-                An individual is considered a Non-Resident if they do not meet
+                An individual is considered a Non-Resident if they do <b>not</b> meet
                 the conditions of residency under Indian tax laws. Residential
-                status is determined annually based on physical presence in
+                status is determined <b>annually</b>based on physical presence in
                 India.
               </p>
             </div>
@@ -397,22 +397,22 @@ const page = () => {
           {visibleAnswer[1] && (
             <div className="answer text-left my-3">
               <p className="text-base mb-3">
-                You are considered a Resident in India if:
+                You are considered a <b>Resident in India</b> if:
               </p>
 
               <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
                 <li>
                   {" "}
-                  You spend 182 days or more in India during the financial year,
+                  You spend <b>182 days or more</b> in India during the financial year,
                   or
                 </li>
                 <li>
                   {" "}
-                  You spend 60 days or more in the financial year and 365 days
+                  You spend <b>60 days or more</b> in the financial year and 365 days
                   or more during the 4 preceding years.
                 </li>
               </ol>
-              <p className="text-base mb-3">Exceptions apply to:</p>
+              <p className="text-base mb-3"><b>Exceptions</b> apply to:</p>
 
               <ol className="list-disc list-inside pl-5 flex flex-col gap-2 custom-circle">
                 <li>
@@ -454,7 +454,7 @@ const page = () => {
               <p className="text-base">
                 Absolutely. NRIs can file ITRs online via the Income Tax
                 Department portal or through professional platforms like
-                FileyourTax. Our dedicated team simplifies the entire process—no
+               <b> FileyourTax</b>. Our dedicated team simplifies the entire process—no
                 matter where you are in the world.
               </p>
             </div>
@@ -627,7 +627,7 @@ const page = () => {
           {visibleAnswer[7] && (
             <div className="answer text-left my-3 text-base">
               <p className=" mb-3">
-                Rental income from Indian properties is fully taxable in India for NRIs. Standard deductions and a basic exemption of ₹2.5 lakh may apply.
+                Rental income from Indian properties is <b>fully taxable</b> in India for NRIs. Standard deductions and a basic exemption of ₹2.5 lakh may apply.
               </p>
              
             </div>
@@ -652,8 +652,8 @@ const page = () => {
           {visibleAnswer[8] && (
             <div className="answer text-left my-3 text-base">
               <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
-                <li>	If held for over 24 months → Long-Term Capital Gains (LTCG) apply </li>
-                <li>	LTCG is taxed at 12.5% from 23rd July 2024</li>
+                <li>	If held for over 24 months → <b>Long-Term Capital Gains (LTCG)</b> apply </li>
+                <li>	LTCG is taxed at <b>12.5%</b> from 23rd July 2024</li>
                 <li>	Indexation benefits and exemptions (e.g., under Section 54) can reduce tax liability</li>
                 <li>	For inherited property, date and cost of acquisition by the original owner are considered </li>
               </ol>
@@ -680,7 +680,7 @@ const page = () => {
           {visibleAnswer[9] && (
             <div className="answer text-left my-3 text-base">
               <p className=" mb-3">If your stay in India is under the prescribed limits (see residential status rules),
-                 you’ll qualify as an NRI. Your foreign salary credited abroad is not taxable in India if your status
+                 you’ll qualify as an NRI. Your foreign salary credited abroad is <b>not taxable</b> in India if your status
                   is confirmed as NRI. </p>
              
             </div>
@@ -704,7 +704,7 @@ const page = () => {
           </div>
           {visibleAnswer[10] && (
             <div className="answer text-left my-3 text-base">
-              <p className="mb-3">Foreign income is not taxable for NRIs unless:</p>
+              <p className="mb-3">Foreign income is <b>not taxable</b> for NRIs unless:</p>
               <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
                 <li>•	It is received directly in India</li>
                 <li>•	It arises from a business or profession in India</li>
@@ -730,7 +730,7 @@ const page = () => {
           </div>
           {visibleAnswer[11] && (
             <div className="answer text-left my-3 text-base">
-             <p className="mb-3">The Double Tax Avoidance Agreement (DTAA) prevents income from being taxed twice—once in India and once abroad. To claim relief under DTAA, obtain a Tax Residency Certificate (TRC) from the country of residence</p>
+             <p className="mb-3">The <b>Double Tax Avoidance Agreement (DTAA)</b> prevents income from being taxed twice—once in India and once abroad. To claim relief under DTAA, obtain a <b>Tax Residency Certificate</b> (TRC) from the country of residence</p>
             </div>
           )}
         </div>
@@ -753,7 +753,7 @@ const page = () => {
           {visibleAnswer[12] && (
             <div className="answer text-left my-3 text-base">
              <p className="mb-3">The same slab rates apply as for resident individuals.
-Note: Senior citizen exemptions do not apply to NRIs.
+<b>Note</b>: Senior citizen exemptions <b>do not</b> apply to NRIs.
 </p>
             </div>
           )}
@@ -777,12 +777,12 @@ Note: Senior citizen exemptions do not apply to NRIs.
           {visibleAnswer[13] && (
             <div className="answer text-left my-3 text-base">
               <ol className="list-disc list-inside pl-5 flex flex-col gap-2 mb-3 custom-circle">
-                <li>1.	Determine Taxable Income </li>
-                <li>2.	Obtain PAN if not already held</li>
-                <li>3.	Compute Tax Liability including deductions and exemptions</li>
-                <li>4.	Pay Tax Online through challan or during ITR filing</li>
-                <li>5.	File Return via ITD portal or with assistance from FileyourTax</li>
-                <li>6.	E-Verify Return within 30 days</li>
+                <li>1.	<b>Determine Taxable Income</b> </li>
+                <li>2. <b>	Obtain PAN </b>if not already held</li>
+                <li>3.	<b>Compute Tax Liability</b> including deductions and exemptions</li>
+                <li>4.	<b>Pay Tax Online</b> through challan or during ITR filing</li>
+                <li>5.	<b>File Return</b> via ITD portal or with assistance from <b>FileyourTax</b></li>
+                <li>6.	<b>E-Verify Return</b> within 30 days</li>
               </ol>
             </div>
           )}

@@ -529,29 +529,29 @@ export default function Home() {
           <div className=" mb-12">
           <h2 className="text-3xl font-bold text-center mb-10">Why Choose FileYourTax for Notice Handling?</h2>
 
-         <div className='flex mx-auto gap-3'>
-           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
-          <p className=" max-w-2xl  text-xl mb-3"> 100% Digital Process – No physical visits required</p>
+         <div className='flex mx-auto gap-3 p-3 border border-teal-100 rounded mb-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-6 max-h-6'></img>
+          <p className=" max-w-2xl  text-xl "> 100% Digital Process – No physical visits required</p>
          </div>
 
-         <div className='flex mx-auto gap-3'>
-           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
-          <p className=" max-w-2xl  text-xl mb-3"> CA-Assisted Resolution for Complex Notices</p>
+         <div className='flex mx-auto gap-3 p-3 border border-teal-100 rounded mb-3 '>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-6 max-h-6'></img>
+          <p className=" max-w-2xl  text-xl"> CA-Assisted Resolution for Complex Notices</p>
          </div>
 
-         <div className='flex mx-auto gap-3'>
-           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
-          <p className=" max-w-2xl  text-xl mb-3">End-to-End Document Preparation and Filing</p>
+         <div className='flex mx-auto gap-3 p-3 border border-teal-100 rounded mb-3 '>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-6 max-h-6'></img>
+          <p className=" max-w-2xl  text-xl ">End-to-End Document Preparation and Filing</p>
          </div>
 
-         <div className='flex mx-auto gap-3'>
-           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
-          <p className=" max-w-2xl  text-xl mb-3">Timely Compliance to Prevent Penalties</p>
+         <div className='flex mx-auto gap-3 p-3 border border-teal-100 rounded mb-3'>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-6 max-h-6'></img>
+          <p className=" max-w-2xl  text-xl ">Timely Compliance to Prevent Penalties</p>
          </div>
-
-         <div className='flex mx-auto gap-3'>
-           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-7 max-h-7'></img>
-          <p className=" max-w-2xl  text-xl mb-3">Transparent Pricing, No Hidden Costs</p>
+ 
+         <div className='flex mx-auto gap-3 p-3 border border-teal-100 rounded mb-3 '>
+           <img src='https://cdn-icons-png.flaticon.com/128/61/61222.png' className='max-w-6 max-h-6'></img>
+          <p className=" max-w-2xl  text-xl ">Transparent Pricing, No Hidden Costs</p>
          </div>
         </div>
 
@@ -658,7 +658,7 @@ export default function Home() {
             <p className=" mb-3">You can respond to an income tax notice through the Income Tax Department’s official e-filing portal. Follow these steps:</p>
 
            <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-              <li>1.	<b>Log in</b> to the <a href='https://www.incometax.gov.in' className='text-blue-500'>Income Tax e-filing portal</a> using your User ID (PAN), password, and captcha code.</li>
+              <li>1.	<b>Log in</b> to the <a href='https://www.incometax.gov.in' target='blank' className='text-blue-500'>Income Tax e-filing portal</a> using your User ID (PAN), password, and captcha code.</li>
               <li>2.	Navigate to the <b>‘e-Proceedings’</b> or <b>‘Compliance’</b> section, depending on the type of notice received.</li>
               <li>3.	Select the relevant notice and <b>submit your response</b> along with any required documents or explanations.</li>
               <li>4.	Once submitted, you may also download the <b>acknowledgment</b> for your records.</li>
@@ -678,7 +678,7 @@ export default function Home() {
             <p className=" mb-3">You can pay your tax on demand easily through the Income Tax Department’s e-filing portal by following these steps:</p>
 
            <ul className="flex flex-col gap-2 mb-3 custom-circle pl-5">
-              <li>1.	<b>Log in</b> to the <a href='https://www.incometax.gov.in' className='text-blue-500'>Income Tax e-filing portal</a> using your PAN and password.</li>
+              <li>1.	<b>Log in</b> to the <a href='https://www.incometax.gov.in' target='blank' className='text-blue-500'>Income Tax e-filing portal</a> using your PAN and password.</li>
               <li>2. Navigate to the <b>‘Pending Actions’</b> section and select <b>‘Response to Outstanding Tax Demand’</b>.</li>
               <li>3.	Locate the relevant <b>Demand Reference Number (DRN)</b> and click on the <b>‘Pay Now’</b> option.</li>
               <li>4.	You will be redirected to the <b>TIN NSDL (now Protean) portal</b> to complete the payment.</li>

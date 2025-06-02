@@ -581,8 +581,8 @@ const page = () => {
 
         {/* faq-section */}
 
-      <div className="section10 py-16 lg:px-24 px-4 text-center">
-        <h1 className="section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10">
+      <div className="section10 py-16 lg:px-24 px-4 ">
+        <h1 className="section5-heading lg:font-bold md:font-bold font-semibold text-4xl lg:mb-16 mb-10 text-center" >
           Frequently Asked Questions (FAQ's)
         </h1>
         <div className="section9-Faqs">

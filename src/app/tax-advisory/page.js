@@ -271,7 +271,7 @@ export default function Home() {
                 Tax Consultancy &<br />Advisory Solutions
               </h1>
               <p className="text-gray-600 mb-6">
-               From proactive tax planning and accurate return filing to expert handling of income tax notices and strategic advisory—FileYourTax is your trusted partner at every step.
+               From proactive tax planning and accurate return filing to expert handling of income tax notices and strategic advisory  <b className="text-gray-600">—FileYourTax is your trusted partner at every step.</b>
               </p>
               <p>Request a Free Quote</p>
             </div>
@@ -518,8 +518,8 @@ Our expert team ensures precise compliance and maximum deductions.
         </div>
         {visibleAnswer[7] &&
           <div className="answer text-left my-3 text-base">
-            <p className=" mb-3">Tax Advisory focuses on legal compliance, documentation, and education.</p>
-            <p className=" mb-3" >Tax Consulting encompasses broader financial strategies, including tax planning, structuring, and business optimization.</p>
+            <p className=" mb-3"><b>Tax Advisory </b>focuses on legal compliance, documentation, and education.</p>
+            <p className=" mb-3" ><b>Tax Consulting</b> encompasses broader financial strategies, including tax planning, structuring, and business optimization.</p>
             
           </div>}
 
