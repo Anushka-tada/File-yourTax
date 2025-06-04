@@ -12,8 +12,8 @@
 }
 
 .Navbar-outer {
-    background-color: white;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     z-index: 16;
 }
 
@@ -98,3 +98,10 @@ margin-top: 570px;
  .connect-btn{
     background-color: var(--primary-color);
  }
+
+ .home-nav{
+  top: 55px;
+}
+.home-nav.scrolled{
+     top: 0 !important;
+}
