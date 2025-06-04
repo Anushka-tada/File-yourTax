@@ -7,7 +7,7 @@ import Support from '@/app/financial-details/Support'
 
 const page = () => {
   return (
-    <div>
+    <div className='page'>
       <Taxreturn_Nav/>
 
      <Mainsteps/>

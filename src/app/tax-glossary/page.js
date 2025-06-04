@@ -83,7 +83,8 @@ export default function page() {
    
  <>
  <Nav/>
-    <div className="max-w-5xl mx-auto px-4 py-10">
+ <div className="page">
+    <div className="max-w-5xl mx-auto px-4 py-10 ">
       <h1 className="text-4xl font-bold text-center tax-glossary-h mb-8">
         🧾 Tax Glossary
       </h1>
@@ -106,6 +107,7 @@ export default function page() {
     </div>
 <Need_Support/>
    <Footer/>
+   </div>
  </>
   );
 }

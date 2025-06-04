@@ -3,7 +3,7 @@ import "./gst.css"
 
 const GstFilling = () => {
   return (
-    <>
+    <div className='page'>
 
       {/* What do we offer as trusted GST Return Filing Platform */}
 
@@ -330,7 +330,7 @@ savings and ensure compliance.</p>
             </div>
       </div>
 
-    </>
+    </div>
   )
 }
 

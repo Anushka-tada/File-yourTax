@@ -12,7 +12,7 @@ import Deduction from '../Deduction'
 
 const page = () => {
   return (
-    <div>
+    <div className='page'>
     <Taxreturn_Nav/>
    <Mainsteps/>
    <Deduction/>

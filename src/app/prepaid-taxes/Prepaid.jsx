@@ -373,7 +373,7 @@ const Prepaid = () => {
 
 
   return (
-    <>
+    <div div className='page'>
      {isLoading ? (
         <div className="loading-indicator flex flex-col items-center justify-center">
           <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
@@ -688,7 +688,7 @@ const Prepaid = () => {
       </div>
       )
     }
-    </>
+    </div>
   );
 };
 

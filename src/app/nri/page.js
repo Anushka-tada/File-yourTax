@@ -87,7 +87,9 @@ const page = () => {
 
   return (
     <>
-      <Nav />
+    <Nav/>
+    <div div className='page'>
+     
 
       <div className="ca-consultants py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
         <div className="ca-text flex flex-col mb-6 ">
@@ -804,7 +806,10 @@ const page = () => {
 
       <Need_Support />
       <Footer />
+    
+    </div>
     </>
+
   );
 };
 

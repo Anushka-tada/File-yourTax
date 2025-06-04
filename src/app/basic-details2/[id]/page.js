@@ -10,12 +10,12 @@ import Support from '@/app/financial-details/Support'
 
 const page = () => {
   return (
-    <>
+    <div className='page'>
       <Taxreturn_Nav/>
   <Mainsteps/>
       <BasicForm/>
       <Support/>
-    </>
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import "./Soultions.css"
 const Solutions = () => {
   return (
     <div className="">
-    <div className="solutions lg:pt-40 md:pt-96 pt-96 pb-16 lg:px-40">
+    <div className="solutions  pb-16 lg:px-40">
         <div className="solution-part1 flex  justify-center lg:flex-nowrap flex-wrap gap-6">
             <div className="part1-box text-center flex flex-col px-16 justify-center items-center  rounded-lg bg-white shadow-lg py-7   w-72">
             <img src="https://tax2win.in/assets-new/img/homepage/rating.svg" alt="Google Rating" title="Google Rating" width="35" height="35"/>

@@ -2,8 +2,26 @@
 
 .solutions{
     background-color: rgba(133, 162, 197, 0.115);
+    padding-top: 25vh;
 }
-
+@media (max-width:1400px) {
+ .solutions{
+       background-color: rgba(133, 162, 197, 0.115);
+       padding-top: 75vh;
+}
+}
+@media (max-width:1024px) {
+ .solutions{
+       background-color: rgba(133, 162, 197, 0.115);
+       padding-top: 90vh;
+}
+}
+@media (max-width:595px) {
+ .solutions{
+       background-color: rgba(133, 162, 197, 0.115);
+       padding-top: 100vh;
+}
+}
 .query{
 
     border: 1px solid #1a4876;

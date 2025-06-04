@@ -56,6 +56,7 @@ const Sign_Form = () => {
   };
 
   return (
+    <div className='page'>
     <div className="Sign-Form flex flex-col items-center text-center py-20 px-4 mb-7">
       <ToastContainer />
       <h1 className="text-3xl sign-heading font-semibold lg:w-1/3 md:w-1/3">Sign Up</h1>
@@ -132,6 +133,7 @@ const Sign_Form = () => {
       <p className="font-bold">
         Already have an account? <a href="./login">  <span className="sign-green">Log In</span> </a>
       </p>
+    </div>
     </div>
   );
 };

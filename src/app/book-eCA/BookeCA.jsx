@@ -83,7 +83,7 @@ const BookeCA = () => {
   }, [selectedService]);
   
   return (
-    <>
+    <div className='page'>
       {/* top CA Consultants section start*/}
       <div className="ca-consultants py-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
         <div className="ca-text flex flex-col mb-6 ">
@@ -289,7 +289,7 @@ const BookeCA = () => {
                 </div>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 

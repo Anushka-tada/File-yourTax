@@ -3,7 +3,7 @@ import "./acounting.css"
 
 const Accounting = () => {
     return (
-        <div>
+        <div className='page'>
             <div className="unlock-financial-section flex flex-col items-center py-28 px-4">
                 <div className="financial-inner">
                     <h1 className='text-4xl font-semibold mb-3 text-white'>Achieve Financial Transparency with FileyourTax's Accounting & Bookkeeping Services</h1>

@@ -7,7 +7,7 @@ const UserPage = () => {
     const { id } = useParams();
     
     return (
-        <div>
+        <div className='page'>
             <h1>Hello World {id}</h1> 
         </div>
     );

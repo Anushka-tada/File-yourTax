@@ -4,7 +4,7 @@ import Plans from './Plans'
 
 const Service = () => {
     return (
-        <>
+        <div className='page'>
 
 
             {/* Income Tax Return Filing: */}
@@ -299,7 +299,7 @@ tax liability.</p>
                  </div>
                     
 
-        </>
+        </div>
     )
 }
 

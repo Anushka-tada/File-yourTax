@@ -10,10 +10,24 @@
     border-bottom:  1px solid rgb(195, 195, 195);
     border-radius: 7px;
 }
+.contact-outer {
+   
+}
 
 .contactForm{
     position: absolute;
     z-index: 0;
+        top: 10%;
+    z-index: 0;
+    left: 8%;
+    right: 8%;
+}
+@media (max-width:510px) {
+      .contactForm{
+        top: 9%;
+    left: 0%;
+    right: 0%;
+}
 }
 .map{
     background: rgba(51, 64, 80, .3);

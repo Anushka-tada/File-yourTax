@@ -219,6 +219,7 @@ const LoginForm = () => {
   };
 
   return (
+    <div div className='page'>
     <div className="login-Form flex flex-col items-center text-center py-20 px-4">
       <h1 className="text-3xl login-heading font-semibold lg:w-1/3 md:w-1/3">
         Login to File Your Tax Income Tax Return Filing Account
@@ -280,6 +281,7 @@ const LoginForm = () => {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 };

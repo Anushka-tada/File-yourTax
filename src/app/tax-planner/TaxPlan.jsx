@@ -4,7 +4,7 @@ import "../pricing/pricing.css"
 
 const TaxPlan = () => {
   return (
-    <>
+    <div div className='page'>
 
       {/* Are you struggling with one of these  */}
       <div className="question-section py-20 flex flex-col items-center text-center">
@@ -310,7 +310,7 @@ const TaxPlan = () => {
                 </div>
 
 
-    </>
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import "../pricing/pricing.css"
 
 const Plans = () => {
     return (
-        <div>
+        <div >
             <div className="pricing-page flex flex-col items-center xl:mx-40 lg:mx-32 md:mx-20 sm:mx-16 mx-3 my-7 px-8 rounded-lg py-6 ">
                 <h1 className='font-bold text-4xl pricing-heading my-5'>Choose Tailored Plans to Get Your IT Returns</h1>
                 <div className="all-pricings  p-5 flex justify-center  gap-3 flex-wrap ">

@@ -3,7 +3,7 @@ import "./tds.css"
 
 const TDS = () => {
     return (
-        <div>
+        <div className='page'>
             <div className="tds-section flex flex-col items-center py-28 px-4">
                 <h1 className='text-4xl font-semibold mb-8 text-white'>Effortless TDS Return Filing with FileyourTax</h1>
                 <div className="tds-points flex flex-col gap-4">

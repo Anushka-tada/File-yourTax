@@ -12,7 +12,9 @@
 }
 
 .Navbar-outer {
-    background-color: var(--secondary-color);
+    background-color: white;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 16;
 }
 
 li {

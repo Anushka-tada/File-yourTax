@@ -2,18 +2,16 @@ import './contactForm.css'
 
 const Contactform = () => {
   return (
-   <div className="contact-outer bg-slate-100 flex justify-center ">
+   <div className="contact-outer bg-slate-100 flex justify-center page">
     
 
-{/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.373805798284!2d85.05419267525365!3d26.411411076949587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecd6db7d0dc83b%3A0x4848c403c0c412bf!2sS%20Mart%20Shopping%20Mall!5e0!3m2!1sen!2sin!4v1748603933504!5m2!1sen!2sin"
- width="100%" height="400" frameBorder="0" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
 
-
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8236069136847!2d77.0838416!3d28.6050681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bdaa90a58e7%3A0xc9e9b2a0e35f3c34!2sFileyourTax.in!5e0!3m2!1sen!2sin!4v1749019950878!5m2!1sen!2sin"  width="100%" height="400" frameBorder="0" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-<div className="map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8236069136847!2d77.0838416!3d28.6050681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bdaa90a58e7%3A0xc9e9b2a0e35f3c34!2sFileyourTax.in!5e0!3m2!1sen!2sin!4v1749019950878!5m2!1sen!2sin"  width="100%" height="400" frameBorder="0" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <div className="map"></div>
      <div className='contactForm flex flex-wrap lg:flex-nowrap lg:justify-between  gap-8 bg-white lg:w-3/4 lg:mt-20 rounded-s-lg'>
 
-          <div className="contact-left flex flex-col gap-4 p-8 py-10">
+         <div className='contact-left'>
+           <div className=" flex flex-col gap-4 p-8 py-10">
             <h2 className='text-xl mb-10'>Get Instant Tax Help</h2>
             <div className='flex gap-6 '>
                 <input type="text" name="" placeholder='Name' className='p-2 name '/>
@@ -25,6 +23,7 @@ const Contactform = () => {
         <div className="subit absolute lg:left-96 top-60  md:left-52 left-32 ms-36 bg-blue p-4 rounded-full">         
            <img src="https://tax2win.in/assets-new/img/send.svg" alt="" className='' width="35" height="35"></img>
            </div>
+          </div>
           </div>
 
           <div className="contact-right p-8 py-10 lg:px-14 md:px-9 px-4 flex  flex-col  gap-3 items-start ps-9 lg:ps-9 md:ps-9 ">

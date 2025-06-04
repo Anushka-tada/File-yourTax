@@ -255,9 +255,9 @@ export default function Home() {
   return (
     <>
     <Nav/>
-    <main className="min-h-screen bg-[#f9fcf9]">
+    <main className="min-h-screen bg-[#f9fcf9] page">
       {/* Hero Section */}
-      <section className="hero-gradient py-12 md:py-16">
+      <section className="hero-gradient py-12 md:py-16 ">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-40 items-center">
             <div>

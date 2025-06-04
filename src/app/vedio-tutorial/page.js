@@ -48,7 +48,7 @@ export default function page() {
   return (
     <>
       <Nav />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 page">
         <h1 className="text-4xl font-bold text-center text-primary mb-6 tax-glossary-h">
          Video Tutorials
         </h1>

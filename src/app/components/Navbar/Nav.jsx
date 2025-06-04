@@ -302,7 +302,7 @@ const Nav = () => {
 
 
   return (
-    <div className="Navbar-outer flex items-center justify-between lg:px-24 px-4 py-4 relative">
+    <div className="Navbar-outer fixed flex items-center justify-between lg:px-24 px-4 py-4 w-full">
       <div className="nav-logo">
         <a href="\homepage">
           <h2 className="font-bold text-3xl logo">

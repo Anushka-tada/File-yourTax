@@ -5,7 +5,7 @@ import Footer from '../homepage/Footer'
 
 const page = () => {
   return (
-    <div>
+    <div >
       <Nav/>
       <Accounting/>
       <Footer/>

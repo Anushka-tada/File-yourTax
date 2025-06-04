@@ -22,12 +22,15 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen">
+    <div >
+        <Nav/>
+
+    <main className="min-h-screen page">
       {/* Header */}
-      <Nav/>
+    
 
       {/* Hero Section */}
-      <section className="bg-teal-gradient text-white py-16 relative overflow-hidden">
+      <section className="bg-teal-gradient text-white py-16 relative overflow-hidden ">
        
         <div className="container mx-auto px-4 relative z-10 ">
           <div className="bg-amber-400 text-amber-800 font-medium text-xs py-1 px-3 rounded-full inline-block mb-4 text-center flex justify-self-center">Welcome To FileYourTax</div>
@@ -531,5 +534,6 @@ export default function Home() {
         </button>
       </div>
     </main>
+    </div>
   );
 }

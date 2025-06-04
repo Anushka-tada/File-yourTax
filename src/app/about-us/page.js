@@ -9,7 +9,7 @@ const page = () => {
   return (
     <>
       <Nav />
-      <div className="about-page ">
+      <div className="about-page page ">
         {/* hero-section */}
 
         <div className="hero-section flex flex-col justify-center items-center">

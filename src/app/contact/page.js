@@ -14,10 +14,10 @@ import Solutions from './Solutions';
 
 const page = () => {
   return (
-    <div>
+    <div >
         {/* <Nav/> */}
         <Navbar/>
-<Contactform/>
+<Contactform />
   <Solutions/>
   <Footer/>
  

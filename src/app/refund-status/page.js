@@ -25,7 +25,7 @@ const page = () => {
   return (
     <>
       <Nav />
-      <div className="refund-page">
+      <div className="refund-page page">
         {/* Header */}
         <div className="header  pb-20 lg:px-20 md:px-10 px-4 flex flex-wrap xl:justify-between lf:justify-between md:justify-between  justify-center items-center">
           <div className="ca-text">

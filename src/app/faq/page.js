@@ -4,11 +4,13 @@ import Footer from "../homepage/Footer";
 
 export default function page() {
   return (
-    <>
-      <Nav />
+    <div>
+       <Nav />
+    < div className="page"> 
+     
 
       {/* Hero Section */}
-      <div className="bg-secondary py-12 px-6 sm:px-10 rounded-2xl shadow-sm mb-12 max-w-6xl mx-auto">
+      <div className="bg-secondary py-12 px-6 sm:px-10 rounded-2xl shadow-sm mb-12 max-w-6xl mx-auto ">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold text-third mb-4">
              Frequently Asked Questions
@@ -26,6 +28,7 @@ export default function page() {
       {/* e.g. <FAQList /> or manually mapped list */}
 
       <Footer />
-    </>
+    </div>
+    </div>
   );
 }

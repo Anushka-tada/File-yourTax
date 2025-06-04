@@ -6,11 +6,11 @@ import Efilling_platform from "../tax-return/Efilling_platform";
 
 export default function page() {
   return (
-    <>
+    <div >
       <Nav />
     <Efilling_platform/>
     <Need_Support/>
       <Footer />
-    </>
+    </div>
   );
 }

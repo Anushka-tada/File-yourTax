@@ -26,7 +26,7 @@ const Pricing = () => {
     };
 
     return (
-        <div>
+        <div className='page'>
             <div className="pricing-section flex flex-col text-center items-center">
                 <div className="pricing-text">
                     <h1 className="font-semibold text-5xl text-white pricing-h">

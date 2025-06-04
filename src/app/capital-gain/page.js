@@ -139,12 +139,15 @@ export default function page() {
   const [caseStudy3Open, setCaseStudy3Open] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white">
+    <div>
+       <Nav/>
+   
+    <main className="min-h-screen bg-white page">
       {/* Navigation Bar */}
       
-      <Nav/>
+     
       {/* Hero Section */}
-      <section className="py-12 pt-20 px-4 md:px-8 bg-gray-50">
+      <section className="py-12 pt-20 px-4 md:px-8 bg-gray-50 ">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
           <div className="md:w-7/12 md:pr-8">
             <h2 className=" font-medium mb-2">Optimize Your Capital Gains. Minimize Your Tax Burden.</h2>
@@ -626,5 +629,6 @@ export default function page() {
       {/* Pricing Section - Footer CTA */}
      
     </main>
+     </div>
   );
 }

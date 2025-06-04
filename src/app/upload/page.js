@@ -5,9 +5,9 @@ import Need_Support from '../homepage/Need_Support';
 
 export default function Page() {
   return (
-    <>
+    < >
       <Nav />
-      <div className="min-h-screen" style={{ backgroundColor: 'rgb(238, 247, 249)' }}>
+      <div className="min-h-screen page" style={{ backgroundColor: 'rgb(238, 247, 249)' }}>
         
 
         <main className="container mx-auto px-4 py-8">

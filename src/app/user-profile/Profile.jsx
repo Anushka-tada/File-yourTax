@@ -22,6 +22,7 @@ const Profile = () => {
     };
 
     return (
+        <div div className='page'>
         <div className="user-profile">
             <div className="profile-sections flex flex-wrap lg:flex-nowrap justify-center gap-5 py-16 xl:px-40 lg:px-32 md:px-16 sm:px-7 px-4">
                 {/* Section 1: User Info */}
@@ -147,6 +148,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

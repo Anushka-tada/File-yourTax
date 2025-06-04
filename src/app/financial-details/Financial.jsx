@@ -89,7 +89,7 @@ const Financial = () => {
   };
 
   return (
-    <>
+    <div className='page'>
      {isLoading ? (
         <div className="loading-indicator flex flex-col items-center justify-center">
           <img src="/assest/animation.gif" alt="Loading..." width="80" height="80" />
@@ -166,7 +166,7 @@ const Financial = () => {
       </div>
       )
     }
-    </>
+    </div>
   );
 };
 

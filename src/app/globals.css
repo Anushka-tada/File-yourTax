@@ -40,3 +40,7 @@ body {
 .text-third{
   color: var(--third-color);
 }
+
+.page{
+  padding-top: 4%;
+}

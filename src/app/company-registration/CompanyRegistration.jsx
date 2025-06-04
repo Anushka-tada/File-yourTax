@@ -3,7 +3,7 @@ import "./company.css";
 
 const CompanyRegistration = () => {
   return (
-    <div>
+    <div className='page'>
       <div className="company-section flex flex-col items-center py-28 px-4">
 
         <div className="company-inner">

@@ -155,6 +155,7 @@ const EasiestWay = () => {
   };
 
   return (
+    <div className='page'>
     <div className="section-1 flex flex-wrap md:flex-wrap lg:flex-nowrap lg:px-24 px-4 items-center pt-9 gap-10 pb-20">
       <div className="section1-text">
         <p className="ITR-btn inline-flex px-6 py-2 rounded-full mb-9">ITR Filing</p>
@@ -238,6 +239,7 @@ const EasiestWay = () => {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 };
