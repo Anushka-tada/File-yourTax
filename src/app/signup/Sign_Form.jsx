@@ -59,7 +59,7 @@ const Sign_Form = () => {
     <div className="Sign-Form flex flex-col items-center text-center py-20 px-4 mb-7">
       <ToastContainer />
       <h1 className="text-3xl sign-heading font-semibold lg:w-1/3 md:w-1/3">Sign Up</h1>
-      <p className="text-lg mb-12 mt-3">Join our 1M+ customers who eFile with us</p>
+      <p className="text-lg mb-12 mt-3">Join our 20K users who eFile with us</p>
       {/* <div className="sign-social-btns flex gap-4 mb-4">
         <div className="sign-google flex gap-2 bg-white py-3 px-10 shadow-md rounded-lg">
           <img src="https://tax2win.in/assets-new/img/signup/btn_google_light_normal.svg" width="20px" height="20px" alt="" />

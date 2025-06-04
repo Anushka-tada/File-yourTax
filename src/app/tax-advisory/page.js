@@ -265,7 +265,7 @@ export default function Home() {
                 <div className="bg-[var(--primary-blue)] p-2 rounded-lg text-white">
                   <LucideWallet size={24} />
                 </div>
-                <span className="text-[var(--primary-blue)] font-medium">Tax2Win</span>
+                <span className="text-[var(--primary-blue)] font-medium">FileYourTax</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                 Tax Consultancy &<br />Advisory Solutions

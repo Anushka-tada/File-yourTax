@@ -18,23 +18,23 @@ const Service = () => {
                     <div className='flex justify-center flex-wrap lg:flex-nowrap gap-8 items-center mt-10 pb-9'>
                         <div className="points  flex flex-col gap-5">
                             <div className="point flex gap-2">
-                                <img src="https://media-hosting.imagekit.io//fe368cbd174a42cc/correct.png?Expires=1837059653&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PBESMvACqx8yKRW8XIb~gWzW1UlBKK8e7pYQQudQ35euwoEWKhY7J4w0k~waJbosnoDPXiptEf2sCtOnTWWksrinj9xvIzuvtluZT4zcv1S2DrH3i0dgYEzmrrxldK8yZwUVQwjLR7JvECMLVx~Xk6YHBRmIQWR8S27BLosbVMr4cu0Sq5ydyhSPvWZO5nhkjeIxLI5ukwyMhZBB5bFphBV7Ufc9NoBhG0E3oUPMsASaerhwXmjG0k~20Z9fZXaEHBl7tmYR9kGMyKhRJQL2NVWQ6Luvs~SygqpKRL0gw~VJ7M3d1cWe6lOKNvXeFSS80AdKfBRPS6azA6MwYcfrXg__" alt="" className='image' />
-                                <p className='text-xl font-semibold text-white'>File your ITR effortlessly with a smooth, guided process.</p>
+                                <img src="/assest/tick.png" alt="" width={32} />
+                                <p className='text-xl font-semibold text-white'>File your ITR effortlessly with a smooth, guided process.</p>       
                             </div>
                             <div className="point flex gap-2">
-                                <img src="https://media-hosting.imagekit.io//fe368cbd174a42cc/correct.png?Expires=1837059653&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PBESMvACqx8yKRW8XIb~gWzW1UlBKK8e7pYQQudQ35euwoEWKhY7J4w0k~waJbosnoDPXiptEf2sCtOnTWWksrinj9xvIzuvtluZT4zcv1S2DrH3i0dgYEzmrrxldK8yZwUVQwjLR7JvECMLVx~Xk6YHBRmIQWR8S27BLosbVMr4cu0Sq5ydyhSPvWZO5nhkjeIxLI5ukwyMhZBB5bFphBV7Ufc9NoBhG0E3oUPMsASaerhwXmjG0k~20Z9fZXaEHBl7tmYR9kGMyKhRJQL2NVWQ6Luvs~SygqpKRL0gw~VJ7M3d1cWe6lOKNvXeFSS80AdKfBRPS6azA6MwYcfrXg__" alt="" className='image' />
+                                 <img src="/assest/tick.png" alt="" width={32} />
                                 <p className='text-xl font-semibold text-white'>Unlock maximum tax savings with smart optimization.</p>
                             </div>
                             <div className="point flex gap-2">
-                                <img src="https://media-hosting.imagekit.io//fe368cbd174a42cc/correct.png?Expires=1837059653&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PBESMvACqx8yKRW8XIb~gWzW1UlBKK8e7pYQQudQ35euwoEWKhY7J4w0k~waJbosnoDPXiptEf2sCtOnTWWksrinj9xvIzuvtluZT4zcv1S2DrH3i0dgYEzmrrxldK8yZwUVQwjLR7JvECMLVx~Xk6YHBRmIQWR8S27BLosbVMr4cu0Sq5ydyhSPvWZO5nhkjeIxLI5ukwyMhZBB5bFphBV7Ufc9NoBhG0E3oUPMsASaerhwXmjG0k~20Z9fZXaEHBl7tmYR9kGMyKhRJQL2NVWQ6Luvs~SygqpKRL0gw~VJ7M3d1cWe6lOKNvXeFSS80AdKfBRPS6azA6MwYcfrXg__" alt="" className='image' />
+                                  <img src="/assest/tick.png" alt="" width={32} />
                                 <p className='text-xl font-semibold text-white'>Enjoy fast processing and instant filing confirmation.</p>
                             </div>
                             <div className="point flex gap-2">
-                                <img src="https://media-hosting.imagekit.io//fe368cbd174a42cc/correct.png?Expires=1837059653&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PBESMvACqx8yKRW8XIb~gWzW1UlBKK8e7pYQQudQ35euwoEWKhY7J4w0k~waJbosnoDPXiptEf2sCtOnTWWksrinj9xvIzuvtluZT4zcv1S2DrH3i0dgYEzmrrxldK8yZwUVQwjLR7JvECMLVx~Xk6YHBRmIQWR8S27BLosbVMr4cu0Sq5ydyhSPvWZO5nhkjeIxLI5ukwyMhZBB5bFphBV7Ufc9NoBhG0E3oUPMsASaerhwXmjG0k~20Z9fZXaEHBl7tmYR9kGMyKhRJQL2NVWQ6Luvs~SygqpKRL0gw~VJ7M3d1cWe6lOKNvXeFSS80AdKfBRPS6azA6MwYcfrXg__" alt="" className='image' />
+                                  <img src="/assest/tick.png" alt="" width={32} />
                                 <p className='text-xl font-semibold text-white'>Stay protected with advanced data security protocols.</p>
                             </div>
                             <div className="point flex gap-2">
-                                <img src="https://media-hosting.imagekit.io//fe368cbd174a42cc/correct.png?Expires=1837059653&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PBESMvACqx8yKRW8XIb~gWzW1UlBKK8e7pYQQudQ35euwoEWKhY7J4w0k~waJbosnoDPXiptEf2sCtOnTWWksrinj9xvIzuvtluZT4zcv1S2DrH3i0dgYEzmrrxldK8yZwUVQwjLR7JvECMLVx~Xk6YHBRmIQWR8S27BLosbVMr4cu0Sq5ydyhSPvWZO5nhkjeIxLI5ukwyMhZBB5bFphBV7Ufc9NoBhG0E3oUPMsASaerhwXmjG0k~20Z9fZXaEHBl7tmYR9kGMyKhRJQL2NVWQ6Luvs~SygqpKRL0gw~VJ7M3d1cWe6lOKNvXeFSS80AdKfBRPS6azA6MwYcfrXg__" alt="" className='image' />
+                                   <img src="/assest/tick.png" alt="" width={32} />
                                 <p className='text-xl font-semibold text-white'>Access expert tax help anytime, right at your fingertips.</p>
                             </div>
 

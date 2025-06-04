@@ -12,7 +12,7 @@ const Solutions = () => {
             </div>
             <div className="part1-box text-center flex flex-col px-16 justify-center items-center rounded-lg bg-white shadow-lg py-7  w-72">
             <img src="https://tax2win.in/assets-new/img/homepage/team.svg" alt="Trusted by" title="Trusted by" width="35" height="35" />
-            <p className="font-medium mt-2">Trusted by 1+ Million
+            <p className="font-medium mt-2">Trusted by 20K
             Users</p>
             </div>
             <div className="part1-box text-center flex flex-col px-16 justify-center items-center rounded-lg bg-white shadow-lg py-7  w-72">

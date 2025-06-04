@@ -162,7 +162,7 @@ export default function page() {
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-[#24656F] mr-2" />
-                <span className="text-sm text-gray-700">10 million+ satisfied customers</span>
+                <span className="text-sm text-gray-700">20K+ satisfied customers</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-[#24656F] mr-2" />

@@ -316,7 +316,7 @@ export default function Home() {
                 alt=""
               />
               <p className="text-lg">
-               1k + Clients Served
+               20k + Clients Served
               </p>
             </li>
             <li className="flex gap-3 items-center mb-2  font-semibold">

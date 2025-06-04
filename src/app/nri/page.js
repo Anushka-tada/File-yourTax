@@ -15,7 +15,7 @@ const page = () => {
       title: "Sagar Tosniwal",
       shortDesc: "Clover Infotech Pvt Ltd, Maharashtra ",
       description:
-        "I am happy with the service offered by Team Tax2win. I have also recommended tax2Win to many of my friends.",
+        "I am happy with the service offered by Team FileYourTax. I have also recommended FileYourTax to many of my friends.",
     },
     {
       title: "Vinay Bakshi ",

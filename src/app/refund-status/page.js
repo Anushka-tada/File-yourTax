@@ -42,7 +42,7 @@ const page = () => {
             </p>
             <p className="mb-5">
               To check your ITR refund status, you can easily enter the required
-              information into the provided form, and Tax2win will help you
+              information into the provided form, and FileYourTax will help you
               determine the status of your refund. Remember to file your return
               on time to speed up the process and receive your refund more
               quickly.
@@ -168,7 +168,7 @@ const page = () => {
               Once the refund is generated, it will be either directly credited
               to your bank account You can know the income tax refund status
               online through the Income Tax Department's website NSDL or through
-              the Tax2win Income Tax Refund status tool.
+              the FileYourTax Income Tax Refund status tool.
             </p>
 
             <div className="fys flex justify-between">
@@ -194,7 +194,7 @@ const page = () => {
                 <div className="flex gap-2">
                   <img src="https://emailer.tax2win.in/assets/guides/guide-banner/r3.svg"></img>
                   <p className="text-lg text-white">
-                    10+ year of industry experience
+                    7+ year of industry experience
                   </p>
                 </div>
               </div>
@@ -235,7 +235,7 @@ const page = () => {
             ></img>
 
             <h4 className="text-2xl font-semibold mb-3">
-              How to Check the Income Tax Refund Status through Tax2win?
+              How to Check the Income Tax Refund Status through FileYourTax?
             </h4>
             <p className="mb-2">
               Enter your PAN, email address, and select the relevant assessment
@@ -628,7 +628,7 @@ const page = () => {
           {visibleAnswer[1] && (
             <div className="answer text-left my-3">
               <p className="text-base mb-3">
-               Taxpayers can view the status of their refund 10 days after the Assessing Officer sends it to the Refund Banker. The Tax2win “Check Income Tax Refund Status” tool helps you know income tax refund status
+               Taxpayers can view the status of their refund 10 days after the Assessing Officer sends it to the Refund Banker. The FileYourTax“Check Income Tax Refund Status” tool helps you know income tax refund status
 
 
               </p>

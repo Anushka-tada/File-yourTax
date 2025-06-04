@@ -2,6 +2,7 @@
 
 
 
+import Navbar from '../components/Navbar/Nav';
 import Footer from '../homepage/Footer';
 import LogFooter from '../login/LogFooter';
 import Contact_footer from './Contact_footer';
@@ -14,7 +15,8 @@ import Solutions from './Solutions';
 const page = () => {
   return (
     <div>
-        <Nav/>
+        {/* <Nav/> */}
+        <Navbar/>
 <Contactform/>
   <Solutions/>
   <Footer/>

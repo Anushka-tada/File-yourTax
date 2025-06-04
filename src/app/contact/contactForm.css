@@ -13,7 +13,7 @@
 
 .contactForm{
     position: absolute;
-    z-index: 99;
+    z-index: 0;
 }
 .map{
     background: rgba(51, 64, 80, .3);

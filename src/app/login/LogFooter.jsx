@@ -27,9 +27,9 @@ const LogFooter = () => {
            </a>  
                    </div> */}
     
-        <div className="footer-img mt-4 md:mt-4 lg:mt-0">
+        {/* <div className="footer-img mt-4 md:mt-4 lg:mt-0">
         <img src="https://tax2win.in/assets-new/img/certificate.jpg?1" width="281" height="32" alt="certificate" loading="lazy"/>
-        </div>
+        </div> */}
       </div>
 
 <div className="bg-zinc-50 py-6">

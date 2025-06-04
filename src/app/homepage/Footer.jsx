@@ -22,6 +22,7 @@ const Footer = () => {
             <li><a href="/upload">Upload Form 16</a></li>
             <li><a href="/book-eCA" >CA Assisted ITR Filing</a></li>
             <li><a href="/refund-status">Refund Status</a></li>
+              <li><a href="/tds-solution">TDS Solution</a></li>
             <li><a href="/nri">NRI Taxes &amp; ITR Filing</a></li>
             <li><a href="/tax-advisory">Tax Advisory Services</a></li>
             <li><a href="/capital-gain">Capital Gain Tax Filing</a></li>

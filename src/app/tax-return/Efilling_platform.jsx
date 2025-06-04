@@ -346,9 +346,9 @@ If you find tax filing complex or need assistance, our team of experts is readil
 
             {/* Find ITR Filling Plans Section start */}
 
-            <div className="Itr-plans-section flex flex-col justify-center items-center py-14  mt-7">
+            <div className="Itr-plans-section flex flex-col justify-center items-center py-14  mt-7 px-3">
               <h1 className='font-extrabold text-4xl mb-4'>Discover the Ideal ITR Filing Solution Tailored to Your Requirements</h1>
-              <p className='text-2xl mb-2 font-semibold'>Explore our bespoke income tax return filing plans crafted to meet your unique financial profile and ensure accurate, hassle-free compliance.</p>
+              <p className='text-2xl mb-2 font-semibold text-center' >Explore our bespoke income tax return filing plans crafted to meet your unique financial profile and ensure accurate, hassle-free compliance.</p>
 
               <div className="itr-plans mt-14 flex flex-wrap gap-5">
                 <div className="itr-plan rounded-2xl p-7">
