@@ -8,9 +8,11 @@ export default function page() {
   return (
     <div >
       <Nav />
-    <Efilling_platform/>
+   <div className="page">
+     <Efilling_platform/>
     <Need_Support/>
       <Footer />
+    </div>
     </div>
   );
 }

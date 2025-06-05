@@ -76,7 +76,7 @@ const Efilling_platform = () => {
 
 
   return (
-    <div className='page'>
+    <div >
 
       {/* income tax return e-filling */}
       {isLoading ? (
